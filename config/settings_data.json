@@ -33,7 +33,7 @@
     "text_font": "dm_sans_n4",
     "heading_apparition": "split_fade",
     "product_color_display": "swatch",
-    "product_info_alignment": "start",
+    "product_info_alignment": "center",
     "cart_type": "drawer",
     "cart_icon": "shopping_cart",
     "checkout_accent_color": "#f0c417",
