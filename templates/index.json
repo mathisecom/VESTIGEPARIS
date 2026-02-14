@@ -16,7 +16,7 @@
           "type": "heading",
           "settings": {
             "text": "MEILLEURES VENTES",
-            "heading_tag": "h3",
+            "heading_tag": "h4",
             "text_color": "",
             "gradient": ""
           }
