@@ -67,21 +67,21 @@
         "166442457738b23caf-0": {
           "type": "item",
           "settings": {
-            "title": "Do you ship overseas?",
+            "title": "Expédiez-vous à l'étranger ?",
             "content": "<p>Oui, nous expédions partout dans le monde. Des frais d'expédition s'appliqueront et seront ajoutés à la caisse.</p>"
           }
         },
         "166442457738b23caf-1": {
           "type": "item",
           "settings": {
-            "title": "How long will it take to get my orders?",
+            "title": "Comment Suivre mon colis ?",
             "content": "<p>Pour suivre votre colis, il vous suffit de vous rendre dans le menu de notre site, puis de cliquer sur <strong>« Suivre votre commande »</strong>. Vous pourrez alors entrer votre numéro de commande pour connaître l’état de votre livraison en temps réel.</p>"
           }
         },
         "166442457738b23caf-2": {
           "type": "item",
           "settings": {
-            "title": "Any question?",
+            "title": "Quel est le temps de livraison ?",
             "content": "<p>Nos commandes sont expédiées et livrée dans un délai de 2 à 3 jours ouvrables avec Colissimo.</p>"
           }
         }
@@ -97,8 +97,8 @@
         "title": "Questions Fréquentes",
         "content": "",
         "team_avatar_width": 160,
-        "support_hours": "Our customer support is available Monday to Friday: 8am-8:30pm.",
-        "answer_time": "Average answer time: 24h",
+        "support_hours": "",
+        "answer_time": "",
         "button_text": "",
         "button_url": "",
         "text_position": "center",
