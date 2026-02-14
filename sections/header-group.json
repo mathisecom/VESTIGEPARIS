@@ -20,17 +20,25 @@
             "text": "LIVRAISON MONDIAL RELAY DISPONIBLE À 4.90€",
             "url": ""
           }
+        },
+        "message_gjnRTy": {
+          "type": "message",
+          "settings": {
+            "text": "📦 LIVRAISON 48H OFFERTE À PARTIR DE 60 € D'ACHATS",
+            "url": ""
+          }
         }
       },
       "block_order": [
-        "message"
+        "message",
+        "message_gjnRTy"
       ],
       "settings": {
         "enable_sticky": false,
         "autoplay": false,
         "cycle_speed": 6,
         "text_size": "text-xs",
-        "navigation_mode": "arrows",
+        "navigation_mode": "scrolling",
         "scrolling_speed": 10,
         "background": "#1a1a1a",
         "background_gradient": "",
