@@ -42,8 +42,9 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
+        "logo": "shopify://shop_images/Vestige..png",
         "logo_max_width": 120,
-        "logo_mobile_max_width": 100,
+        "logo_mobile_max_width": 115,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
