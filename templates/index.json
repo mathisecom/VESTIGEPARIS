@@ -12,6 +12,12 @@
     "rich_text_cecXwD": {
       "type": "rich-text",
       "blocks": {
+        "subheading_rhe9Hj": {
+          "type": "subheading",
+          "settings": {
+            "text": "Subheading"
+          }
+        },
         "heading_b3EdaX": {
           "type": "heading",
           "settings": {
@@ -23,6 +29,7 @@
         }
       },
       "block_order": [
+        "subheading_rhe9Hj",
         "heading_b3EdaX"
       ],
       "name": "Rich text",
@@ -59,6 +66,32 @@
         "heading_gradient": "",
         "product_card_background": "",
         "product_card_text_color": ""
+      }
+    },
+    "rich_text_NRUXWj": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_xgrkpQ": {
+          "type": "heading",
+          "settings": {
+            "text": "NOS COLLECTIONS",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_xgrkpQ"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "",
+        "background_gradient": "",
+        "text_color": ""
       }
     },
     "collection_list_PUwcAr": {
@@ -187,6 +220,7 @@
   "order": [
     "rich_text_cecXwD",
     "featured_collection_4kbB9L",
+    "rich_text_NRUXWj",
     "collection_list_PUwcAr",
     "faq"
   ]
