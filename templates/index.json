@@ -164,6 +164,92 @@
         "heading_gradient": ""
       }
     },
+    "rich_text_XRNW9e": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_kmWP7L": {
+          "type": "heading",
+          "settings": {
+            "text": "NOS COLLECTIONS",
+            "heading_tag": "h3",
+            "text_color": "",
+            "gradient": ""
+          }
+        }
+      },
+      "block_order": [
+        "heading_kmWP7L"
+      ],
+      "name": "Rich text",
+      "settings": {
+        "full_width": true,
+        "content_width": "small",
+        "text_position": "center",
+        "background": "#f9f9f9",
+        "background_gradient": "",
+        "text_color": ""
+      }
+    },
+    "testimonials_q4GVhe": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_azctpY": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "John S.",
+            "title": "Testimonial 1",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_WFiR4q": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 5,
+            "author": "Mary U.",
+            "title": "Testimonial 2",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        },
+        "testimonial_KKPWqp": {
+          "type": "testimonial",
+          "settings": {
+            "round_avatar": true,
+            "show_rating": true,
+            "rating": 4,
+            "author": "Joshua A.",
+            "title": "Testimonial 3",
+            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_azctpY",
+        "testimonial_WFiR4q",
+        "testimonial_KKPWqp"
+      ],
+      "name": "Testimonials",
+      "settings": {
+        "full_width": true,
+        "stack_testimonials": false,
+        "subheading": "",
+        "title": "",
+        "content": "",
+        "link_url": "",
+        "link_text": "",
+        "background": "#f9f9f9",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "testimonial_card_background": "",
+        "testimonial_card_text_color": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -222,6 +308,8 @@
     "featured_collection_4kbB9L",
     "rich_text_NRUXWj",
     "collection_list_PUwcAr",
+    "rich_text_XRNW9e",
+    "testimonials_q4GVhe",
     "faq"
   ]
 }
