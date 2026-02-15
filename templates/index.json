@@ -84,6 +84,7 @@
       "block_order": [
         "heading_xgrkpQ"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -145,6 +146,7 @@
         "collection_QWUUnd",
         "collection_xUYTdX"
       ],
+      "disabled": true,
       "name": "Collection list",
       "settings": {
         "full_width": true,
