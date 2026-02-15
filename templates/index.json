@@ -46,7 +46,7 @@
       "type": "featured-collection",
       "name": "Featured collection",
       "settings": {
-        "collection": "",
+        "collection": "frontpage",
         "products": [],
         "full_width": true,
         "stack_products": false,
