@@ -12,6 +12,12 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "liquid_a3N3bC": {
+          "type": "liquid",
+          "settings": {
+            "liquid": ""
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -96,9 +102,20 @@
             "content": "<h3>Livraison</h3><p>Nos commandes sont expédiées et livrées sous <strong>2 à 3 jours ouvrables</strong> via <strong>La Poste Colissimo</strong>.<br/><br/>Nous proposons également la livraison via <strong>Mondial Relay</strong>, avec un délai estimé de <strong>3 à 5 jours ouvrables</strong>.</p><h3>Retour</h3><p>Les retours sont possibles pendant <strong>14 jours</strong> après la réception de la commande.<br/><br/>Si la demande de remboursement est validée, tu recevras ton remboursement sous <strong>5 à 10 jours ouvrés</strong> (délai géré par le processeur de paiement).</p><p>Les <strong>frais de retour</strong> sont pris en charge uniquement en cas de <strong>défaut du colis ou du produit nécessitant une prise en charge SAV</strong>.</p>",
             "page": ""
           }
+        },
+        "collapsible_text_UGQrVY": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "title": "Lavage & Entretien",
+            "content": "<p><strong>- </strong>Lavage <strong>30°</strong><br/><strong>- </strong>Pas de <strong>sèche-linge</strong><br/><strong>- </strong>Repassage <strong>à l'envers</strong></p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
+        "liquid_a3N3bC",
         "title",
         "badges",
         "price",
@@ -110,7 +127,8 @@
         "buy_buttons",
         "liquid_zUWBYU",
         "liquid_6dWYbt",
-        "collapsible_text_3prNwy"
+        "collapsible_text_3prNwy",
+        "collapsible_text_UGQrVY"
       ],
       "settings": {
         "full_width": true,
