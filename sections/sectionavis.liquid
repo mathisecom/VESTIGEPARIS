@@ -1,0 +1,507 @@
+{% comment %}
+  Section Avis clients — grille alternée et responsive.
+  Installation : Boutique en ligne > Thèmes > Modifier le code > Sections > nouvelle section.
+{% endcomment %}
+
+{% if section.settings.font_family == 'manrope' %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+{% endif %}
+
+<section
+  id="fpr-{{ section.id }}"
+  class="fpr-section"
+  style="
+    --fpr-bg: {{ section.settings.background_color }};
+    --fpr-card: {{ section.settings.card_color }};
+    --fpr-title: {{ section.settings.title_color }};
+    --fpr-text: {{ section.settings.text_color }};
+    --fpr-muted: {{ section.settings.muted_color }};
+    --fpr-star: {{ section.settings.star_color }};
+    --fpr-pill: {{ section.settings.pill_color }};
+    --fpr-pill-text: {{ section.settings.pill_text_color }};
+    --fpr-gap: {{ section.settings.column_gap }}px;
+    --fpr-radius: {{ section.settings.card_radius }}px;
+    --fpr-photo-ratio: {{ section.settings.photo_ratio }};
+    --fpr-last-star: {{ section.settings.last_star_fill }}%;
+    --fpr-columns-desktop: {{ section.settings.columns_desktop }};
+    --fpr-columns-mobile: {{ section.settings.columns_mobile }};
+    --fpr-heading-size: {{ section.settings.heading_size }}px;
+    --fpr-review-size: {{ section.settings.review_size }}px;
+  "
+>
+  <div class="fpr-container">
+    <header class="fpr-header">
+      {% if section.settings.heading != blank %}
+        <h2 class="fpr-heading">{{ section.settings.heading | escape }}</h2>
+      {% endif %}
+
+      {% if section.settings.show_rating %}
+        <div class="fpr-rating">
+          {% if section.settings.rating_label != blank %}
+            <span class="fpr-rating-label">{{ section.settings.rating_label | escape }}</span>
+          {% endif %}
+          <span class="fpr-rating-stars" aria-label="Note : {{ section.settings.rating_score | escape }}">
+            {% for star in (1..5) %}
+              <span class="fpr-star{% if star == 5 %} fpr-star-last{% endif %}" aria-hidden="true">★</span>
+            {% endfor %}
+          </span>
+          {% if section.settings.rating_summary != blank %}
+            <span class="fpr-rating-summary">{{ section.settings.rating_summary | escape }}</span>
+          {% endif %}
+          {% if section.settings.rating_score != blank %}
+            <span class="fpr-rating-score"><span aria-hidden="true">★</span> {{ section.settings.rating_score | escape }}</span>
+          {% endif %}
+        </div>
+      {% endif %}
+    </header>
+
+    <div class="fpr-grid">
+      {% for block in section.blocks %}
+        {% if block.type == 'testimonial' %}
+          {% capture fpr_photo %}
+            <div class="fpr-photo-card">
+              {% if block.settings.photo != blank %}
+                {{ block.settings.photo | image_url: width: 1100 | image_tag: class: 'fpr-photo', loading: 'lazy', widths: '200, 300, 400, 550, 750, 900, 1100', sizes: '(max-width: 749px) 46vw, (max-width: 989px) 46vw, 24vw' }}
+              {% else %}
+                <div class="fpr-photo-empty">
+                  {{ 'product-1' | placeholder_svg_tag: 'fpr-photo-placeholder' }}
+                  <span>Ajoutez une photo client</span>
+                </div>
+              {% endif %}
+
+              {% if section.settings.show_product_label and block.settings.product != blank %}
+                <span class="fpr-product-pill">
+                  <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M4 4h3l3.3 12.5h7.3l2-3.5"/>
+                    <path d="M8 8h3M9 16.5h10"/>
+                    <circle cx="11" cy="19" r="1.5"/>
+                    <circle cx="19" cy="19" r="1.5"/>
+                  </svg>
+                  {{ block.settings.product | escape }}
+                </span>
+              {% endif %}
+            </div>
+          {% endcapture %}
+
+          {% capture fpr_review %}
+            <div class="fpr-review-card">
+              <div class="fpr-person">
+                {% if section.settings.show_avatars %}
+                  {% if block.settings.avatar != blank %}
+                    {{ block.settings.avatar | image_url: width: 100 | image_tag: class: 'fpr-avatar', loading: 'lazy', widths: '50, 100' }}
+                  {% else %}
+                    <span class="fpr-avatar fpr-avatar-initial">{{ block.settings.author | slice: 0 | upcase | escape }}</span>
+                  {% endif %}
+                {% endif %}
+                {% if block.settings.author != blank %}
+                  <span class="fpr-author">{{ block.settings.author | escape }}</span>
+                {% endif %}
+              </div>
+
+              {% if block.settings.review != blank %}
+                <div class="fpr-review-body">{{ block.settings.review | escape | newline_to_br }}</div>
+              {% endif %}
+
+              {% if section.settings.show_dates and block.settings.date != blank %}
+                <div class="fpr-review-date">{{ block.settings.date | escape }}</div>
+              {% endif %}
+            </div>
+          {% endcapture %}
+
+          <div class="fpr-stack" {{ block.shopify_attributes }}>
+            {% if block.settings.image_first %}
+              {{ fpr_photo }}
+              {{ fpr_review }}
+            {% else %}
+              {{ fpr_review }}
+              {{ fpr_photo }}
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% if section.settings.bottom_text != blank %}
+      <div class="fpr-bottom-text">{{ section.settings.bottom_text | escape }}</div>
+    {% endif %}
+  </div>
+</section>
+
+<style>
+  #fpr-{{ section.id }} {
+    background: var(--fpr-bg);
+    color: var(--fpr-text);
+    padding: {{ section.settings.padding_top }}px 16px {{ section.settings.padding_bottom }}px;
+    {% if section.settings.font_family == 'manrope' %}
+      font-family: 'Manrope', sans-serif;
+    {% elsif section.settings.font_family == 'arial' %}
+      font-family: Arial, Helvetica, sans-serif;
+    {% else %}
+      font-family: inherit;
+    {% endif %}
+  }
+
+  #fpr-{{ section.id }} *,
+  #fpr-{{ section.id }} *::before,
+  #fpr-{{ section.id }} *::after { box-sizing: border-box; }
+
+  #fpr-{{ section.id }} .fpr-container {
+    width: 100%;
+    max-width: {{ section.settings.max_width }}px;
+    margin: 0 auto;
+  }
+
+  #fpr-{{ section.id }} .fpr-header {
+    text-align: center;
+    margin-bottom: {{ section.settings.header_spacing }}px;
+  }
+
+  #fpr-{{ section.id }} .fpr-heading {
+    color: var(--fpr-title);
+    font-size: var(--fpr-heading-size);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.045em;
+    margin: 0 0 10px;
+  }
+
+  #fpr-{{ section.id }} .fpr-rating {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5px 7px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #fpr-{{ section.id }} .fpr-rating-label { font-weight: 700; }
+  #fpr-{{ section.id }} .fpr-rating-stars { display: inline-flex; align-items: center; gap: 2px; }
+  #fpr-{{ section.id }} .fpr-star {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 17px;
+    height: 17px;
+    background: var(--fpr-star);
+    color: #fff;
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1;
+  }
+  #fpr-{{ section.id }} .fpr-star-last {
+    background: linear-gradient(to right, var(--fpr-star) var(--fpr-last-star), #cecece var(--fpr-last-star));
+  }
+  #fpr-{{ section.id }} .fpr-rating-summary { font-weight: 500; }
+  #fpr-{{ section.id }} .fpr-rating-score { white-space: nowrap; }
+  #fpr-{{ section.id }} .fpr-rating-score > span { color: var(--fpr-star); }
+
+  #fpr-{{ section.id }} .fpr-grid {
+    display: grid;
+    grid-template-columns: repeat(var(--fpr-columns-desktop), minmax(0, 1fr));
+    gap: var(--fpr-gap);
+    align-items: start;
+  }
+
+  #fpr-{{ section.id }} .fpr-column {
+    display: flex;
+    flex-direction: column;
+    gap: var(--fpr-gap);
+    min-width: 0;
+  }
+
+  #fpr-{{ section.id }} .fpr-stack {
+    display: flex;
+    flex-direction: column;
+    gap: var(--fpr-gap);
+    min-width: 0;
+  }
+
+  #fpr-{{ section.id }} .fpr-photo-card {
+    position: relative;
+    width: 100%;
+    aspect-ratio: var(--fpr-photo-ratio);
+    overflow: hidden;
+    background: #e8e8e8;
+    border-radius: var(--fpr-radius);
+  }
+
+  #fpr-{{ section.id }} .fpr-photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #fpr-{{ section.id }} .fpr-photo-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 14px;
+    text-align: center;
+    color: #666;
+    font-size: 11px;
+    gap: 8px;
+  }
+  #fpr-{{ section.id }} .fpr-photo-placeholder { width: 75%; height: auto; max-height: 75%; }
+
+  #fpr-{{ section.id }} .fpr-product-pill {
+    position: absolute;
+    right: 12px;
+    bottom: 12px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    max-width: calc(100% - 24px);
+    border-radius: 999px;
+    padding: 7px 12px;
+    background: var(--fpr-pill);
+    color: var(--fpr-pill-text);
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 1.1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  #fpr-{{ section.id }} .fpr-product-pill svg { flex: none; }
+
+  #fpr-{{ section.id }} .fpr-review-card {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: {{ section.settings.card_padding }}px;
+    border-radius: var(--fpr-radius);
+    background: var(--fpr-card);
+    min-width: 0;
+  }
+
+  #fpr-{{ section.id }} .fpr-person {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    min-width: 0;
+  }
+
+  #fpr-{{ section.id }} .fpr-avatar {
+    flex: 0 0 36px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  #fpr-{{ section.id }} .fpr-avatar-initial {
+    background: #e2e8ef;
+    color: #334155;
+    font-size: 15px;
+    font-weight: 700;
+  }
+
+  #fpr-{{ section.id }} .fpr-author {
+    color: var(--fpr-title);
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+  }
+
+  #fpr-{{ section.id }} .fpr-review-body {
+    color: var(--fpr-text);
+    font-size: var(--fpr-review-size);
+    font-weight: 400;
+    line-height: 1.38;
+    overflow-wrap: anywhere;
+  }
+
+  #fpr-{{ section.id }} .fpr-review-date {
+    margin-top: 10px;
+    color: var(--fpr-muted);
+    font-size: 12px;
+    line-height: 1.5;
+  }
+
+  #fpr-{{ section.id }} .fpr-bottom-text {
+    margin-top: 25px;
+    text-align: center;
+    color: var(--fpr-muted);
+    font-size: 12px;
+  }
+
+  @media (max-width: 989px) {
+    #fpr-{{ section.id }} .fpr-grid {
+      grid-template-columns: repeat(var(--fpr-columns-mobile), minmax(0, 1fr));
+    }
+  }
+
+  @media (max-width: 749px) {
+    #fpr-{{ section.id }} {
+      padding: {{ section.settings.padding_top_mobile }}px 14px {{ section.settings.padding_bottom_mobile }}px;
+      --fpr-gap: {{ section.settings.column_gap_mobile }}px;
+    }
+    #fpr-{{ section.id }} .fpr-header { margin-bottom: 32px; }
+    #fpr-{{ section.id }} .fpr-heading {
+      font-size: {{ section.settings.heading_size_mobile }}px;
+      margin-bottom: 14px;
+    }
+    #fpr-{{ section.id }} .fpr-rating { font-size: 11px; column-gap: 5px; }
+    #fpr-{{ section.id }} .fpr-review-card {
+      padding: {{ section.settings.card_padding_mobile }}px;
+      gap: 9px;
+    }
+    #fpr-{{ section.id }} .fpr-review-body { font-size: {{ section.settings.review_size_mobile }}px; line-height: 1.4; }
+    #fpr-{{ section.id }} .fpr-author { font-size: 14px; }
+    #fpr-{{ section.id }} .fpr-avatar { width: 30px; height: 30px; flex-basis: 30px; }
+    #fpr-{{ section.id }} .fpr-product-pill {
+      bottom: 9px;
+      right: 9px;
+      max-width: calc(100% - 18px);
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+    #fpr-{{ section.id }} .fpr-product-pill svg { width: 15px; height: 15px; }
+    #fpr-{{ section.id }} .fpr-review-date { font-size: 11px; margin-top: 10px; }
+  }
+</style>
+
+<script>
+  /* Masonry sans trous : chaque colonne empile ses cartes indépendamment. */
+  (function () {
+    var root = document.getElementById('fpr-{{ section.id }}');
+    if (!root || root.dataset.fprInitialized === 'true') return;
+    root.dataset.fprInitialized = 'true';
+
+    var grid = root.querySelector('.fpr-grid');
+    if (!grid) return;
+    var media = window.matchMedia('(max-width: 989px)');
+    var desktopCount = {{ section.settings.columns_desktop | json }};
+    var mobileCount = {{ section.settings.columns_mobile | plus: 0 | json }};
+
+    function organizeCards() {
+      var cards = Array.prototype.slice.call(grid.querySelectorAll('.fpr-stack'));
+      var count = media.matches ? mobileCount : desktopCount;
+      if (!cards.length) return;
+
+      var columns = [];
+      var fragment = document.createDocumentFragment();
+      for (var i = 0; i < count; i++) {
+        var col = document.createElement('div');
+        col.className = 'fpr-column';
+        columns.push(col);
+        fragment.appendChild(col);
+      }
+      cards.forEach(function (card, index) {
+        columns[index % count].appendChild(card);
+      });
+      grid.replaceChildren(fragment);
+    }
+
+    organizeCards();
+    if (media.addEventListener) {
+      media.addEventListener('change', organizeCards);
+    } else if (media.addListener) {
+      media.addListener(organizeCards);
+    }
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Avis clients - galerie",
+  "tag": "section",
+  "class": "section-avis-clients-galerie",
+  "settings": [
+    { "type": "header", "content": "En-tête" },
+    { "type": "text", "id": "heading", "label": "Titre", "default": "Ce que disent nos clients" },
+    { "type": "checkbox", "id": "show_rating", "label": "Afficher la note générale", "default": true },
+    { "type": "text", "id": "rating_label", "label": "Mention avant les étoiles", "default": "Excellent" },
+    { "type": "text", "id": "rating_summary", "label": "Texte après les étoiles", "default": "Noté excellent sur la base de 5 007 avis" },
+    { "type": "text", "id": "rating_score", "label": "Note affichée", "default": "(4,6/5)" },
+    { "type": "range", "id": "last_star_fill", "label": "Remplissage de la 5e étoile", "min": 0, "max": 100, "step": 5, "unit": "%", "default": 60 },
+    { "type": "text", "id": "bottom_text", "label": "Texte sous la galerie", "default": "Avis et photos de nos clients" },
+
+    { "type": "header", "content": "Disposition" },
+    { "type": "range", "id": "max_width", "label": "Largeur maximale", "min": 800, "max": 1600, "step": 20, "unit": "px", "default": 1080 },
+    { "type": "range", "id": "columns_desktop", "label": "Colonnes sur ordinateur", "min": 2, "max": 5, "step": 1, "default": 4 },
+    { "type": "select", "id": "columns_mobile", "label": "Colonnes sur tablette et mobile", "options": [{ "value": "1", "label": "1 colonne" }, { "value": "2", "label": "2 colonnes" }], "default": "2" },
+    { "type": "range", "id": "column_gap", "label": "Espacement entre les cartes - PC", "min": 4, "max": 30, "step": 1, "unit": "px", "default": 16 },
+    { "type": "range", "id": "column_gap_mobile", "label": "Espacement entre les cartes - mobile", "min": 4, "max": 24, "step": 1, "unit": "px", "default": 10 },
+    { "type": "select", "id": "photo_ratio", "label": "Format des photos", "options": [
+      { "value": "3 / 4", "label": "Portrait 3:4" },
+      { "value": "4 / 5", "label": "Portrait 4:5" },
+      { "value": "1 / 1", "label": "Carré 1:1" },
+      { "value": "4 / 3", "label": "Paysage 4:3" }
+    ], "default": "3 / 4" },
+    { "type": "range", "id": "card_radius", "label": "Arrondi des cartes", "min": 0, "max": 32, "step": 1, "unit": "px", "default": 12 },
+    { "type": "range", "id": "card_padding", "label": "Marge intérieure avis - PC", "min": 8, "max": 30, "step": 1, "unit": "px", "default": 20 },
+    { "type": "range", "id": "card_padding_mobile", "label": "Marge intérieure avis - mobile", "min": 8, "max": 24, "step": 1, "unit": "px", "default": 14 },
+    { "type": "checkbox", "id": "show_avatars", "label": "Afficher les avatars clients", "default": true },
+    { "type": "checkbox", "id": "show_dates", "label": "Afficher les dates", "default": true },
+    { "type": "checkbox", "id": "show_product_label", "label": "Afficher le badge produit sur les photos", "default": true },
+
+    { "type": "header", "content": "Typographie" },
+    { "type": "select", "id": "font_family", "label": "Police", "options": [
+      { "value": "manrope", "label": "Manrope" },
+      { "value": "theme", "label": "Police du thème" },
+      { "value": "arial", "label": "Arial" }
+    ], "default": "manrope" },
+    { "type": "range", "id": "heading_size", "label": "Taille du titre - PC", "min": 22, "max": 60, "step": 1, "unit": "px", "default": 38 },
+    { "type": "range", "id": "heading_size_mobile", "label": "Taille du titre - mobile", "min": 20, "max": 42, "step": 1, "unit": "px", "default": 30 },
+    { "type": "range", "id": "review_size", "label": "Taille du texte avis - PC", "min": 12, "max": 20, "step": 1, "unit": "px", "default": 14 },
+    { "type": "range", "id": "review_size_mobile", "label": "Taille du texte avis - mobile", "min": 12, "max": 19, "step": 1, "unit": "px", "default": 14 },
+
+    { "type": "header", "content": "Couleurs" },
+    { "type": "color", "id": "background_color", "label": "Fond de la section", "default": "#F6F6F8" },
+    { "type": "color", "id": "card_color", "label": "Fond des avis", "default": "#FFFFFF" },
+    { "type": "color", "id": "title_color", "label": "Titres et noms", "default": "#0A0A0A" },
+    { "type": "color", "id": "text_color", "label": "Texte des avis", "default": "#242424" },
+    { "type": "color", "id": "muted_color", "label": "Dates et mentions secondaires", "default": "#737373" },
+    { "type": "color", "id": "star_color", "label": "Étoiles", "default": "#D9A14C" },
+    { "type": "color", "id": "pill_color", "label": "Fond badge produit", "default": "#FFFFFF" },
+    { "type": "color", "id": "pill_text_color", "label": "Texte badge produit", "default": "#202020" },
+
+    { "type": "header", "content": "Espacements de section" },
+    { "type": "range", "id": "padding_top", "label": "Marge haute - PC", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 28 },
+    { "type": "range", "id": "padding_bottom", "label": "Marge basse - PC", "min": 0, "max": 120, "step": 4, "unit": "px", "default": 32 },
+    { "type": "range", "id": "padding_top_mobile", "label": "Marge haute - mobile", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 16 },
+    { "type": "range", "id": "padding_bottom_mobile", "label": "Marge basse - mobile", "min": 0, "max": 100, "step": 4, "unit": "px", "default": 24 },
+    { "type": "range", "id": "header_spacing", "label": "Espace sous le titre et la note", "min": 12, "max": 80, "step": 2, "unit": "px", "default": 34 }
+  ],
+  "blocks": [
+    {
+      "type": "testimonial",
+      "name": "Photo + avis client",
+      "settings": [
+        { "type": "header", "content": "Photo produit / client" },
+        { "type": "image_picker", "id": "photo", "label": "Photo de la carte" },
+        { "type": "text", "id": "product", "label": "Badge produit sur la photo", "default": "ST3 Pro" },
+        { "type": "checkbox", "id": "image_first", "label": "Afficher la photo avant l'avis", "default": true },
+        { "type": "header", "content": "Avis client" },
+        { "type": "image_picker", "id": "avatar", "label": "Photo de profil du client" },
+        { "type": "text", "id": "author", "label": "Nom du client", "default": "Client satisfait" },
+        { "type": "textarea", "id": "review", "label": "Texte de l'avis", "default": "Un excellent produit ! Très agréable à utiliser, avec une qualité et un confort au rendez-vous. Je recommande sans hésiter." },
+        { "type": "text", "id": "date", "label": "Date de l'avis", "default": "25 mars 2026" }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Avis clients - galerie",
+      "blocks": [
+        { "type": "testimonial", "settings": { "image_first": true, "author": "Raphaël Voss", "product": "ST3 Pro", "review": "Extrêmement puissante, avec un confort de conduite incomparable grâce à la suspension. La batterie tient très bien, même par temps froid. Livraison rapide et service impeccable !", "date": "20 février 2026" } },
+        { "type": "testimonial", "settings": { "image_first": false, "author": "Sébastien Holt", "product": "ST3 Pro", "review": "Quelle excellente trottinette ! Une belle autonomie, une conduite souple et un design élégant. Les clignotants et l'application sont très pratiques. Je recommande pour les trajets quotidiens !", "date": "25 mars 2026" } },
+        { "type": "testimonial", "settings": { "image_first": true, "author": "Damien Frost", "product": "GT3 Max", "review": "Cette trottinette est géniale ! Elle avance parfaitement, la suspension absorbe les irrégularités de la route et l'autonomie est remarquable. Un vrai plaisir au quotidien.", "date": "12 février 2026" } },
+        { "type": "testimonial", "settings": { "image_first": false, "author": "Nova Sterling", "product": "GT3 Pro", "review": "Une accélération puissante et une suspension très confortable sur toutes les surfaces. L'autonomie est suffisante pour toute la journée. Très bon rapport qualité-prix !", "date": "12 mars 2026" } }
+      ]
+    }
+  ]
+}
+{% endschema %}
