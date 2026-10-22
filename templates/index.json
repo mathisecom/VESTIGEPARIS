@@ -49,7 +49,7 @@
       ],
       "name": "Barre avantages",
       "settings": {
-        "bg_color": "#F5F5F5",
+        "bg_color": "#f5f5f5",
         "text_color": "#181818",
         "bar_height": 65,
         "autoplay": true,
@@ -244,6 +244,88 @@
         "heading_gradient": "",
         "product_card_background": "",
         "product_card_text_color": ""
+      }
+    },
+    "imgiconss_MpLnBn": {
+      "type": "imgiconss",
+      "blocks": {
+        "stat_VGjCBy": {
+          "type": "stat",
+          "settings": {
+            "number": "10 000+",
+            "title": "Cavaliers en Europe",
+            "description": "<p>La communauté grandit - dans la rue et en ligne.</p>"
+          }
+        },
+        "stat_e9Fabx": {
+          "type": "stat",
+          "settings": {
+            "number": "100+",
+            "title": "Partenaires dans toute l'Europe",
+            "description": "<p>Essai et conseil personnalisé également près de chez vous.</p>"
+          }
+        },
+        "stat_HFt9fX": {
+          "type": "stat",
+          "settings": {
+            "number": "4.8",
+            "title": "Avis client",
+            "description": "<p>De vrais avis de vrais conducteurs sur Trusted Shops et autres.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "stat_VGjCBy",
+        "stat_e9Fabx",
+        "stat_HFt9fX"
+      ],
+      "name": "Image et statistiques",
+      "settings": {
+        "image_position": "center center",
+        "image_heading": "",
+        "show_stars": false,
+        "star_count": 5,
+        "bottom_heading": "",
+        "bottom_text": "",
+        "main_heading": "",
+        "main_heading_size": 38,
+        "heading_weight": "500",
+        "image_heading_size": 52,
+        "bottom_heading_size": 28,
+        "number_size": 56,
+        "stat_title_size": 28,
+        "description_size": 18,
+        "max_width": 1400,
+        "image_side": "left",
+        "image_width": 38,
+        "image_height": 510,
+        "image_radius": 28,
+        "image_padding": 30,
+        "overlay_strength": 70,
+        "column_gap": 100,
+        "heading_spacing": 50,
+        "number_column_width": 180,
+        "row_padding": 30,
+        "padding_top": 20,
+        "padding_bottom": 20,
+        "mobile_image_first": true,
+        "mobile_image_height": 420,
+        "mobile_image_title_size": 22,
+        "mobile_heading_size": 29,
+        "mobile_number_size": 38,
+        "mobile_number_column": 120,
+        "mobile_stat_title_size": 19,
+        "mobile_description_size": 14,
+        "mobile_gap": 32,
+        "mobile_padding_top": 20,
+        "mobile_padding_bottom": 30,
+        "background_color": "#FFFFFF",
+        "title_color": "#19191B",
+        "text_color": "#252525",
+        "secondary_color": "#66666C",
+        "border_color": "#EEEEEE",
+        "card_text_color": "#FFFFFF",
+        "stars_color": "#FFFFFF"
       }
     },
     "logoscroll_QEPRX9": {
@@ -577,6 +659,7 @@
     "reassuranceicons_PdXdib",
     "collection_list_JgaeVB",
     "featured_collection_UC9RJT",
+    "imgiconss_MpLnBn",
     "logoscroll_QEPRX9",
     "sectionavis_Hre73q",
     "featured_collection_NBPUwG",
