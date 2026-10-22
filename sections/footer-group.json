@@ -18,7 +18,6 @@
           "type": "item",
           "settings": {
             "icon": "picto-box",
-            "custom_icon": "shopify://shop_images/cronografo_98bf3512-7cc7-4342-9648-519382a77186.svg",
             "mobile_icon_width": 36,
             "icon_width": 36,
             "icon_background_type": "none",
@@ -32,7 +31,6 @@
           "type": "item",
           "settings": {
             "icon": "picto-coupon",
-            "custom_icon": "shopify://shop_images/tarjeta-de-credito_ac7e19f8-c578-4f33-8bbf-78dadda8d55f.svg",
             "mobile_icon_width": 36,
             "icon_width": 36,
             "icon_background_type": "none",
@@ -46,7 +44,6 @@
           "type": "item",
           "settings": {
             "icon": "picto-customer-support",
-            "custom_icon": "shopify://shop_images/caja_0b041079-3cb2-400f-8d05-6058f21363e9.svg",
             "mobile_icon_width": 36,
             "icon_width": 36,
             "icon_background_type": "none",
@@ -80,7 +77,6 @@
         "newsletter": {
           "type": "newsletter",
           "settings": {
-            "image": "shopify://shop_images/Vestige._1.png",
             "image_width": 140,
             "heading_size": "h3",
             "title": "Newsletters -",
@@ -99,8 +95,8 @@
           "type": "text",
           "settings": {
             "title": "Contactez-Nous",
-            "content": "<p><a href=\"tel:%F0%9F%93%9E 06 22 27 60 06\">📞 06 22 27 60 06</a></p>",
-            "enable_follow_on_shop": true
+            "content": "",
+            "enable_follow_on_shop": false
           }
         }
       },

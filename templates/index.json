@@ -182,6 +182,7 @@
       "block_order": [
         "heading_kmWP7L"
       ],
+      "disabled": true,
       "name": "Rich text",
       "settings": {
         "full_width": true,
@@ -234,6 +235,7 @@
         "testimonial_WFiR4q",
         "testimonial_KKPWqp"
       ],
+      "disabled": true,
       "name": "Testimonials",
       "settings": {
         "full_width": true,
@@ -282,6 +284,7 @@
         "166442457738b23caf-1",
         "166442457738b23caf-2"
       ],
+      "disabled": true,
       "settings": {
         "full_width": false,
         "subheading": "",
