@@ -1,0 +1,446 @@
+
+{% comment %}
+  BARRE AVANTAGES - RESPONSIVE
+  Desktop : 4 colonnes
+  Mobile : slider automatique + swipe
+{% endcomment %}
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&display=swap" rel="stylesheet">
+
+<section
+  id="fp-benefits-{{ section.id }}"
+  class="fp-benefits"
+  aria-label="Les avantages de notre boutique"
+>
+  <div class="fp-benefits__slider">
+    {% for block in section.blocks %}
+      <div
+        class="fp-benefits__item"
+        {{ block.shopify_attributes }}
+      >
+        <span class="fp-benefits__icon" aria-hidden="true">
+
+          {% case block.settings.icon %}
+
+            {% when 'truck' %}
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M3 6h11v11H3V6Z"/>
+                <path d="M14 10h4l3 4v3h-7"/>
+                <circle cx="7.5" cy="18" r="2"/>
+                <circle cx="17.5" cy="18" r="2"/>
+                <path d="M1 10h7M1 13h5"/>
+              </svg>
+
+            {% when 'lock' %}
+              <svg viewBox="0 0 24 24" fill="none">
+                <rect x="5" y="10" width="14" height="11" rx="2"/>
+                <path d="M8 10V7a4 4 0 0 1 8 0v3"/>
+                <path d="M12 14v3"/>
+              </svg>
+
+            {% when 'shield' %}
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M12 2 21 6v6c0 5-3.5 8-9 10-5.5-2-9-5-9-10V6l9-4Z"/>
+                <path d="m8 12 2.5 2.5L16 9"/>
+              </svg>
+
+            {% when 'support' %}
+              <svg viewBox="0 0 24 24" fill="none">
+                <path d="M4 12V10a8 8 0 0 1 16 0v2"/>
+                <rect x="2" y="11" width="4" height="7" rx="2"/>
+                <rect x="18" y="11" width="4" height="7" rx="2"/>
+                <path d="M20 18c0 2-2 3-5 3h-3"/>
+                <path d="M12 21h-2"/>
+              </svg>
+
+          {% endcase %}
+
+        </span>
+
+        <span class="fp-benefits__text">
+          {{ block.settings.text | escape }}
+        </span>
+      </div>
+    {% endfor %}
+  </div>
+</section>
+
+<style>
+  #fp-benefits-{{ section.id }} {
+    --fp-bg: {{ section.settings.bg_color }};
+    --fp-text: {{ section.settings.text_color }};
+    --fp-height: {{ section.settings.bar_height }}px;
+
+    width: 100%;
+    background: var(--fp-bg);
+    color: var(--fp-text);
+    overflow: hidden;
+  }
+
+  #fp-benefits-{{ section.id }} *,
+  #fp-benefits-{{ section.id }} *::before,
+  #fp-benefits-{{ section.id }} *::after {
+    box-sizing: border-box;
+  }
+
+  #fp-benefits-{{ section.id }} .fp-benefits__slider {
+    width: 100%;
+    max-width: 1600px;
+    min-height: var(--fp-height);
+    margin: 0 auto;
+    padding: 0 20px;
+
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  #fp-benefits-{{ section.id }} .fp-benefits__item {
+    flex: 1 1 0;
+    min-width: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 12px 6px;
+    white-space: nowrap;
+  }
+
+  #fp-benefits-{{ section.id }} .fp-benefits__icon {
+    width: 23px;
+    height: 23px;
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #fp-benefits-{{ section.id }} .fp-benefits__icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  #fp-benefits-{{ section.id }} .fp-benefits__text {
+    font-family: 'Barlow Condensed', 'Arial Narrow', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    line-height: 1.1;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: inherit;
+  }
+
+  /* TABLETTE */
+  @media screen and (min-width: 750px) and (max-width: 1100px) {
+    #fp-benefits-{{ section.id }} .fp-benefits__text {
+      font-size: 14px;
+    }
+
+    #fp-benefits-{{ section.id }} .fp-benefits__icon {
+      width: 19px;
+      height: 19px;
+    }
+
+    #fp-benefits-{{ section.id }} .fp-benefits__item {
+      gap: 7px;
+      padding-left: 2px;
+      padding-right: 2px;
+    }
+  }
+
+  /* MOBILE : SLIDER HORIZONTAL */
+  @media screen and (max-width: 749px) {
+
+    #fp-benefits-{{ section.id }} .fp-benefits__slider {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+
+      gap: 14px;
+      width: 100%;
+      min-height: 65px;
+      padding: 0 18px;
+
+      overflow-x: auto;
+      overflow-y: hidden;
+
+      scroll-snap-type: x mandatory;
+      scroll-padding-left: 18px;
+      scroll-behavior: smooth;
+
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      touch-action: pan-x;
+      overscroll-behavior-x: contain;
+    }
+
+    #fp-benefits-{{ section.id }} .fp-benefits__slider::-webkit-scrollbar {
+      display: none;
+    }
+
+    #fp-benefits-{{ section.id }} .fp-benefits__item {
+      flex: 0 0 65%;
+      justify-content: flex-start;
+      min-width: 0;
+      padding: 12px 0;
+      gap: 9px;
+      scroll-snap-align: start;
+    }
+
+    #fp-benefits-{{ section.id }} .fp-benefits__icon {
+      width: 23px;
+      height: 23px;
+    }
+
+    #fp-benefits-{{ section.id }} .fp-benefits__text {
+      font-size: 18px;
+      font-weight: 800;
+      white-space: nowrap;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    #fp-benefits-{{ section.id }} .fp-benefits__slider {
+      scroll-behavior: auto;
+    }
+  }
+</style>
+
+<script>
+(function() {
+  const sectionId = 'fp-benefits-{{ section.id }}';
+  const sectionEl = document.getElementById(sectionId);
+
+  if (!sectionEl || sectionEl.dataset.sliderInitialized === 'true') {
+    return;
+  }
+
+  sectionEl.dataset.sliderInitialized = 'true';
+
+  const slider = sectionEl.querySelector('.fp-benefits__slider');
+  const slides = slider.querySelectorAll('.fp-benefits__item');
+  const mobileQuery = window.matchMedia('(max-width: 749px)');
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+
+  const autoplay = {{ section.settings.autoplay | json }};
+  const interval = {{ section.settings.slide_speed | times: 1000 }};
+
+  if (!autoplay || slides.length < 2 || reducedMotion.matches) {
+    return;
+  }
+
+  let paused = false;
+  let timer = null;
+
+  function nextSlide() {
+    if (!mobileQuery.matches || paused || document.hidden) {
+      return;
+    }
+
+    const firstSlide = slides[0];
+    const gap = parseFloat(window.getComputedStyle(slider).gap) || 0;
+    const step = firstSlide.getBoundingClientRect().width + gap;
+
+    const atEnd =
+      slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 5;
+
+    if (atEnd) {
+      slider.scrollTo({
+        left: 0,
+        behavior: 'smooth'
+      });
+    } else {
+      slider.scrollBy({
+        left: step,
+        behavior: 'smooth'
+      });
+    }
+  }
+
+  function startSlider() {
+    if (timer !== null) return;
+    timer = window.setInterval(nextSlide, interval);
+  }
+
+  function stopSlider() {
+    if (timer !== null) {
+      window.clearInterval(timer);
+      timer = null;
+    }
+  }
+
+  slider.addEventListener('mouseenter', function() {
+    paused = true;
+  });
+
+  slider.addEventListener('mouseleave', function() {
+    paused = false;
+  });
+
+  slider.addEventListener('focusin', function() {
+    paused = true;
+  });
+
+  slider.addEventListener('focusout', function() {
+    paused = false;
+  });
+
+  slider.addEventListener('touchstart', function() {
+    paused = true;
+  }, { passive: true });
+
+  slider.addEventListener('touchend', function() {
+    window.setTimeout(function() {
+      paused = false;
+    }, 4000);
+  }, { passive: true });
+
+  document.addEventListener('shopify:section:unload', function(event) {
+    if (event.target.contains(sectionEl)) {
+      stopSlider();
+    }
+  });
+
+  startSlider();
+})();
+</script>
+
+{% schema %}
+{
+  "name": "Barre avantages",
+  "tag": "div",
+  "class": "section-barre-avantages",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Apparence"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Couleur de fond",
+      "default": "#F5F5F5"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Couleur du texte et des icônes",
+      "default": "#181818"
+    },
+    {
+      "type": "range",
+      "id": "bar_height",
+      "label": "Hauteur de la barre (PC)",
+      "min": 45,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 65
+    },
+    {
+      "type": "header",
+      "content": "Slider mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "autoplay",
+      "label": "Défilement automatique",
+      "default": true
+    },
+    {
+      "type": "range",
+      "id": "slide_speed",
+      "label": "Intervalle entre les slides",
+      "min": 2,
+      "max": 8,
+      "step": 1,
+      "unit": "s",
+      "default": 3
+    }
+  ],
+  "blocks": [
+    {
+      "type": "advantage",
+      "name": "Avantage",
+      "settings": [
+        {
+          "type": "text",
+          "id": "text",
+          "label": "Texte",
+          "default": "Livraison rapide"
+        },
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icône",
+          "options": [
+            {
+              "value": "truck",
+              "label": "Livraison"
+            },
+            {
+              "value": "lock",
+              "label": "Paiement sécurisé"
+            },
+            {
+              "value": "shield",
+              "label": "Garantie"
+            },
+            {
+              "value": "support",
+              "label": "Support client"
+            }
+          ],
+          "default": "truck"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 4,
+  "presets": [
+    {
+      "name": "Barre avantages",
+      "blocks": [
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Livraison rapide",
+            "icon": "truck"
+          }
+        },
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Paiement sécurisé",
+            "icon": "lock"
+          }
+        },
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Garantie 2 ans",
+            "icon": "shield"
+          }
+        },
+        {
+          "type": "advantage",
+          "settings": {
+            "text": "Support client",
+            "icon": "support"
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
