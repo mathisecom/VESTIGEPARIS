@@ -377,6 +377,101 @@
         "header_spacing": 34
       }
     },
+    "featured_collection_NBPUwG": {
+      "type": "featured-collection",
+      "blocks": {
+        "product_specs_pRyFAh": {
+          "type": "product_specs",
+          "settings": {
+            "product": "all-terrain-electric-scooter-1000w-motor-45km-h-speed-48v-15ah-battery-40-60km-long-range-10-off-road-tires-120kg-load-foldable-waterproof-dual-suspension-adult-escooter-k2",
+            "speed": "30",
+            "range": "",
+            "power": "",
+            "battery": ""
+          }
+        },
+        "product_specs_Mqtwcg": {
+          "type": "product_specs",
+          "settings": {
+            "product": "sunnigoo-adult-electric-scooter-36v-10-4ah-350w-motor-30km-long-range-30km-h-8-5-inch-solid-tires-foldable-smart-app-escooter",
+            "speed": "30",
+            "range": "",
+            "power": "",
+            "battery": ""
+          }
+        },
+        "product_specs_neKHzY": {
+          "type": "product_specs",
+          "settings": {
+            "product": "iscooter-dx5-pro-electric-scooter-with-nfcs-52v-20ah-battery-electric-motorcycle-2000w-motor-90-100km-range-60km-h-max-speed-with-seat-and-basket-17-3-5-e-moto-tires-with-tcs-e-scooter",
+            "speed": "30",
+            "range": "",
+            "power": "",
+            "battery": ""
+          }
+        },
+        "product_specs_eFVzUW": {
+          "type": "product_specs",
+          "settings": {
+            "product": "zylvro-c14-e-scooter-with-rear-suspension-900w-motor-48v-15ah-battery-14-inch-tires-disc-brakes-40km-h-top-speed-60km-long-range",
+            "speed": "30",
+            "range": "",
+            "power": "",
+            "battery": ""
+          }
+        },
+        "product_specs_yG8Ahh": {
+          "type": "product_specs",
+          "settings": {
+            "product": "dx5-6-adult-e-motorcycle-e-scooter-48v-15-6ah-battery-25km-h-speed-60-72km-range-15-inch-pneumatic-tyres-nfc-tap-unlock-dual-hydraulic-disc-brake-built-in-comfort-seat-storage-basket-for-urban-commute-grocery-shoppi",
+            "speed": "30",
+            "range": "",
+            "power": "",
+            "battery": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_specs_pRyFAh",
+        "product_specs_Mqtwcg",
+        "product_specs_neKHzY",
+        "product_specs_eFVzUW",
+        "product_specs_yG8Ahh"
+      ],
+      "name": "Featured collection",
+      "settings": {
+        "collection": "accessoires",
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_count": 6,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "subheading": "",
+        "title": "Accessoires",
+        "content": "",
+        "link_url": "",
+        "link_text": "Découvrir",
+        "enable_specs": true,
+        "speed_label": "Vitesse max.",
+        "range_label": "Autonomie",
+        "power_label": "Puissance",
+        "battery_label": "Batterie",
+        "specs_background": "#f0f0f0",
+        "specs_value_color": "#111111",
+        "specs_label_color": "#666666",
+        "specs_radius": 14,
+        "specs_padding": 14,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -436,6 +531,7 @@
     "featured_collection_UC9RJT",
     "logoscroll_QEPRX9",
     "sectionavis_Hre73q",
+    "featured_collection_NBPUwG",
     "faq"
   ]
 }
