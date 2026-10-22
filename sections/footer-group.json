@@ -95,9 +95,10 @@
         "newsletter": {
           "type": "newsletter",
           "settings": {
-            "image_width": 140,
+            "image": "shopify://shop_images/Nouveau_projet_-_2026-10-22T215811.583.png",
+            "image_width": 160,
             "heading_size": "h4",
-            "title": "Newsletters -",
+            "title": "Newsletters",
             "content": ""
           }
         },
