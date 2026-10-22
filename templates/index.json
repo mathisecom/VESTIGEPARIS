@@ -60,6 +60,7 @@
           "type": "collection",
           "settings": {
             "collection": "accessoires",
+            "image": "shopify://shop_images/Nouveau_projet_48.webp",
             "subheading": "",
             "title": "Accessoires",
             "url": "",
