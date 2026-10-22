@@ -30,6 +30,62 @@
       --product-list-carousel-item-width: calc(var(--container-inner-width) / {{ section.settings.products_per_row_desktop }} - (var(--product-list-column-gap) / {{ section.settings.products_per_row_desktop }} * {{ section.settings.products_per_row_desktop | minus: 1 }}));
     }
   }
+
+  /* Bandeau de caracteristiques ajoute au bas de chaque carte produit. */
+  #shopify-section-{{ section.id }} .fp-specs {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2px;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 12px;
+    padding: {{ section.settings.specs_padding }}px 6px;
+    background: {{ section.settings.specs_background }};
+    border-radius: 0 0 {{ section.settings.specs_radius }}px {{ section.settings.specs_radius }}px;
+    font-family: inherit;
+  }
+
+  #shopify-section-{{ section.id }} .fp-specs__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    min-width: 0;
+    text-align: center;
+  }
+
+  #shopify-section-{{ section.id }} .fp-specs__value {
+    max-width: 100%;
+    color: {{ section.settings.specs_value_color }};
+    font-size: 12px;
+    font-weight: 800;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  #shopify-section-{{ section.id }} .fp-specs__label {
+    max-width: 100%;
+    color: {{ section.settings.specs_label_color }};
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
+  }
+
+  @media screen and (max-width: 699px) {
+    #shopify-section-{{ section.id }} .fp-specs {
+      gap: 1px;
+      padding: 10px 2px;
+      margin-top: 8px;
+      border-radius: 0 0 10px 10px;
+    }
+
+    #shopify-section-{{ section.id }} .fp-specs__item { gap: 3px; }
+    #shopify-section-{{ section.id }} .fp-specs__value { font-size: 9px; }
+    #shopify-section-{{ section.id }} .fp-specs__label { font-size: 7px; }
+  }
 </style>
 
 <div {% render 'section-properties' %}>
@@ -46,7 +102,72 @@
             {%- assign products = section.settings.products | default: section.settings.collection.products -%}
 
             {%- for product in products limit: section.settings.products_count -%}
-              {%- render 'product-card', product: product, stacked: section.settings.stack_products, position: forloop.index, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+              {%- capture fp_card_html -%}
+                {%- render 'product-card', product: product, stacked: section.settings.stack_products, position: forloop.index, background: section.settings.product_card_background, text_color: section.settings.product_card_text_color, show_badges: true -%}
+              {%- endcapture -%}
+
+              {%- if section.settings.enable_specs -%}
+                {%- liquid
+                  assign fp_speed = product.metafields.custom.vitesse_max.value
+                  assign fp_range = product.metafields.custom.autonomie.value
+                  assign fp_power = product.metafields.custom.puissance_moteur.value
+                  assign fp_battery = product.metafields.custom.batterie.value
+                  assign fp_specs_block = nil
+
+                  for block in section.blocks
+                    if block.type == 'product_specs' and block.settings.product != blank
+                      if block.settings.product.id == product.id
+                        assign fp_specs_block = block
+                        break
+                      endif
+                    endif
+                  endfor
+
+                  if fp_specs_block != nil
+                    if fp_specs_block.settings.speed != blank
+                      assign fp_speed = fp_specs_block.settings.speed
+                    endif
+                    if fp_specs_block.settings.range != blank
+                      assign fp_range = fp_specs_block.settings.range
+                    endif
+                    if fp_specs_block.settings.power != blank
+                      assign fp_power = fp_specs_block.settings.power
+                    endif
+                    if fp_specs_block.settings.battery != blank
+                      assign fp_battery = fp_specs_block.settings.battery
+                    endif
+                  endif
+                -%}
+
+                {%- if fp_speed != blank or fp_range != blank or fp_power != blank or fp_battery != blank -%}
+                  {%- capture fp_specs_html -%}
+                    <div class="fp-specs" aria-label="Caractéristiques de {{ product.title | escape }}" {% if fp_specs_block != nil %}{{ fp_specs_block.shopify_attributes }}{% endif %}>
+                      <div class="fp-specs__item">
+                        <strong class="fp-specs__value">{{ fp_speed | default: '—' | escape }}</strong>
+                        <span class="fp-specs__label">{{ section.settings.speed_label | escape }}</span>
+                      </div>
+                      <div class="fp-specs__item">
+                        <strong class="fp-specs__value">{{ fp_range | default: '—' | escape }}</strong>
+                        <span class="fp-specs__label">{{ section.settings.range_label | escape }}</span>
+                      </div>
+                      <div class="fp-specs__item">
+                        <strong class="fp-specs__value">{{ fp_power | default: '—' | escape }}</strong>
+                        <span class="fp-specs__label">{{ section.settings.power_label | escape }}</span>
+                      </div>
+                      <div class="fp-specs__item">
+                        <strong class="fp-specs__value">{{ fp_battery | default: '—' | escape }}</strong>
+                        <span class="fp-specs__label">{{ section.settings.battery_label | escape }}</span>
+                      </div>
+                    </div>
+                  {%- endcapture -%}
+                  {%- assign fp_specs_with_closing_tag = fp_specs_html | append: '</product-card>' -%}
+                  {{- fp_card_html | replace: '</product-card>', fp_specs_with_closing_tag -}}
+                {%- else -%}
+                  {{- fp_card_html -}}
+                {%- endif -%}
+              {%- else -%}
+                {{- fp_card_html -}}
+              {%- endif -%}
             {%- else -%}
               {%- for i in (1..section.settings.products_count) -%}
                 {%- capture placeholder_image -%}product-{% cycle '1', '2', '3', '4', '5', '6' %}{%- endcapture -%}
@@ -129,14 +250,8 @@
       "id": "products_per_row_mobile",
       "label": "Products per row (mobile)",
       "options": [
-        {
-          "value": "1",
-          "label": "1"
-        },
-        {
-          "value": "2",
-          "label": "2"
-        }
+        { "value": "1", "label": "1" },
+        { "value": "2", "label": "2" }
       ],
       "default": "2"
     },
@@ -175,6 +290,79 @@
       "id": "link_text",
       "label": "Link text",
       "default": "View all"
+    },
+    {
+      "type": "header",
+      "content": "Caractéristiques produits"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_specs",
+      "label": "Afficher les caractéristiques",
+      "default": true,
+      "info": "Ajoutez un bloc par produit ci-dessous, ou utilisez les métachamps custom.vitesse_max, custom.autonomie, custom.puissance_moteur et custom.batterie."
+    },
+    {
+      "type": "text",
+      "id": "speed_label",
+      "label": "Libellé vitesse",
+      "default": "Vitesse max."
+    },
+    {
+      "type": "text",
+      "id": "range_label",
+      "label": "Libellé autonomie",
+      "default": "Autonomie"
+    },
+    {
+      "type": "text",
+      "id": "power_label",
+      "label": "Libellé puissance",
+      "default": "Puissance"
+    },
+    {
+      "type": "text",
+      "id": "battery_label",
+      "label": "Libellé batterie",
+      "default": "Batterie"
+    },
+    {
+      "type": "color",
+      "id": "specs_background",
+      "label": "Fond du bandeau",
+      "default": "#F0F0F0"
+    },
+    {
+      "type": "color",
+      "id": "specs_value_color",
+      "label": "Couleur des valeurs",
+      "default": "#111111"
+    },
+    {
+      "type": "color",
+      "id": "specs_label_color",
+      "label": "Couleur des libellés",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "specs_radius",
+      "label": "Arrondi du bandeau",
+      "min": 0,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 14
+    },
+    {
+      "type": "range",
+      "id": "specs_padding",
+      "label": "Espacement vertical",
+      "min": 8,
+      "max": 24,
+      "step": 2,
+      "unit": "px",
+      "default": 14
     },
     {
       "type": "header",
@@ -217,6 +405,44 @@
       "label": "Product card text"
     }
   ],
+  "blocks": [
+    {
+      "type": "product_specs",
+      "name": "Caractéristiques produit",
+      "settings": [
+        {
+          "type": "product",
+          "id": "product",
+          "label": "Produit concerné"
+        },
+        {
+          "type": "text",
+          "id": "speed",
+          "label": "Vitesse maximale",
+          "placeholder": "28 MPH"
+        },
+        {
+          "type": "text",
+          "id": "range",
+          "label": "Autonomie",
+          "placeholder": "40 Miles"
+        },
+        {
+          "type": "text",
+          "id": "power",
+          "label": "Puissance du moteur",
+          "placeholder": "1000W"
+        },
+        {
+          "type": "text",
+          "id": "battery",
+          "label": "Capacité de la batterie",
+          "placeholder": "624Wh"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 50,
   "presets": [
     {
       "name": "Featured collection"
