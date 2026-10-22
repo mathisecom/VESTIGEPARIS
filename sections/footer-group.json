@@ -79,7 +79,7 @@
           "type": "newsletter",
           "settings": {
             "image_width": 140,
-            "heading_size": "h3",
+            "heading_size": "h4",
             "title": "Newsletters -",
             "content": ""
           }
