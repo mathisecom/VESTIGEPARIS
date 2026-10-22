@@ -46,14 +46,15 @@
           "type": "collection",
           "settings": {
             "collection": "",
+            "image": "shopify://shop_images/Nouveau_projet_49.webp",
             "subheading": "",
-            "title": "",
+            "title": "Tout Terrain",
             "url": "",
             "heading_tag": "h4",
             "text_position": "place-self-end-start text-start",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 15
           }
         },
         "collection_Hi9EGD": {
@@ -68,7 +69,7 @@
             "text_position": "place-self-end-start text-start",
             "text_color": "#ffffff",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 15
           }
         }
       },
