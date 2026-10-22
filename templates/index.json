@@ -9,6 +9,53 @@
  */
 {
   "sections": {
+    "reassuranceicons_PdXdib": {
+      "type": "reassuranceicons",
+      "blocks": {
+        "advantage_bA9Mbh": {
+          "type": "advantage",
+          "settings": {
+            "text": "Livraison rapide",
+            "icon": "truck"
+          }
+        },
+        "advantage_gLpEEF": {
+          "type": "advantage",
+          "settings": {
+            "text": "Paiement sécurisé",
+            "icon": "lock"
+          }
+        },
+        "advantage_ggQRRY": {
+          "type": "advantage",
+          "settings": {
+            "text": "Garantie 2 ans",
+            "icon": "shield"
+          }
+        },
+        "advantage_qB8DyT": {
+          "type": "advantage",
+          "settings": {
+            "text": "Support client",
+            "icon": "support"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_bA9Mbh",
+        "advantage_gLpEEF",
+        "advantage_ggQRRY",
+        "advantage_qB8DyT"
+      ],
+      "name": "Barre avantages",
+      "settings": {
+        "bg_color": "#F5F5F5",
+        "text_color": "#181818",
+        "bar_height": 65,
+        "autoplay": true,
+        "slide_speed": 3
+      }
+    },
     "collection_list_JgaeVB": {
       "type": "collection-list",
       "blocks": {
@@ -527,6 +574,7 @@
     }
   },
   "order": [
+    "reassuranceicons_PdXdib",
     "collection_list_JgaeVB",
     "featured_collection_UC9RJT",
     "logoscroll_QEPRX9",
