@@ -13,26 +13,6 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
-      "blocks": {
-        "message": {
-          "type": "message",
-          "settings": {
-            "text": "LIVRAISON MONDIAL RELAY DISPONIBLE À 4.90€",
-            "url": ""
-          }
-        },
-        "message_gjnRTy": {
-          "type": "message",
-          "settings": {
-            "text": "📦 LIVRAISON 48H OFFERTE À PARTIR DE 60 € D'ACHATS",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "message",
-        "message_gjnRTy"
-      ],
       "settings": {
         "enable_sticky": false,
         "autoplay": false,
@@ -42,7 +22,7 @@
         "scrolling_speed": 10,
         "background": "#000000",
         "background_gradient": "",
-        "text_color": "#FFFFFF"
+        "text_color": "#ffffff"
       }
     },
     "header": {
