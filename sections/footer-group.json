@@ -113,7 +113,7 @@
           "type": "text",
           "settings": {
             "title": "Contactez-Nous",
-            "content": "",
+            "content": "<p></p><p><strong>E-RYD&nbsp;</strong></p><p>47, rue Vivienne – 75002 Paris – France</p>",
             "enable_follow_on_shop": false
           }
         }
