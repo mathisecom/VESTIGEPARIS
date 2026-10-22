@@ -19,10 +19,10 @@
           "settings": {
             "icon": "picto-box",
             "custom_icon": "shopify://shop_images/trustpillot4.8_0d01fc0a-caf6-4775-9edf-17e4abcc651b.avif",
-            "mobile_icon_width": 40,
-            "icon_width": 40,
-            "icon_background_type": "circle",
-            "icon_background": "#2A2A2A",
+            "mobile_icon_width": 36,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "#2a2a2a",
             "icon_color": "",
             "title": "Livraison Rapide",
             "content": ""
@@ -33,10 +33,10 @@
           "settings": {
             "icon": "picto-box",
             "custom_icon": "shopify://shop_images/2_c1d1fe3b-ed52-4124-8fcb-554ef41658d0.avif",
-            "mobile_icon_width": 40,
-            "icon_width": 40,
-            "icon_background_type": "circle",
-            "icon_background": "#2A2A2A",
+            "mobile_icon_width": 36,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "#2a2a2a",
             "icon_color": "",
             "title": "Livraison Rapide",
             "content": ""
@@ -47,11 +47,11 @@
           "settings": {
             "icon": "picto-box",
             "custom_icon": "shopify://shop_images/24_82bea0e7-ff0e-46dd-8835-3c10e30e259f.avif",
-            "mobile_icon_width": 40,
-            "icon_width": 40,
-            "icon_background_type": "circle",
-            "icon_background": "#2A2A2A",
-            "icon_color": "#2A2A2A",
+            "mobile_icon_width": 36,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "#2a2a2a",
+            "icon_color": "#2a2a2a",
             "title": "Livraison Rapide",
             "content": ""
           }
@@ -61,11 +61,11 @@
           "settings": {
             "icon": "picto-box",
             "custom_icon": "shopify://shop_images/25f7c811e1a238f7a9d4ef81a863fca9_64d9ef09-2b36-4e35-9e17-75b68a8c793a.avif",
-            "mobile_icon_width": 40,
-            "icon_width": 40,
-            "icon_background_type": "circle",
-            "icon_background": "#2A2A2A",
-            "icon_color": "#2A2A2A",
+            "mobile_icon_width": 36,
+            "icon_width": 36,
+            "icon_background_type": "none",
+            "icon_background": "#2a2a2a",
+            "icon_color": "#2a2a2a",
             "title": "Livraison Rapide",
             "content": ""
           }
