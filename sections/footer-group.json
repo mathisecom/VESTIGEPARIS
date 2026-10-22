@@ -50,7 +50,7 @@
             "mobile_icon_width": 40,
             "icon_width": 40,
             "icon_background_type": "circle",
-            "icon_background": "",
+            "icon_background": "#2A2A2A",
             "icon_color": "#2A2A2A",
             "title": "Livraison Rapide",
             "content": ""
@@ -64,7 +64,7 @@
             "mobile_icon_width": 40,
             "icon_width": 40,
             "icon_background_type": "circle",
-            "icon_background": "",
+            "icon_background": "#2A2A2A",
             "icon_color": "#2A2A2A",
             "title": "Livraison Rapide",
             "content": ""
