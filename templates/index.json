@@ -9,6 +9,97 @@
  */
 {
   "sections": {
+    "sectionavis_Hre73q": {
+      "type": "sectionavis",
+      "blocks": {
+        "testimonial_KkGgxi": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_first": true,
+            "author": "Raphaël Voss",
+            "review": "Extrêmement puissante, avec un confort de conduite incomparable grâce à la suspension. La batterie tient très bien, même par temps froid. Livraison rapide et service impeccable !",
+            "date": "20 février 2026"
+          }
+        },
+        "testimonial_8yrJFg": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_first": false,
+            "author": "Sébastien Holt",
+            "review": "Quelle excellente trottinette ! Une belle autonomie, une conduite souple et un design élégant. Les clignotants et l'application sont très pratiques. Je recommande pour les trajets quotidiens !",
+            "date": "25 mars 2026"
+          }
+        },
+        "testimonial_bWayG4": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_first": true,
+            "author": "Damien Frost",
+            "review": "Cette trottinette est géniale ! Elle avance parfaitement, la suspension absorbe les irrégularités de la route et l'autonomie est remarquable. Un vrai plaisir au quotidien.",
+            "date": "12 février 2026"
+          }
+        },
+        "testimonial_LwXRzx": {
+          "type": "testimonial",
+          "settings": {
+            "product": "",
+            "image_first": false,
+            "author": "Nova Sterling",
+            "review": "Une accélération puissante et une suspension très confortable sur toutes les surfaces. L'autonomie est suffisante pour toute la journée. Très bon rapport qualité-prix !",
+            "date": "12 mars 2026"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_KkGgxi",
+        "testimonial_8yrJFg",
+        "testimonial_bWayG4",
+        "testimonial_LwXRzx"
+      ],
+      "name": "Avis clients - galerie",
+      "settings": {
+        "heading": "Ce que disent nos clients",
+        "show_rating": true,
+        "rating_label": "Excellent",
+        "rating_summary": "Noté excellent sur la base de 5,007 avis",
+        "rating_score": "(4,7/5)",
+        "last_star_fill": 60,
+        "bottom_text": "",
+        "max_width": 1080,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "column_gap": 16,
+        "column_gap_mobile": 10,
+        "photo_ratio": "3 / 4",
+        "card_radius": 12,
+        "card_padding": 20,
+        "card_padding_mobile": 14,
+        "show_avatars": true,
+        "show_dates": true,
+        "show_product_label": true,
+        "font_family": "manrope",
+        "heading_size": 40,
+        "heading_size_mobile": 28,
+        "review_size": 14,
+        "review_size_mobile": 13,
+        "background_color": "#FFFFFF",
+        "card_color": "#FFFFFF",
+        "title_color": "#0A0A0A",
+        "text_color": "#242424",
+        "muted_color": "#737373",
+        "star_color": "#00B67A",
+        "pill_color": "#FFFFFF",
+        "pill_text_color": "#202020",
+        "padding_top": 28,
+        "padding_bottom": 32,
+        "padding_top_mobile": 16,
+        "padding_bottom_mobile": 24,
+        "header_spacing": 34
+      }
+    },
     "faq": {
       "type": "faq",
       "blocks": {
@@ -64,6 +155,7 @@
     }
   },
   "order": [
+    "sectionavis_Hre73q",
     "faq"
   ]
 }
