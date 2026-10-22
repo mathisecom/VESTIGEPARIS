@@ -57,6 +57,7 @@
         "show_country_flag": true,
         "show_country_name": false,
         "transparent_header_text_color": "#ffffff",
+        "transparent_logo": "shopify://shop_images/Nouveau_projet_-_2026-10-22T215811.583.png",
         "reduce_padding": true,
         "background_opacity": 100,
         "background_blur_radius": 0

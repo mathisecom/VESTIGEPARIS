@@ -11,30 +11,15 @@
   "sections": {
     "video_cbL6Xp": {
       "type": "video",
-      "blocks": {
-        "play_kBJnjz": {
-          "type": "play",
-          "settings": {}
-        },
-        "heading_VwEAna": {
-          "type": "heading",
-          "settings": {
-            "text": "Video",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "play_kBJnjz",
-        "heading_VwEAna"
-      ],
       "name": "Video",
       "settings": {
         "full_width": true,
-        "allow_transparent_header": false,
-        "autoplay": false,
+        "allow_transparent_header": true,
+        "autoplay": true,
         "video_size": "auto",
-        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "video": "shopify://files/videos/1023 (1)(1).mp4",
+        "mobile_video": "shopify://files/videos/1023.mp4",
+        "external_video_url": "",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
         "overlay_opacity": 30
