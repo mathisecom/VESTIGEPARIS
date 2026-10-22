@@ -310,6 +310,7 @@
         "testimonial_bWayG4": {
           "type": "testimonial",
           "settings": {
+            "photo": "shopify://shop_images/6_4d646807-ce11-41c8-8384-af06fb95f42d.webp",
             "product": "",
             "image_first": true,
             "author": "Damien Frost",
@@ -320,6 +321,7 @@
         "testimonial_LwXRzx": {
           "type": "testimonial",
           "settings": {
+            "photo": "shopify://shop_images/2_ac1f1b5d-eca4-481d-807d-cb68f4145e30.webp",
             "product": "",
             "image_first": false,
             "author": "Louis Sterling",
