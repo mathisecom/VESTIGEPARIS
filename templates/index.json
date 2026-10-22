@@ -205,24 +205,35 @@
         "image_ePEQJT": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/db7621d070eaa7b52268986e218a032545d85950.webp",
             "url": ""
           }
         },
         "image_KUmM8W": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/db7621d070eaa7b52268986e218a032545d85950_1.webp",
             "url": ""
           }
         },
         "image_ftYkgp": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/db7621d070eaa7b52268986e218a032545d85950_2.webp",
             "url": ""
           }
         },
         "image_YBmtbd": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/db7621d070eaa7b52268986e218a032545d85950_3.webp",
+            "url": ""
+          }
+        },
+        "image_EKa4Dt": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/db7621d070eaa7b52268986e218a032545d85950_4.webp",
             "url": ""
           }
         }
@@ -231,7 +242,8 @@
         "image_ePEQJT",
         "image_KUmM8W",
         "image_ftYkgp",
-        "image_YBmtbd"
+        "image_YBmtbd",
+        "image_EKa4Dt"
       ],
       "name": "SS - Scrolling logo cloud #5",
       "settings": {
