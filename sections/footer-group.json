@@ -59,17 +59,16 @@
         "discount",
         "customer-support"
       ],
-      "disabled": true,
       "settings": {
         "full_width": true,
         "stack_on_mobile": false,
         "title": "",
         "heading_tag": "h6",
-        "text_alignment": "center",
+        "text_alignment": "start",
         "icon_spacing": "small",
-        "background": "#f9f9f9",
+        "background": "#000000",
         "background_gradient": "",
-        "text_color": ""
+        "text_color": "#FFFFFF"
       }
     },
     "footer": {
