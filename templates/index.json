@@ -138,7 +138,7 @@
           "settings": {
             "product": "",
             "image_first": false,
-            "author": "Sébastien H.",
+            "author": "Sébastien Hault",
             "review": "Quelle excellente trottinette ! Une belle autonomie, une conduite souple et un design élégant. Les clignotants et l'application sont très pratiques. Je recommande pour les trajets quotidiens !",
             "date": "25 mars 2026"
           }
@@ -196,13 +196,13 @@
         "heading_size_mobile": 28,
         "review_size": 14,
         "review_size_mobile": 13,
-        "background_color": "#FFFFFF",
-        "card_color": "#FFFFFF",
-        "title_color": "#0A0A0A",
+        "background_color": "#ffffff",
+        "card_color": "#ffffff",
+        "title_color": "#0a0a0a",
         "text_color": "#242424",
         "muted_color": "#737373",
-        "star_color": "#00B67A",
-        "pill_color": "#FFFFFF",
+        "star_color": "#00b67a",
+        "pill_color": "#ffffff",
         "pill_text_color": "#202020",
         "padding_top": 28,
         "padding_bottom": 32,

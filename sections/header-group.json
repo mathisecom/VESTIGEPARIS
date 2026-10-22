@@ -13,6 +13,18 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "blocks": {
+        "message_cpwkrC": {
+          "type": "message",
+          "settings": {
+            "text": "Announce something here",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "message_cpwkrC"
+      ],
       "settings": {
         "enable_sticky": false,
         "autoplay": false,
