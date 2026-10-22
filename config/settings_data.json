@@ -40,7 +40,7 @@
     "color_swatch_config": "Noir : #181916\nBlanc : #F9F9F9",
     "discount_mode": "percentage",
     "product_color_display": "swatch",
-    "product_info_alignment": "center",
+    "product_info_alignment": "start",
     "cart_type": "drawer",
     "cart_icon": "tote_bag",
     "cart_show_free_shipping_threshold": true,
