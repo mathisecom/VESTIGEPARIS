@@ -281,6 +281,7 @@
       ],
       "name": "Image et statistiques",
       "settings": {
+        "image": "shopify://shop_images/ef2909840e65e8fef88e20dc209ce066.webp",
         "image_position": "center center",
         "image_heading": "",
         "show_stars": false,
@@ -490,7 +491,7 @@
         "heading_size": 35,
         "heading_size_mobile": 28,
         "review_size": 14,
-        "review_size_mobile": 13,
+        "review_size_mobile": 12,
         "background_color": "#ffffff",
         "card_color": "#ffffff",
         "title_color": "#0a0a0a",
