@@ -42,8 +42,9 @@
       "settings": {
         "enable_sticky": true,
         "hide_on_scroll": false,
+        "logo": "shopify://shop_images/e-ryd-logo.webp",
         "logo_max_width": 125,
-        "logo_mobile_max_width": 120,
+        "logo_mobile_max_width": 110,
         "menu": "main-menu",
         "sidebar_menu": "",
         "secondary_menu": "",
