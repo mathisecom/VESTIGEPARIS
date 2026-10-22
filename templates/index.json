@@ -252,8 +252,8 @@
         "stat_VGjCBy": {
           "type": "stat",
           "settings": {
-            "number": "10 000+",
-            "title": "Cavaliers en Europe",
+            "number": "+3,000",
+            "title": "Clients Satisfaits",
             "description": "<p>La communauté grandit - dans la rue et en ligne.</p>"
           }
         },
@@ -470,7 +470,7 @@
         "heading": "Ce que Disent Nos Clients",
         "show_rating": true,
         "rating_label": "Excellent",
-        "rating_summary": "Noté Excellent sur la Base de 5,007 avis",
+        "rating_summary": "Noté Excellent sur la Base de 3,007 avis",
         "rating_score": "(4,7/5)",
         "last_star_fill": 60,
         "bottom_text": "",
