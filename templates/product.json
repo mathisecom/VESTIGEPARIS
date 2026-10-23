@@ -296,7 +296,7 @@
       ],
       "name": "Barre avantages",
       "settings": {
-        "bg_color": "#F5F5F5",
+        "bg_color": "#f5f5f5",
         "text_color": "#181818",
         "bar_height": 65,
         "autoplay": true,
@@ -395,6 +395,174 @@
         "padding_top_mobile": 52,
         "padding_bottom_mobile": 24,
         "header_spacing": 34
+      }
+    },
+    "detailsproduit_Gw8tF9": {
+      "type": "detailsproduit",
+      "blocks": {
+        "spec_mCDJbK": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Moteur",
+            "value": "1 000 W (pic à 1 500 W)"
+          }
+        },
+        "spec_eyFaBx": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Vitesse maximale",
+            "value": "Jusqu'à 48 km/h"
+          }
+        },
+        "spec_TAADTA": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Autonomie maximale",
+            "value": "60 km (jusqu'à 113 km avec assistance)"
+          }
+        },
+        "spec_xtUVM3": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Batterie",
+            "value": "48 V - 15,6 Ah, amovible"
+          }
+        },
+        "spec_wykraC": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Temps de charge",
+            "value": "6 à 7 heures"
+          }
+        },
+        "spec_WtmeKC": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Freins",
+            "value": "Double freinage hydraulique"
+          }
+        },
+        "spec_aWqhXW": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Dérailleur arrière",
+            "value": "Shimano 7 vitesses"
+          }
+        },
+        "spec_4Ap6bi": {
+          "type": "spec",
+          "settings": {
+            "group": "performance",
+            "label": "Type d'utilisation",
+            "value": "Trajets urbains et loisirs"
+          }
+        },
+        "spec_TwbNk8": {
+          "type": "spec",
+          "settings": {
+            "group": "performance",
+            "label": "Assistance",
+            "value": "Plusieurs niveaux au choix"
+          }
+        },
+        "pack_item_ETF4aN": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Trotinette",
+            "icon": "vehicle"
+          }
+        },
+        "pack_item_9eVtqG": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Boîte à outils",
+            "icon": "toolbox"
+          }
+        },
+        "pack_item_p49nRf": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Chargeur",
+            "icon": "charger"
+          }
+        },
+        "pack_item_apY4jK": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Manuel d'utilisation",
+            "icon": "manual"
+          }
+        },
+        "pack_item_hRzq8z": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Clés",
+            "icon": "key"
+          }
+        }
+      },
+      "block_order": [
+        "spec_mCDJbK",
+        "spec_eyFaBx",
+        "spec_TAADTA",
+        "spec_xtUVM3",
+        "spec_wykraC",
+        "spec_WtmeKC",
+        "spec_aWqhXW",
+        "spec_4Ap6bi",
+        "spec_TwbNk8",
+        "pack_item_ETF4aN",
+        "pack_item_9eVtqG",
+        "pack_item_p49nRf",
+        "pack_item_apY4jK",
+        "pack_item_hRzq8z"
+      ],
+      "name": "Détails produit + colis",
+      "settings": {
+        "heading": "Détails du produit",
+        "technical_title": "Caractéristiques techniques",
+        "performance_title": "Performances",
+        "box_title": "Contenu du colis",
+        "technical_open_desktop": true,
+        "performance_open_desktop": false,
+        "accordions_open_mobile": false,
+        "max_width": 1440,
+        "box_width": 395,
+        "columns_gap": 50,
+        "box_radius": 18,
+        "show_tab": true,
+        "text_color": "#171717",
+        "muted_color": "#888888",
+        "line_color": "#E8E8E8",
+        "panel_color": "#F8F8F8",
+        "icon_background": "#FFFFFF",
+        "accent_color": "#CF0008",
+        "tab_color": "#171717",
+        "title_size_desktop": 48,
+        "group_size_desktop": 15,
+        "item_size_desktop": 14,
+        "value_size_desktop": 13,
+        "box_title_size_desktop": 24,
+        "icon_size_desktop": 80,
+        "title_size_mobile": 30,
+        "group_size_mobile": 15,
+        "item_size_mobile": 14,
+        "value_size_mobile": 12,
+        "box_title_size_mobile": 24,
+        "icon_size_mobile": 92,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 70,
+        "padding_side_desktop": 30,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 46,
+        "padding_side_mobile": 20
       }
     },
     "testimonials_F9K3KM": {
@@ -540,6 +708,7 @@
     "caracteristiques_nMEbU4",
     "reassuranceicons_P7mN9p",
     "sectionavis_4PYdxQ",
+    "detailsproduit_Gw8tF9",
     "testimonials_F9K3KM",
     "faq_ai4max",
     "related-products"
