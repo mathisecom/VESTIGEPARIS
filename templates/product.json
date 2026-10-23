@@ -131,6 +131,16 @@
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
+        },
+        "associated_products_xyXekt": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Buy it with",
+            "stack_products": false,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
         }
       },
       "block_order": [
@@ -149,7 +159,8 @@
         "liquid_Dr4GJC",
         "collapsible_text_4YVNEA",
         "collapsible_text_NYqN3e",
-        "collapsible_text_g4ykq8"
+        "collapsible_text_g4ykq8",
+        "associated_products_xyXekt"
       ],
       "settings": {
         "full_width": true,
