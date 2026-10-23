@@ -320,6 +320,7 @@
         "testimonial_rLntWL": {
           "type": "testimonial",
           "settings": {
+            "photo": "shopify://shop_images/6_4d646807-ce11-41c8-8384-af06fb95f42d_1.webp",
             "product": "ST3 Pro",
             "image_first": false,
             "author": "Sébastien Holt",
@@ -377,6 +378,10 @@
         "show_avatars": true,
         "show_dates": true,
         "show_product_label": false,
+        "enable_mobile_slider": true,
+        "slider_card_width": 85,
+        "slider_show_arrows": true,
+        "slider_show_dots": true,
         "font_family": "manrope",
         "heading_size": 38,
         "heading_size_mobile": 25,
