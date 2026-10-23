@@ -1,5 +1,5 @@
 {% comment %}
-  Section Avis clients — grille alternée et responsive.
+  Section Avis clients — grille masonry sur PC, slider tactile sur mobile.
   Installation : Boutique en ligne > Thèmes > Modifier le code > Sections > nouvelle section.
 {% endcomment %}
 
@@ -29,6 +29,7 @@
     --fpr-columns-mobile: {{ section.settings.columns_mobile }};
     --fpr-heading-size: {{ section.settings.heading_size }}px;
     --fpr-review-size: {{ section.settings.review_size }}px;
+    --fpr-mobile-slide-width: {{ section.settings.slider_card_width }}%;
   "
 >
   <div class="fpr-container">
@@ -57,13 +58,13 @@
       {% endif %}
     </header>
 
-    <div class="fpr-grid">
+    <div class="fpr-grid" id="fpr-grid-{{ section.id }}" aria-label="Avis de nos clients">
       {% for block in section.blocks %}
         {% if block.type == 'testimonial' %}
           {% capture fpr_photo %}
             <div class="fpr-photo-card">
               {% if block.settings.photo != blank %}
-                {{ block.settings.photo | image_url: width: 1100 | image_tag: class: 'fpr-photo', loading: 'lazy', widths: '200, 300, 400, 550, 750, 900, 1100', sizes: '(max-width: 749px) 46vw, (max-width: 989px) 46vw, 24vw' }}
+                {{ block.settings.photo | image_url: width: 1100 | image_tag: class: 'fpr-photo', loading: 'lazy', widths: '200, 300, 400, 550, 750, 900, 1100', sizes: '(max-width: 749px) 100vw, (max-width: 989px) 46vw, 24vw' }}
               {% else %}
                 <div class="fpr-photo-empty">
                   {{ 'product-1' | placeholder_svg_tag: 'fpr-photo-placeholder' }}
@@ -110,7 +111,7 @@
             </div>
           {% endcapture %}
 
-          <div class="fpr-stack" {{ block.shopify_attributes }}>
+          <div class="fpr-stack" data-fpr-index="{{ forloop.index0 }}" {{ block.shopify_attributes }}>
             {% if block.settings.image_first %}
               {{ fpr_photo }}
               {{ fpr_review }}
@@ -122,6 +123,24 @@
         {% endif %}
       {% endfor %}
     </div>
+
+    {% if section.settings.enable_mobile_slider %}
+      <div class="fpr-slider-nav" aria-label="Navigation des avis clients">
+        {% if section.settings.slider_show_arrows %}
+          <button type="button" class="fpr-slider-arrow fpr-slider-prev" aria-label="Avis précédent">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+        {% endif %}
+        {% if section.settings.slider_show_dots %}
+          <div class="fpr-slider-dots" aria-label="Choisir un avis"></div>
+        {% endif %}
+        {% if section.settings.slider_show_arrows %}
+          <button type="button" class="fpr-slider-arrow fpr-slider-next" aria-label="Avis suivant">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+          </button>
+        {% endif %}
+      </div>
+    {% endif %}
 
     {% if section.settings.bottom_text != blank %}
       <div class="fpr-bottom-text">{{ section.settings.bottom_text | escape }}</div>
@@ -336,6 +355,55 @@
     font-size: 12px;
   }
 
+
+  /* Boutons du slider masqués sur ordinateur */
+  #fpr-{{ section.id }} .fpr-slider-nav { display: none; }
+  #fpr-{{ section.id }} .fpr-slider-arrow {
+    appearance: none; border: 1px solid #dedede; background: var(--fpr-card);
+    color: var(--fpr-title); border-radius: 50%; width: 38px; height: 38px;
+    display: inline-flex; align-items: center; justify-content: center;
+    cursor: pointer; padding: 9px; transition: opacity .2s;
+  }
+  #fpr-{{ section.id }} .fpr-slider-arrow svg { width: 100%; height: 100%; }
+  #fpr-{{ section.id }} .fpr-slider-arrow:disabled { opacity: .3; cursor: default; }
+  #fpr-{{ section.id }} .fpr-slider-dots {
+    display: flex; flex-wrap: wrap; gap: 7px; align-items: center;
+    justify-content: center;
+  }
+  #fpr-{{ section.id }} .fpr-slider-dot {
+    appearance: none; border: 0; padding: 0; width: 7px; height: 7px;
+    background: var(--fpr-muted); opacity: .35; border-radius: 99px;
+    cursor: pointer; transition: width .2s, opacity .2s;
+  }
+  #fpr-{{ section.id }} .fpr-slider-dot.is-active {
+    width: 20px; opacity: 1; background: var(--fpr-title);
+  }
+
+  @media (max-width: 749px) {
+    /* Slider tactile : 1 avis complet et un aperçu du suivant */
+    #fpr-{{ section.id }} .fpr-grid.is-slider {
+      display: flex; flex-wrap: nowrap; align-items: stretch;
+      gap: var(--fpr-gap); overflow-x: auto; overflow-y: hidden;
+      scroll-snap-type: x mandatory; scroll-padding-inline: 0;
+      overscroll-behavior-x: contain;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+      padding-bottom: 2px;
+    }
+    #fpr-{{ section.id }} .fpr-grid.is-slider::-webkit-scrollbar { display: none; }
+    #fpr-{{ section.id }} .fpr-grid.is-slider > .fpr-stack {
+      flex: 0 0 var(--fpr-mobile-slide-width);
+      width: var(--fpr-mobile-slide-width);
+      min-width: 0;
+      scroll-snap-align: start;
+      scroll-snap-stop: always;
+    }
+    #fpr-{{ section.id }} .fpr-grid.is-slider + .fpr-slider-nav {
+      display: flex; align-items: center; justify-content: center;
+      gap: 16px; margin-top: 18px;
+    }
+  }
+
   @media (max-width: 989px) {
     #fpr-{{ section.id }} .fpr-grid {
       grid-template-columns: repeat(var(--fpr-columns-mobile), minmax(0, 1fr));
@@ -373,7 +441,7 @@
 </style>
 
 <script>
-  /* Masonry sans trous : chaque colonne empile ses cartes indépendamment. */
+  /* PC : galerie masonry. Mobile : slider tactile avec flèches et points. */
   (function () {
     var root = document.getElementById('fpr-{{ section.id }}');
     if (!root || root.dataset.fprInitialized === 'true') return;
@@ -381,35 +449,124 @@
 
     var grid = root.querySelector('.fpr-grid');
     if (!grid) return;
-    var media = window.matchMedia('(max-width: 989px)');
-    var desktopCount = {{ section.settings.columns_desktop | json }};
+    var cards = Array.prototype.slice.call(grid.querySelectorAll('.fpr-stack'));
+    var mobileMedia = window.matchMedia('(max-width: 749px)');
+    var tabletMedia = window.matchMedia('(max-width: 989px)');
+    var enableSlider = {{ section.settings.enable_mobile_slider | json }};
+    var desktopCount = {{ section.settings.columns_desktop | plus: 0 | json }};
     var mobileCount = {{ section.settings.columns_mobile | plus: 0 | json }};
+    var nav = root.querySelector('.fpr-slider-nav');
+    var prev = root.querySelector('.fpr-slider-prev');
+    var next = root.querySelector('.fpr-slider-next');
+    var dotsBox = root.querySelector('.fpr-slider-dots');
+    var dots = [];
+    var current = 0;
+    var rafPending = false;
+
+    // Créer un point par avis si cette option est activée.
+    if (dotsBox) {
+      cards.forEach(function (card, i) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'fpr-slider-dot';
+        dot.setAttribute('aria-label', 'Afficher l’avis ' + (i + 1));
+        dot.addEventListener('click', function () { goTo(i); });
+        dotsBox.appendChild(dot);
+        dots.push(dot);
+      });
+    }
+
+    function sliderActive() {
+      return enableSlider && mobileMedia.matches;
+    }
+
+    function goTo(i) {
+      if (!sliderActive() || !cards.length) return;
+      current = Math.max(0, Math.min(i, cards.length - 1));
+      var left = cards[current].offsetLeft - cards[0].offsetLeft;
+      grid.scrollTo({
+        left: left,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+      });
+      updateControls();
+    }
+
+    function updateControls() {
+      if (!sliderActive() || !cards.length) return;
+      var gridLeft = grid.getBoundingClientRect().left;
+      var bestDistance = Infinity;
+      cards.forEach(function (card, i) {
+        var distance = Math.abs(card.getBoundingClientRect().left - gridLeft);
+        if (distance < bestDistance) { bestDistance = distance; current = i; }
+      });
+      dots.forEach(function (dot, i) {
+        var selected = i === current;
+        dot.classList.toggle('is-active', selected);
+        dot.setAttribute('aria-current', selected ? 'true' : 'false');
+      });
+      if (prev) prev.disabled = current === 0;
+      if (next) next.disabled = current === cards.length - 1;
+    }
 
     function organizeCards() {
-      var cards = Array.prototype.slice.call(grid.querySelectorAll('.fpr-stack'));
-      var count = media.matches ? mobileCount : desktopCount;
-      if (!cards.length) return;
-
-      var columns = [];
       var fragment = document.createDocumentFragment();
-      for (var i = 0; i < count; i++) {
-        var col = document.createElement('div');
-        col.className = 'fpr-column';
-        columns.push(col);
-        fragment.appendChild(col);
+      var isSlider = sliderActive();
+      grid.classList.toggle('is-slider', isSlider);
+
+      if (isSlider) {
+        cards.forEach(function (card) { fragment.appendChild(card); });
+      } else {
+        // On conserve la grille verticale alternée du code d'origine.
+        var count = tabletMedia.matches ? mobileCount : desktopCount;
+        var columns = [];
+        for (var i = 0; i < count; i++) {
+          var column = document.createElement('div');
+          column.className = 'fpr-column';
+          columns.push(column);
+          fragment.appendChild(column);
+        }
+        cards.forEach(function (card, index) {
+          columns[index % count].appendChild(card);
+        });
       }
-      cards.forEach(function (card, index) {
-        columns[index % count].appendChild(card);
-      });
+
       grid.replaceChildren(fragment);
+      if (nav) nav.setAttribute('aria-hidden', isSlider ? 'false' : 'true');
+      if (isSlider) {
+        grid.scrollLeft = 0;
+        current = 0;
+        updateControls();
+      }
     }
+
+    if (prev) prev.addEventListener('click', function () { goTo(current - 1); });
+    if (next) next.addEventListener('click', function () { goTo(current + 1); });
+    grid.addEventListener('scroll', function () {
+      if (!sliderActive() || rafPending) return;
+      rafPending = true;
+      window.requestAnimationFrame(function () {
+        rafPending = false;
+        updateControls();
+      });
+    }, { passive: true });
+
+    function onMediaChange() { organizeCards(); }
+    if (mobileMedia.addEventListener) {
+      mobileMedia.addEventListener('change', onMediaChange);
+      tabletMedia.addEventListener('change', onMediaChange);
+    } else {
+      mobileMedia.addListener(onMediaChange);
+      tabletMedia.addListener(onMediaChange);
+    }
+
+    // Quand on sélectionne un avis dans l'éditeur Shopify, l'afficher.
+    document.addEventListener('shopify:block:select', function (event) {
+      if (!sliderActive() || !root.contains(event.target)) return;
+      var card = event.target.closest('.fpr-stack');
+      if (card) goTo(cards.indexOf(card));
+    });
 
     organizeCards();
-    if (media.addEventListener) {
-      media.addEventListener('change', organizeCards);
-    } else if (media.addListener) {
-      media.addListener(organizeCards);
-    }
   })();
 </script>
 
@@ -446,6 +603,12 @@
     { "type": "checkbox", "id": "show_avatars", "label": "Afficher les avatars clients", "default": true },
     { "type": "checkbox", "id": "show_dates", "label": "Afficher les dates", "default": true },
     { "type": "checkbox", "id": "show_product_label", "label": "Afficher le badge produit sur les photos", "default": true },
+
+    { "type": "header", "content": "Slider sur mobile" },
+    { "type": "checkbox", "id": "enable_mobile_slider", "label": "Activer le slider sur mobile", "default": true },
+    { "type": "range", "id": "slider_card_width", "label": "Largeur d'un avis sur mobile", "min": 70, "max": 100, "step": 5, "unit": "%", "default": 85 },
+    { "type": "checkbox", "id": "slider_show_arrows", "label": "Afficher les flèches", "default": true },
+    { "type": "checkbox", "id": "slider_show_dots", "label": "Afficher les points de navigation", "default": true },
 
     { "type": "header", "content": "Typographie" },
     { "type": "select", "id": "font_family", "label": "Police", "options": [
