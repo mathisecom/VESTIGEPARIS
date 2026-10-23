@@ -245,8 +245,8 @@
         "heading": "",
         "section_width": 1300,
         "circle_size": 88,
-        "padding_top": 35,
-        "padding_bottom": 35,
+        "padding_top": 75,
+        "padding_bottom": 75,
         "padding_top_mobile": 10,
         "padding_bottom_mobile": 50,
         "background": "#ffffff",
@@ -254,6 +254,53 @@
         "accent_color": "#c94b50",
         "value_color": "#181818",
         "label_color": "#383838"
+      }
+    },
+    "reassuranceicons_P7mN9p": {
+      "type": "reassuranceicons",
+      "blocks": {
+        "advantage_3r43xg": {
+          "type": "advantage",
+          "settings": {
+            "text": "Livraison rapide",
+            "icon": "truck"
+          }
+        },
+        "advantage_jqc4Wx": {
+          "type": "advantage",
+          "settings": {
+            "text": "Paiement sécurisé",
+            "icon": "lock"
+          }
+        },
+        "advantage_eYLtg9": {
+          "type": "advantage",
+          "settings": {
+            "text": "Garantie 2 ans",
+            "icon": "shield"
+          }
+        },
+        "advantage_xqeDWi": {
+          "type": "advantage",
+          "settings": {
+            "text": "Support client",
+            "icon": "support"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_3r43xg",
+        "advantage_jqc4Wx",
+        "advantage_eYLtg9",
+        "advantage_xqeDWi"
+      ],
+      "name": "Barre avantages",
+      "settings": {
+        "bg_color": "#F5F5F5",
+        "text_color": "#181818",
+        "bar_height": 65,
+        "autoplay": true,
+        "slide_speed": 3
       }
     },
     "sectionavis_4PYdxQ": {
@@ -343,9 +390,9 @@
         "star_color": "#00b67a",
         "pill_color": "#ffffff",
         "pill_text_color": "#202020",
-        "padding_top": 28,
+        "padding_top": 56,
         "padding_bottom": 32,
-        "padding_top_mobile": 16,
+        "padding_top_mobile": 52,
         "padding_bottom_mobile": 24,
         "header_spacing": 34
       }
@@ -491,6 +538,7 @@
   "order": [
     "main",
     "caracteristiques_nMEbU4",
+    "reassuranceicons_P7mN9p",
     "sectionavis_4PYdxQ",
     "testimonials_F9K3KM",
     "faq_ai4max",
