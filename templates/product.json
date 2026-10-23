@@ -483,6 +483,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Boîte à outils",
+            "image": "shopify://shop_images/key_3.png",
             "icon": "toolbox"
           }
         },
@@ -490,6 +491,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Chargeur",
+            "image": "shopify://shop_images/key_2.png",
             "icon": "charger"
           }
         },
@@ -497,6 +499,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Manuel d'utilisation",
+            "image": "shopify://shop_images/key_1.png",
             "icon": "manual"
           }
         },
@@ -504,6 +507,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Clés",
+            "image": "shopify://shop_images/key.png",
             "icon": "key"
           }
         }
@@ -543,7 +547,7 @@
         "line_color": "#E8E8E8",
         "panel_color": "#F8F8F8",
         "icon_background": "#FFFFFF",
-        "accent_color": "#CF0008",
+        "accent_color": "#DA0000",
         "tab_color": "#171717",
         "title_size_desktop": 48,
         "group_size_desktop": 15,
