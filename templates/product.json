@@ -397,6 +397,62 @@
         "header_spacing": 34
       }
     },
+    "bannieresuspension_X7Lk7C": {
+      "type": "bannieresuspension",
+      "name": "Bannière suspension",
+      "settings": {
+        "position_image_pc": "center center",
+        "position_image_mobile": "center center",
+        "fallback_color": "#B50000",
+        "titre_pc": "Suspension avant\net arrière",
+        "titre_mobile": "Suspension avant et arrière",
+        "texte_pc": "Une conduite fluide, même sur les terrains difficiles. La double suspension absorbe les chocs pour un confort optimal.",
+        "texte_mobile": "Une conduite fluide, même sur les terrains difficiles. La double suspension absorbe les chocs.",
+        "section_color": "#FFFFFF",
+        "heading_color": "#FFFFFF",
+        "text_color": "#FFFFFF",
+        "overlay_color": "#000000",
+        "opacity_pc": 5,
+        "opacity_mobile": 10,
+        "max_width": 1900,
+        "height_pc": 710,
+        "radius_pc": 0,
+        "content_width_pc": 620,
+        "align_pc": "flex-end",
+        "vertical_pc": "flex-start",
+        "text_align_pc": "center",
+        "heading_size_pc": 52,
+        "text_size_pc": 17,
+        "heading_line_pc": 105,
+        "text_line_pc": 150,
+        "gap_pc": 24,
+        "heading_weight": "600",
+        "text_weight": "400",
+        "outer_top_pc": 0,
+        "outer_bottom_pc": 0,
+        "outer_side_pc": 30,
+        "inner_top_pc": 56,
+        "inner_bottom_pc": 56,
+        "inner_side_pc": 70,
+        "height_mobile": 680,
+        "radius_mobile": 0,
+        "content_width_mobile": 400,
+        "align_mobile": "flex-start",
+        "vertical_mobile": "flex-start",
+        "text_align_mobile": "left",
+        "heading_size_mobile": 28,
+        "text_size_mobile": 14,
+        "heading_line_mobile": 110,
+        "text_line_mobile": 145,
+        "gap_mobile": 16,
+        "outer_top_mobile": 0,
+        "outer_bottom_mobile": 0,
+        "outer_side_mobile": 8,
+        "inner_top_mobile": 38,
+        "inner_bottom_mobile": 38,
+        "inner_side_mobile": 20
+      }
+    },
     "detailsproduit_Gw8tF9": {
       "type": "detailsproduit",
       "blocks": {
@@ -544,10 +600,10 @@
         "show_tab": true,
         "text_color": "#171717",
         "muted_color": "#888888",
-        "line_color": "#E8E8E8",
-        "panel_color": "#F8F8F8",
-        "icon_background": "#FFFFFF",
-        "accent_color": "#DA0000",
+        "line_color": "#e8e8e8",
+        "panel_color": "#f8f8f8",
+        "icon_background": "#ffffff",
+        "accent_color": "#da0000",
         "tab_color": "#171717",
         "title_size_desktop": 48,
         "group_size_desktop": 15,
@@ -567,67 +623,6 @@
         "padding_top_mobile": 30,
         "padding_bottom_mobile": 46,
         "padding_side_mobile": 20
-      }
-    },
-    "testimonials_F9K3KM": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_xCypJV": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "John S.",
-            "title": "Testimonial 1",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_EcEgXm": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 5,
-            "author": "Mary U.",
-            "title": "Testimonial 2",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        },
-        "testimonial_d3NFXn": {
-          "type": "testimonial",
-          "settings": {
-            "round_avatar": true,
-            "show_rating": true,
-            "rating": 4,
-            "author": "Joshua A.",
-            "title": "Testimonial 3",
-            "content": "<p>Share what your customers are saying about your products, customer service or shipping rates.</p>"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_xCypJV",
-        "testimonial_EcEgXm",
-        "testimonial_d3NFXn"
-      ],
-      "disabled": true,
-      "name": "Testimonials",
-      "settings": {
-        "full_width": true,
-        "stack_testimonials": false,
-        "subheading": "",
-        "title": "",
-        "content": "",
-        "link_url": "",
-        "link_text": "",
-        "background": "",
-        "background_gradient": "",
-        "text_color": "",
-        "heading_color": "",
-        "heading_gradient": "",
-        "testimonial_card_background": "",
-        "testimonial_card_text_color": ""
       }
     },
     "faq_ai4max": {
@@ -712,8 +707,8 @@
     "caracteristiques_nMEbU4",
     "reassuranceicons_P7mN9p",
     "sectionavis_4PYdxQ",
+    "bannieresuspension_X7Lk7C",
     "detailsproduit_Gw8tF9",
-    "testimonials_F9K3KM",
     "faq_ai4max",
     "related-products"
   ]
