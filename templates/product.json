@@ -105,7 +105,7 @@
             "icon": "none",
             "custom_icon": "shopify://shop_images/d3225ab021040514f24fda6b9469ff51_8c9bef18-47a9-4af3-8734-722ec3b40cf4.webp",
             "icon_width": 20,
-            "title": "Title",
+            "title": "Informations Livraisons",
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
@@ -116,7 +116,7 @@
             "icon": "none",
             "custom_icon": "shopify://shop_images/fe10326b372aa3bcfa3731af12fd8c29.png",
             "icon_width": 20,
-            "title": "Title",
+            "title": "Retours et Remboursements",
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
@@ -127,7 +127,7 @@
             "icon": "none",
             "custom_icon": "shopify://shop_images/2_9817c4d5-ca4a-4aab-bacd-3f5cbc88116e.webp",
             "icon_width": 18,
-            "title": "Title",
+            "title": "Service Client 24/7",
             "content": "<p>Share some content to your customers about your products.</p>",
             "page": ""
           }
@@ -639,7 +639,7 @@
         "content": "",
         "background": "#000000",
         "background_gradient": "linear-gradient(190deg, rgba(41, 41, 41, 1), rgba(0, 0, 0, 1) 100%)",
-        "text_color": "#FFFFFF"
+        "text_color": "#ffffff"
       }
     },
     "detailsproduit_Gw8tF9": {
@@ -994,12 +994,12 @@
         "question_size_mobile": 14,
         "answer_size": 14,
         "answer_size_mobile": 14,
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title_color": "#252525",
         "category_color": "#242424",
         "question_color": "#373737",
         "answer_color": "#686868",
-        "divider_color": "#DEDEDE",
+        "divider_color": "#dedede",
         "padding_top": 44,
         "padding_bottom": 54,
         "padding_sides": 24,
