@@ -222,10 +222,10 @@
           "type": "product_specs",
           "settings": {
             "product": "zylvro-c14-e-scooter-with-rear-suspension-900w-motor-48v-15ah-battery-14-inch-tires-disc-brakes-40km-h-top-speed-60km-long-range",
-            "speed": "30",
-            "range": "",
-            "power": "",
-            "battery": ""
+            "speed": "30 km/h",
+            "range": "50-60 km",
+            "power": "500 W",
+            "battery": "48V"
           }
         },
         "product_specs_fbDBh8": {
