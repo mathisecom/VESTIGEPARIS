@@ -117,7 +117,7 @@
             "custom_icon": "shopify://shop_images/fe10326b372aa3bcfa3731af12fd8c29.png",
             "icon_width": 20,
             "title": "Retours et Remboursements",
-            "content": "<p>Share some content to your customers about your products.</p>",
+            "content": "<p>Nous acceptons les retours dans un <strong>délai de</strong> <strong>14 jours</strong>, quelle qu'en soit la raison.&nbsp;</p><p>Les produits présentant des problèmes de qualité peuvent être retournés dans un délai de <strong>30 jours.</strong> Vous avez ainsi l'assurance de ne pas avoir à vous soucier de la qualité.</p>",
             "page": ""
           }
         },
@@ -128,8 +128,8 @@
             "custom_icon": "shopify://shop_images/2_9817c4d5-ca4a-4aab-bacd-3f5cbc88116e.webp",
             "icon_width": 18,
             "title": "Service Client 24/7",
-            "content": "<p>Share some content to your customers about your products.</p>",
-            "page": ""
+            "content": "<p>Une question ? Notre équipe est à votre écoute pour vous accompagner avant, pendant et après votre commande, à tout moment.</p>",
+            "page": "contact"
           }
         },
         "associated_products_xyXekt": {
