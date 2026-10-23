@@ -192,10 +192,10 @@
           "type": "product_specs",
           "settings": {
             "product": "all-terrain-electric-scooter-1000w-motor-45km-h-speed-48v-15ah-battery-40-60km-long-range-10-off-road-tires-120kg-load-foldable-waterproof-dual-suspension-adult-escooter-k2",
-            "speed": "30",
-            "range": "25-30",
-            "power": "",
-            "battery": ""
+            "speed": "45  km/h",
+            "range": "40-60 km",
+            "power": "1000W",
+            "battery": "48V"
           }
         },
         "product_specs_9XtNFr": {
@@ -224,7 +224,7 @@
             "product": "zylvro-c14-e-scooter-with-rear-suspension-900w-motor-48v-15ah-battery-14-inch-tires-disc-brakes-40km-h-top-speed-60km-long-range",
             "speed": "30 km/h",
             "range": "50-60 km",
-            "power": "500 W",
+            "power": "500W",
             "battery": "48V"
           }
         },
