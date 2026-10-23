@@ -11,6 +11,30 @@
   "sections": {
     "video_cbL6Xp": {
       "type": "video",
+      "blocks": {
+        "heading_9M63yp": {
+          "type": "heading",
+          "settings": {
+            "text": "Heading",
+            "heading_tag": "h2"
+          }
+        },
+        "button_DEFVeT": {
+          "type": "button",
+          "settings": {
+            "style": "fill",
+            "size": "base",
+            "text": "DÉCOUVRIR",
+            "url": "",
+            "background": "#FFFFFF",
+            "text_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9M63yp",
+        "button_DEFVeT"
+      ],
       "name": "Video",
       "settings": {
         "full_width": true,
@@ -22,7 +46,7 @@
         "external_video_url": "",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 30
+        "overlay_opacity": 40
       }
     },
     "reassuranceicons_PdXdib": {
@@ -666,7 +690,7 @@
         "heading_gradient": "",
         "button_background": "",
         "button_text_color": "",
-        "accordion_background": "#FFFFFF",
+        "accordion_background": "#ffffff",
         "accordion_text_color": ""
       }
     }
