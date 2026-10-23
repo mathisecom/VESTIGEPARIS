@@ -212,10 +212,10 @@
           "type": "product_specs",
           "settings": {
             "product": "iscooter-dx5-pro-electric-scooter-with-nfcs-52v-20ah-battery-electric-motorcycle-2000w-motor-90-100km-range-60km-h-max-speed-with-seat-and-basket-17-3-5-e-moto-tires-with-tcs-e-scooter",
-            "speed": "30",
-            "range": "",
-            "power": "1500W",
-            "battery": ""
+            "speed": "60 km/h",
+            "range": "90-100 km",
+            "power": "2000W",
+            "battery": "52V"
           }
         },
         "product_specs_r4N434": {
