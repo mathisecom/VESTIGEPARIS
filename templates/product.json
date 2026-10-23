@@ -650,7 +650,7 @@
           "settings": {
             "group": "technical",
             "label": "Moteur",
-            "value": "1 000 W (pic à 1 500 W)"
+            "value": "350 W"
           }
         },
         "spec_eyFaBx": {
@@ -658,7 +658,7 @@
           "settings": {
             "group": "technical",
             "label": "Vitesse maximale",
-            "value": "Jusqu'à 48 km/h"
+            "value": "Jusqu'à 30 km/h"
           }
         },
         "spec_TAADTA": {
