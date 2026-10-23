@@ -483,7 +483,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Boîte à outils",
-            "image": "shopify://shop_images/key_3.png",
+            "image": "shopify://shop_images/key_7.png",
             "icon": "toolbox"
           }
         },
@@ -491,7 +491,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Chargeur",
-            "image": "shopify://shop_images/key_2.png",
+            "image": "shopify://shop_images/key_6.png",
             "icon": "charger"
           }
         },
@@ -499,7 +499,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Manuel d'utilisation",
-            "image": "shopify://shop_images/key_1.png",
+            "image": "shopify://shop_images/key_5.png",
             "icon": "manual"
           }
         },
@@ -507,7 +507,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Clés",
-            "image": "shopify://shop_images/key.png",
+            "image": "shopify://shop_images/key_4.png",
             "icon": "key"
           }
         }
