@@ -193,7 +193,7 @@
           "settings": {
             "product": "all-terrain-electric-scooter-1000w-motor-45km-h-speed-48v-15ah-battery-40-60km-long-range-10-off-road-tires-120kg-load-foldable-waterproof-dual-suspension-adult-escooter-k2",
             "speed": "30",
-            "range": "",
+            "range": "25-30",
             "power": "",
             "battery": ""
           }
@@ -203,9 +203,9 @@
           "settings": {
             "product": "sunnigoo-adult-electric-scooter-36v-10-4ah-350w-motor-30km-long-range-30km-h-8-5-inch-solid-tires-foldable-smart-app-escooter",
             "speed": "30",
-            "range": "",
-            "power": "",
-            "battery": ""
+            "range": "25-30",
+            "power": "350W",
+            "battery": "36V"
           }
         },
         "product_specs_WLxc9H": {
