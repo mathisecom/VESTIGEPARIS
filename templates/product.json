@@ -407,6 +407,7 @@
       "name": "Bannière suspension",
       "settings": {
         "image_pc": "shopify://shop_images/a3f01715-7689-4a93-89ff-730ca762810c.png",
+        "image_mobile": "shopify://shop_images/07e5c179-1c7e-439e-b503-e4b81e65188f.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
