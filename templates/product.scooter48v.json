@@ -195,7 +195,7 @@
           "type": "spec",
           "settings": {
             "icon": "speed",
-            "value": "30 km/h",
+            "value": "55 km/h",
             "label": "Vitesse maximale"
           }
         },
@@ -203,7 +203,7 @@
           "type": "spec",
           "settings": {
             "icon": "battery",
-            "value": "36 V / 7,8 Ah",
+            "value": "48 V / 15.6 Ah",
             "label": "Capacité de batterie"
           }
         },
@@ -211,7 +211,7 @@
           "type": "spec",
           "settings": {
             "icon": "range",
-            "value": "25-30 km",
+            "value": "72 km",
             "label": "Autonomie"
           }
         },
@@ -219,7 +219,7 @@
           "type": "spec",
           "settings": {
             "icon": "load",
-            "value": "100 kg",
+            "value": "150 kg",
             "label": "Charge maximale"
           }
         },
@@ -227,7 +227,7 @@
           "type": "spec",
           "settings": {
             "icon": "charge",
-            "value": "5 à 6 h",
+            "value": "6 à 8 h",
             "label": "Temps de charge"
           }
         }
