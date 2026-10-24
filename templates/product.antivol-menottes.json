@@ -1,0 +1,1054 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "liquid_a3N3bC": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<style>\n  /* IMPORT TYPOGRAPHIE MANROPE */\n  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');\n\n  .titanox-rating-brand {\n    width: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: space-between;\n    gap: 20px;\n    font-family: \"Manrope\", sans-serif !important;\n    margin: 8px 0 14px;\n  }\n\n  /* FORCE MANROPE SUR TOUS LES TEXTES */\n  .titanox-rating-brand,\n  .titanox-rating-brand *,\n  .titanox-rating-brand__score,\n  .titanox-rating-brand__score strong,\n  .titanox-rating-brand__score span,\n  .titanox-rating-brand__french-text {\n    font-family: \"Manrope\", sans-serif !important;\n  }\n\n  /* AVIS CLIENTS */\n  .titanox-rating-brand__reviews {\n    display: flex;\n    align-items: center;\n    gap: 11px;\n    min-width: 0;\n  }\n\n  .titanox-rating-brand__stars {\n    display: flex;\n    align-items: center;\n    gap: 2px;\n    color: #2BA874;\n    font-size: 22px;\n    line-height: 1;\n    white-space: nowrap;\n  }\n\n  .titanox-rating-brand__score {\n    display: flex;\n    align-items: center;\n    gap: 5px;\n    white-space: nowrap;\n    color: #111827;\n    font-size: 14px;\n    line-height: 1.2;\n    letter-spacing: -0.1px;\n  }\n\n  .titanox-rating-brand__score strong {\n    font-weight: 600;\n  }\n\n  .titanox-rating-brand__score span {\n    font-weight: 400;\n  }\n\n  /* MARQUE FRANÇAISE */\n  .titanox-rating-brand__french {\n    display: flex;\n    align-items: center;\n    gap: 9px;\n    flex-shrink: 0;\n  }\n\n  .titanox-rating-brand__french-text {\n    color: #525B65;\n    font-size: 13px;\n    font-weight: 500;\n    line-height: 1.2;\n    letter-spacing: -0.05px;\n    white-space: nowrap;\n  }\n\n  /* DRAPEAU FRANÇAIS */\n  .titanox-french-flag {\n    width: 27px;\n    height: 19px;\n    display: flex;\n    overflow: hidden;\n    border-radius: 1px;\n    box-shadow: 0 0 0 1px rgba(0,0,0,.05);\n  }\n\n  .titanox-french-flag span {\n    width: 33.333%;\n    height: 100%;\n    display: block;\n  }\n\n  .titanox-french-flag__blue {\n    background: #0055A4;\n  }\n\n  .titanox-french-flag__white {\n    background: #FFFFFF;\n  }\n\n  .titanox-french-flag__red {\n    background: #EF4135;\n  }\n\n  /* TABLETTE */\n  @media screen and (max-width: 990px) {\n    .titanox-rating-brand__stars {\n      font-size: 20px;\n    }\n\n    .titanox-rating-brand__score {\n      font-size: 13px;\n    }\n\n    .titanox-rating-brand__french-text {\n      font-size: 12px;\n    }\n  }\n\n  /* MOBILE */\n  @media screen and (max-width: 749px) {\n    .titanox-rating-brand {\n      gap: 12px;\n      margin-top: 6px;\n      margin-bottom: 12px;\n    }\n\n    .titanox-rating-brand__reviews {\n      gap: 7px;\n    }\n\n    .titanox-rating-brand__stars {\n      gap: 1px;\n      font-size: 18px;\n    }\n\n    .titanox-rating-brand__score {\n      gap: 4px;\n      font-size: 13px;\n    }\n\n    .titanox-rating-brand__french {\n      gap: 6px;\n    }\n\n    .titanox-french-flag {\n      width: 24px;\n      height: 17px;\n    }\n\n    .titanox-rating-brand__french-text {\n      font-size: 12px;\n    }\n  }\n\n  /* PETITS MOBILES */\n  @media screen and (max-width: 390px) {\n    .titanox-rating-brand__stars {\n      font-size: 17px;\n    }\n\n    .titanox-rating-brand__score {\n      font-size: 12px;\n    }\n\n    .titanox-rating-brand__french-text {\n      font-size: 11px;\n    }\n\n    .titanox-french-flag {\n      width: 22px;\n      height: 16px;\n    }\n  }\n</style>\n\n<div class=\"titanox-rating-brand\">\n\n  <!-- NOTE CLIENTS -->\n  <div class=\"titanox-rating-brand__reviews\">\n\n    <div class=\"titanox-rating-brand__stars\"\n         aria-label=\"4,8 sur 5\">\n      <span>★</span>\n      <span>★</span>\n      <span>★</span>\n      <span>★</span>\n      <span>★</span>\n    </div>\n\n    <div class=\"titanox-rating-brand__score\">\n      <strong>4,8 sur 5</strong>\n      <span>(3 214 avis)</span>\n    </div>\n\n  </div>\n\n  <!-- MARQUE FRANÇAISE -->\n  <div class=\"titanox-rating-brand__french\">\n\n    <div class=\"titanox-french-flag\"\n         aria-hidden=\"true\">\n      <span class=\"titanox-french-flag__blue\"></span>\n      <span class=\"titanox-french-flag__white\"></span>\n      <span class=\"titanox-french-flag__red\"></span>\n    </div>\n\n    <span class=\"titanox-rating-brand__french-text\">\n      Marque française\n    </span>\n\n  </div>\n\n</div>"
+          }
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "badges": {
+          "type": "badges",
+          "settings": {}
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "liquid_4xMdpq": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"scooter-specs\">\n  <div class=\"scooter-specs__grid\">\n\n    <!-- VITESSE -->\n    <div class=\"scooter-specs__card\">\n      <div class=\"scooter-specs__icon\">\n        <svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\"\n          stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n          <path d=\"M9 38a20 20 0 1 1 30 0\"/>\n          <path d=\"M15 32a12 12 0 1 1 18 0\"/>\n          <path d=\"M24 24 35 13\"/>\n          <circle cx=\"24\" cy=\"24\" r=\"3.5\" fill=\"white\"/>\n        </svg>\n      </div>\n      <div class=\"scooter-specs__text\">\n        <strong>30 km/h</strong>\n        <span>Vitesse maximale</span>\n      </div>\n    </div>\n\n    <!-- AUTONOMIE -->\n    <div class=\"scooter-specs__card\">\n      <div class=\"scooter-specs__icon\">\n        <svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\"\n          stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n          <path d=\"M22 16c0 9-10 19-10 19S2 25 2 16a10 10 0 0 1 20 0Z\"/>\n          <circle cx=\"12\" cy=\"16\" r=\"3\"/>\n          <path d=\"M27 16a10 10 0 0 1 19 4c0 8-10 19-10 19s-6-7-9-14\"/>\n          <circle cx=\"36\" cy=\"20\" r=\"3\"/>\n        </svg>\n      </div>\n      <div class=\"scooter-specs__text\">\n        <strong>Jusqu'à 30 km</strong>\n        <span>Autonomie</span>\n      </div>\n    </div>\n\n    <!-- PUISSANCE -->\n    <div class=\"scooter-specs__card\">\n      <div class=\"scooter-specs__icon\">\n        <svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\"\n          stroke-width=\"2.3\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n          <path d=\"M19 3h10l1.5 5 4 2 5-2 6 8-3 4v8l3 4-6 8-5-2-4 2-1.5 5H19l-1.5-5-4-2-5 2-6-8 3-4v-8l-3-4 6-8 5 2 4-2Z\"/>\n          <circle cx=\"24\" cy=\"24\" r=\"12\"/>\n          <path d=\"m27 15-7 10h6l-5 9\"/>\n        </svg>\n      </div>\n      <div class=\"scooter-specs__text\">\n        <strong>350 W max</strong>\n        <span>Puissance Moteur</span>\n      </div>\n    </div>\n\n    <!-- PNEUS -->\n    <div class=\"scooter-specs__card\">\n      <div class=\"scooter-specs__icon\">\n        <svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\"\n          stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n          <circle cx=\"24\" cy=\"24\" r=\"21\"/>\n          <circle cx=\"24\" cy=\"24\" r=\"13\" stroke-dasharray=\"9 5\"/>\n          <circle cx=\"24\" cy=\"24\" r=\"5\"/>\n          <path d=\"M24 3v7M24 38v7M3 24h7M38 24h7\"/>\n        </svg>\n      </div>\n      <div class=\"scooter-specs__text\">\n        <strong>8 pouces</strong>\n        <span>Pneus alvéolés</span>\n      </div>\n    </div>\n\n    <!-- PENTE -->\n    <div class=\"scooter-specs__card\">\n      <div class=\"scooter-specs__icon\">\n        <svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\"\n          stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n          <path d=\"M3 43h42M5 29l37 14\"/>\n          <path d=\"M13 19l9 7 10-15 8-3\"/>\n          <path d=\"m34 8 6 0 2 5\"/>\n          <circle cx=\"17\" cy=\"24\" r=\"4\"/>\n          <path d=\"m25 13 6 8-3 8 8 6\"/>\n          <circle cx=\"38\" cy=\"34\" r=\"4\"/>\n        </svg>\n      </div>\n      <div class=\"scooter-specs__text\">\n        <strong>15 %</strong>\n        <span>Pente maximale</span>\n      </div>\n    </div>\n\n    <!-- BATTERIE -->\n    <div class=\"scooter-specs__card\">\n      <div class=\"scooter-specs__icon\">\n        <svg viewBox=\"0 0 48 48\" fill=\"none\" stroke=\"currentColor\"\n          stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n          <path d=\"M18 4h12v4h5a3 3 0 0 1 3 3v32H10V11a3 3 0 0 1 3-3h5V4Z\"/>\n          <path d=\"M15 27h18M15 33h18M15 39h18\"/>\n          <path d=\"M15 20h18\"/>\n        </svg>\n      </div>\n      <div class=\"scooter-specs__text\">\n        <strong>280 Wh</strong>\n        <span>Capacité batterie</span>\n      </div>\n    </div>\n\n  </div>\n</div>\n\n<style>\n/* CONTENEUR */\n.scooter-specs {\n  width: 100%;\n  max-width: 1000px;\n  margin: 0 auto;\n  padding: 5px 0;\n  font-family: inherit;\n}\n\n.scooter-specs *,\n.scooter-specs *::before,\n.scooter-specs *::after {\n  box-sizing: border-box;\n}\n\n/* 2 COLONNES PC ET MOBILE */\n.scooter-specs__grid {\n  display: grid;\n  grid-template-columns: repeat(2, minmax(0, 1fr));\n  gap: 9px 12px;\n}\n\n/* CARTES COMPACTES PC */\n.scooter-specs__card {\n  display: flex;\n  align-items: center;\n  gap: 12px;\n  min-width: 0;\n  min-height: 62px;\n  padding: 10px 14px;\n  background: #fff;\n  border: 1px solid #f3f3f3;\n  border-radius: 9px;\n  box-shadow: 0 1px 4px rgba(0,0,0,0.045);\n}\n\n/* ICONES PC */\n.scooter-specs__icon {\n  flex: 0 0 30px;\n  width: 30px;\n  height: 30px;\n  color: #111;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n}\n\n.scooter-specs__icon svg {\n  display: block;\n  width: 100%;\n  height: 100%;\n}\n\n/* TEXTES PC */\n.scooter-specs__text {\n  display: flex;\n  flex-direction: column;\n  justify-content: center;\n  gap: 2px;\n  min-width: 0;\n}\n\n.scooter-specs__text strong {\n  display: block;\n  font-family: inherit;\n  font-size: 16px;\n  font-weight: 800;\n  line-height: 1.2;\n  letter-spacing: -0.3px;\n  color: #171717;\n  overflow-wrap: break-word;\n}\n\n.scooter-specs__text span {\n  display: block;\n  font-family: inherit;\n  font-size: 13px;\n  font-weight: 400;\n  line-height: 1.3;\n  color: #454545;\n  overflow-wrap: break-word;\n}\n\n/* MOBILE : 2 COLONNES */\n@media screen and (max-width: 600px) {\n\n  .scooter-specs {\n    padding: 5px 0;\n  }\n\n  .scooter-specs__grid {\n    grid-template-columns: repeat(2, minmax(0, 1fr));\n    gap: 8px;\n  }\n\n  .scooter-specs__card {\n    min-height: 72px;\n    padding: 9px 8px;\n    gap: 8px;\n    border-radius: 8px;\n  }\n\n  .scooter-specs__icon {\n    flex: 0 0 29px;\n    width: 29px;\n    height: 29px;\n  }\n\n  .scooter-specs__text {\n    gap: 3px;\n  }\n\n  .scooter-specs__text strong {\n    font-size: 14px;\n    font-weight: 800;\n    line-height: 1.2;\n  }\n\n  .scooter-specs__text span {\n    font-size: 11px;\n    line-height: 1.3;\n  }\n}\n\n/* PETITS ECRANS */\n@media screen and (max-width: 360px) {\n\n  .scooter-specs__grid {\n    gap: 6px;\n  }\n\n  .scooter-specs__card {\n    padding: 8px 6px;\n    gap: 6px;\n  }\n\n  .scooter-specs__icon {\n    flex: 0 0 25px;\n    width: 25px;\n    height: 25px;\n  }\n\n  .scooter-specs__text strong {\n    font-size: 12px;\n  }\n\n  .scooter-specs__text span {\n    font-size: 10px;\n  }\n}\n</style>"
+          }
+        },
+        "rating": {
+          "type": "rating",
+          "disabled": true,
+          "settings": {
+            "show_empty": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "disabled": true,
+          "settings": {}
+        },
+        "description": {
+          "type": "description",
+          "disabled": true,
+          "settings": {
+            "icon": "none",
+            "icon_width": 20,
+            "collapse_content": false
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "stack_blocks": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {}
+        },
+        "liquid_gihk4C": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-info__block-item\" data-block-id=\"liquid_JPLX8f\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <style> .vorha-delivery-line { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 8px 10px; margin-top: 10px; background: #F9F9F9; color: #000; font-size: 12px; line-height: 1.2; box-sizing: border-box; } .vorha-delivery-left { display: flex; align-items: center; gap: 7px; min-width: 0; } .vorha-green-dot { display: inline-block; width: 9px; height: 9px; min-width: 9px; border-radius: 50%; background: #00B67A; } .vorha-delivery-date { font-weight: 600; white-space: nowrap; } .vorha-delivery-free { font-weight: 500; white-space: nowrap; margin-left: auto; } @media screen and (max-width: 480px) { .vorha-delivery-line { padding: 8px; gap: 6px; font-size: 11px; } .vorha-delivery-left { gap: 6px; } .vorha-green-dot { width: 8px; height: 8px; min-width: 8px; } } </style> <div class=\"vorha-delivery-line\"> <div class=\"vorha-delivery-left\"> <span class=\"vorha-green-dot\"></span> <span class=\"vorha-delivery-date\" data-vorha-delivery-date=\"\">Livré entre 25 oct et 27 oct</span> </div> <span class=\"vorha-delivery-free\"> FR Livraison Gratuite </span> </div> <script> (function () { const mois = [ \"janv\", \"févr\", \"mars\", \"avr\", \"mai\", \"juin\", \"juil\", \"août\", \"sept\", \"oct\", \"nov\", \"déc\" ]; function ajouterJours(date, nombre) { const nouvelleDate = new Date(date); nouvelleDate.setDate(nouvelleDate.getDate() + nombre); return nouvelleDate; } function formaterDate(date) { const numeroJour = String(date.getDate()).padStart(2, \"0\"); const moisNom = mois[date.getMonth()]; return numeroJour + \" \" + moisNom; } const aujourdHui = new Date(); const dateMin = ajouterJours(aujourdHui, 3); const dateMax = ajouterJours(aujourdHui, 5); const texteLivraison = \"Livré entre \" + formaterDate(dateMin) + \" et \" + formaterDate(dateMax); document .querySelectorAll(\"[data-vorha-delivery-date]\") .forEach(function(element) { element.textContent = texteLivraison; }); })(); </script>\n            </div></div>"
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "liquid_Dr4GJC": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<div class=\"product-info__block-item\" data-block-id=\"liquid_RFqLDf\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_4GLJMY\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_LfFxkj\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_XJBFXM\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-info__liquid\">\n              <div class=\"product-info__block-item\" data-block-id=\"liquid_kNi8Pb\" data-block-type=\"liquid\"><div class=\"product-info__liquid\">\n              <div class=\"product-payment-icons\">\n  \n    <svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\" fill=\"none\" aria-labelledby=\"pi-american_express\"><title id=\"pi-american_express\">American Express</title><rect x=\".5\" y=\".5\" width=\"37\" height=\"23\" rx=\"2.5\" stroke=\"#000\" stroke-opacity=\".07\" fill=\"none\"></rect><path d=\"M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z\" fill=\"#0071CE\" style=\"fill:#0071CE;fill:color(display-p3 0.0000 0.4431 0.8078);fill-opacity:1;\"></path><path d=\"M3 0.5H35C36.3348 0.5 37.5 1.58692 37.5 3V21C37.5 22.4239 36.4239 23.5 35 23.5H3C1.66524 23.5 0.5 22.4131 0.5 21V3C0.5 1.57614 1.57614 0.5 3 0.5Z\" stroke=\"black\" stroke-opacity=\"0.07\" style=\"stroke:black;stroke-opacity:0.07;\"></path><path d=\"M25.8662 6.33203V3H31L31.8662 5.5332L32.7334 3H37V14.2002H36.7998L34.8672 16.2656L36.7998 18.3594H37V21.2666H33.5996L31.9336 19.3994L30.2002 21.2666H19.4668V12.666H16L20.2666 3H24.4004L25.8662 6.33203ZM20.5996 20.2656H27V18.5322H22.666V17.3994H26.8662V15.666H22.666V14.5322H27V12.7988H20.5996V20.2656ZM30.5332 16.5322L27 20.2656H29.5996L31.8662 17.8662L34.0664 20.2656H36.7324L33.1992 16.4658L36.7324 12.7988H34.1328L31.8662 15.1992L29.7324 12.7988H27L30.5332 16.5322ZM17.666 11.7324H19.9326L20.5332 10.1992H23.999L24.666 11.7324H26.999L23.666 4.19922H20.999L17.666 11.7324ZM33.5996 4.19922L31.9326 8.86621L30.1992 4.19922H27V11.666H29.0664V6.39941L31 11.666H32.7998L34.7324 6.39941V11.666H36.7324V4.13281L33.5996 4.19922ZM23.2656 8.46582H21.2656L22.2656 5.99902L23.2656 8.46582Z\" fill=\"white\" style=\"fill:white;fill-opacity:1;\"></path></svg>\n\n  \n    <svg version=\"1.1\" xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" x=\"0\" y=\"0\" width=\"38\" height=\"24\" viewBox=\"0 0 165.521 105.965\" xml:space=\"preserve\" aria-labelledby=\"pi-apple_pay\"><title id=\"pi-apple_pay\">Apple Pay</title><path fill=\"#000\" d=\"M150.698 0H14.823c-.566 0-1.133 0-1.698.003-.477.004-.953.009-1.43.022-1.039.028-2.087.09-3.113.274a10.51 10.51 0 0 0-2.958.975 9.932 9.932 0 0 0-4.35 4.35 10.463 10.463 0 0 0-.975 2.96C.113 9.611.052 10.658.024 11.696a70.22 70.22 0 0 0-.022 1.43C0 13.69 0 14.256 0 14.823v76.318c0 .567 0 1.132.002 1.699.003.476.009.953.022 1.43.028 1.036.09 2.084.275 3.11a10.46 10.46 0 0 0 .974 2.96 9.897 9.897 0 0 0 1.83 2.52 9.874 9.874 0 0 0 2.52 1.83c.947.483 1.917.79 2.96.977 1.025.183 2.073.245 3.112.273.477.011.953.017 1.43.02.565.004 1.132.004 1.698.004h135.875c.565 0 1.132 0 1.697-.004.476-.002.952-.009 1.431-.02 1.037-.028 2.085-.09 3.113-.273a10.478 10.478 0 0 0 2.958-.977 9.955 9.955 0 0 0 4.35-4.35c.483-.947.789-1.917.974-2.96.186-1.026.246-2.074.274-3.11.013-.477.02-.954.022-1.43.004-.567.004-1.132.004-1.699V14.824c0-.567 0-1.133-.004-1.699a63.067 63.067 0 0 0-.022-1.429c-.028-1.038-.088-2.085-.274-3.112a10.4 10.4 0 0 0-.974-2.96 9.94 9.94 0 0 0-4.35-4.35A10.52 10.52 0 0 0 156.939.3c-1.028-.185-2.076-.246-3.113-.274a71.417 71.417 0 0 0-1.431-.022C151.83 0 151.263 0 150.698 0z\"></path><path fill=\"#FFF\" d=\"M150.698 3.532l1.672.003c.452.003.905.008 1.36.02.793.022 1.719.065 2.583.22.75.135 1.38.34 1.984.648a6.392 6.392 0 0 1 2.804 2.807c.306.6.51 1.226.645 1.983.154.854.197 1.783.218 2.58.013.45.019.9.02 1.36.005.557.005 1.113.005 1.671v76.318c0 .558 0 1.114-.004 1.682-.002.45-.008.9-.02 1.35-.022.796-.065 1.725-.221 2.589a6.855 6.855 0 0 1-.645 1.975 6.397 6.397 0 0 1-2.808 2.807c-.6.306-1.228.511-1.971.645-.881.157-1.847.2-2.574.22-.457.01-.912.017-1.379.019-.555.004-1.113.004-1.669.004H14.801c-.55 0-1.1 0-1.66-.004a74.993 74.993 0 0 1-1.35-.018c-.744-.02-1.71-.064-2.584-.22a6.938 6.938 0 0 1-1.986-.65 6.337 6.337 0 0 1-1.622-1.18 6.355 6.355 0 0 1-1.178-1.623 6.935 6.935 0 0 1-.646-1.985c-.156-.863-.2-1.788-.22-2.578a66.088 66.088 0 0 1-.02-1.355l-.003-1.327V14.474l.002-1.325a66.7 66.7 0 0 1 .02-1.357c.022-.792.065-1.717.222-2.587a6.924 6.924 0 0 1 .646-1.981c.304-.598.7-1.144 1.18-1.623a6.386 6.386 0 0 1 1.624-1.18 6.96 6.96 0 0 1 1.98-.646c.865-.155 1.792-.198 2.586-.22.452-.012.905-.017 1.354-.02l1.677-.003h135.875\"></path><g><g><path fill=\"#000\" d=\"M43.508 35.77c1.404-1.755 2.356-4.112 2.105-6.52-2.054.102-4.56 1.355-6.012 3.112-1.303 1.504-2.456 3.959-2.156 6.266 2.306.2 4.61-1.152 6.063-2.858\"></path><path fill=\"#000\" d=\"M45.587 39.079c-3.35-.2-6.196 1.9-7.795 1.9-1.6 0-4.049-1.8-6.698-1.751-3.447.05-6.645 2-8.395 5.1-3.598 6.2-.95 15.4 2.55 20.45 1.699 2.5 3.747 5.25 6.445 5.151 2.55-.1 3.549-1.65 6.647-1.65 3.097 0 3.997 1.65 6.696 1.6 2.798-.05 4.548-2.5 6.247-5 1.95-2.85 2.747-5.6 2.797-5.75-.05-.05-5.396-2.101-5.446-8.251-.05-5.15 4.198-7.6 4.398-7.751-2.399-3.548-6.147-3.948-7.447-4.048\"></path></g><g><path fill=\"#000\" d=\"M78.973 32.11c7.278 0 12.347 5.017 12.347 12.321 0 7.33-5.173 12.373-12.529 12.373h-8.058V69.62h-5.822V32.11h14.062zm-8.24 19.807h6.68c5.07 0 7.954-2.729 7.954-7.46 0-4.73-2.885-7.434-7.928-7.434h-6.706v14.894z\"></path><path fill=\"#000\" d=\"M92.764 61.847c0-4.809 3.665-7.564 10.423-7.98l7.252-.442v-2.08c0-3.04-2.001-4.704-5.562-4.704-2.938 0-5.07 1.507-5.51 3.82h-5.252c.157-4.86 4.731-8.395 10.918-8.395 6.654 0 10.995 3.483 10.995 8.89v18.663h-5.38v-4.497h-.13c-1.534 2.937-4.914 4.782-8.579 4.782-5.406 0-9.175-3.222-9.175-8.057zm17.675-2.417v-2.106l-6.472.416c-3.64.234-5.536 1.585-5.536 3.95 0 2.288 1.975 3.77 5.068 3.77 3.95 0 6.94-2.522 6.94-6.03z\"></path><path fill=\"#000\" d=\"M120.975 79.652v-4.496c.364.051 1.247.103 1.715.103 2.573 0 4.029-1.09 4.913-3.899l.52-1.663-9.852-27.293h6.082l6.863 22.146h.13l6.862-22.146h5.927l-10.216 28.67c-2.34 6.577-5.017 8.735-10.683 8.735-.442 0-1.872-.052-2.261-.157z\"></path></g></g></svg>\n\n  \n    <svg width=\"38\" height=\"24\" role=\"img\" viewBox=\"0 0 38 24\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\" aria-labelledby=\"pi-cartes_bancaires\"><title id=\"pi-cartes_bancaires\">Cartes Bancaires</title><rect x=\"1\" y=\"1\" width=\"36\" height=\"22\" rx=\"2\" fill=\"url(#pi-cartes_bancaires-paint0_linear)\"></rect><rect x=\".5\" y=\".5\" width=\"37\" height=\"23\" rx=\"2.5\" stroke=\"#000\" stroke-opacity=\".07\"></rect><path fill-rule=\"evenodd\" clip-rule=\"evenodd\" d=\"M28 9.934c0 1.067-.8 1.932-1.79 1.934v.002h-6.52V8h6.52c.99.002 1.79.867 1.79 1.934zm0 4.104c0 1.067-.8 1.932-1.79 1.934v.003h-6.52v-3.87h6.52c.99.002 1.79.867 1.79 1.933zm-13.224-1.934h4.788v.378c0 1.943-1.46 3.518-3.26 3.518H13.26C11.46 16 10 14.425 10 12.482v-.938c0-1.943 1.46-3.518 3.26-3.518h3.044c1.8 0 3.26 1.575 3.26 3.518v.326h-4.788v.234z\" fill=\"#fff\"></path><defs><linearGradient id=\"pi-cartes_bancaires-paint0_linear\" x1=\"37\" y1=\"1\" x2=\"17.422\" y2=\"33.036\" gradientUnits=\"userSpaceOnUse\"><stop stop-color=\"#083969\"></stop><stop offset=\".492\" stop-color=\"#007B9D\"></stop><stop offset=\"1\" stop-color=\"#00A84A\"></stop></linearGradient></defs></svg>\n    <svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\" fill=\"none\" aria-labelledby=\"pi-master\"><title id=\"pi-master\">Mastercard</title><rect x=\".5\" y=\".5\" width=\"37\" height=\"23\" rx=\"2.5\" stroke=\"#000\" stroke-opacity=\".07\" fill=\"none\"></rect><path d=\"M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z\" fill=\"#1C1C1C\" style=\"fill:#1C1C1C;fill:color(display-p3 0.1098 0.1098 0.1098);fill-opacity:1;\"></path><path d=\"M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z\" fill=\"#232323\" style=\"fill:#232323;fill:color(display-p3 0.1373 0.1373 0.1373);fill-opacity:1;\"></path><path d=\"M14.6364 19.2727C18.8538 19.2727 22.2727 15.8538 22.2727 11.6364C22.2727 7.41892 18.8538 4 14.6364 4C10.4189 4 7 7.41892 7 11.6364C7 15.8538 10.4189 19.2727 14.6364 19.2727Z\" fill=\"#EB001B\" style=\"fill:#EB001B;fill:color(display-p3 0.9216 0.0000 0.1059);fill-opacity:1;\"></path><path d=\"M23.3637 19.2727C27.5811 19.2727 31 15.8538 31 11.6364C31 7.41892 27.5811 4 23.3637 4C19.1462 4 15.7273 7.41892 15.7273 11.6364C15.7273 15.8538 19.1462 19.2727 23.3637 19.2727Z\" fill=\"#F79E1B\" style=\"fill:#F79E1B;fill:color(display-p3 0.9686 0.6196 0.1059);fill-opacity:1;\"></path><path d=\"M22.2727 11.6362C22.2727 9.01797 20.9637 6.72706 19 5.41797C17.0364 6.83615 15.7273 9.12706 15.7273 11.6362C15.7273 14.1452 17.0364 16.5452 19 17.8543C20.9637 16.5452 22.2727 14.2543 22.2727 11.6362Z\" fill=\"#FF5F00\" style=\"fill:#FF5F00;fill:color(display-p3 1.0000 0.3725 0.0000);fill-opacity:1;\"></path></svg>\n\n  \n    <svg viewBox=\"0 0 38 24\" xmlns=\"http://www.w3.org/2000/svg\" width=\"38\" height=\"24\" role=\"img\" aria-labelledby=\"pi-paypal\"><title id=\"pi-paypal\">PayPal</title><path opacity=\".07\" d=\"M35 0H3C1.3 0 0 1.3 0 3v18c0 1.7 1.4 3 3 3h32c1.7 0 3-1.3 3-3V3c0-1.7-1.4-3-3-3z\"></path><path fill=\"#fff\" d=\"M35 1c1.1 0 2 .9 2 2v18c0 1.1-.9 2-2 2H3c-1.1 0-2-.9-2-2V3c0-1.1.9-2 2-2h32\"></path><path fill=\"#003087\" d=\"M23.9 8.3c.2-1 0-1.7-.6-2.3-.6-.7-1.7-1-3.1-1h-4.1c-.3 0-.5.2-.6.5L14 15.6c0 .2.1.4.3.4H17l.4-3.4 1.8-2.2 4.7-2.1z\"></path><path fill=\"#3086C8\" d=\"M23.9 8.3l-.2.2c-.5 2.8-2.2 3.8-4.6 3.8H18c-.3 0-.5.2-.6.5l-.6 3.9-.2 1c0 .2.1.4.3.4H19c.3 0 .5-.2.5-.4v-.1l.4-2.4v-.1c0-.2.3-.4.5-.4h.3c2.1 0 3.7-.8 4.1-3.2.2-1 .1-1.8-.4-2.4-.1-.5-.3-.7-.5-.8z\"></path><path fill=\"#012169\" d=\"M23.3 8.1c-.1-.1-.2-.1-.3-.1-.1 0-.2 0-.3-.1-.3-.1-.7-.1-1.1-.1h-3c-.1 0-.2 0-.2.1-.2.1-.3.2-.3.4l-.7 4.4v.1c0-.3.3-.5.6-.5h1.3c2.5 0 4.1-1 4.6-3.8v-.2c-.1-.1-.3-.2-.5-.2h-.1z\"></path></svg>\n  \n    <svg xmlns=\"http://www.w3.org/2000/svg\" role=\"img\" viewBox=\"0 0 38 24\" width=\"38\" height=\"24\" fill=\"none\" aria-labelledby=\"pi-visa\"><title id=\"pi-visa\">Visa</title><rect x=\".5\" y=\".5\" width=\"37\" height=\"23\" rx=\"2.5\" stroke=\"#000\" stroke-opacity=\".07\" fill=\"none\"></rect><path d=\"M35 0H3C1.3 0 0 1.3 0 3V21C0 22.7 1.4 24 3 24H35C36.7 24 38 22.7 38 21V3C38 1.3 36.6 0 35 0Z\" fill=\"#142FBD\" style=\"fill:#142FBD;fill:color(display-p3 0.0784 0.1843 0.7412);fill-opacity:1;\"></path><path d=\"M35 1C36.1 1 37 1.9 37 3V21C37 22.1 36.1 23 35 23H3C1.9 23 1 22.1 1 21V3C1 1.9 1.9 1 3 1H35Z\" fill=\"#1532CB\" style=\"fill:#1532CB;fill:color(display-p3 0.0824 0.1961 0.7961);fill-opacity:1;\"></path><path d=\"M29.5944 10.2167H29.2778C28.8556 11.2722 28.5389 11.8 28.2222 13.3833H30.2278C29.9111 11.8 29.9111 11.0611 29.5944 10.2167V10.2167ZM32.6556 16.4444H30.8611C30.7556 16.4444 30.7556 16.4444 30.65 16.3389L30.4389 15.3889L30.3333 15.1778H27.8C27.6944 15.1778 27.5889 15.1778 27.5889 15.3889L27.2722 16.3389C27.2722 16.4444 27.1667 16.4444 27.1667 16.4444H24.95L25.1611 15.9167L28.2222 8.73889C28.2222 8.21111 28.5389 8 29.0667 8H30.65C30.7556 8 30.8611 8 30.8611 8.21111L32.3389 15.0722C32.4444 15.4944 32.55 15.8111 32.55 16.2333C32.6556 16.3389 32.6556 16.3389 32.6556 16.4444V16.4444ZM18.5111 16.1278L18.9333 14.2278C19.0389 14.2278 19.1444 14.3333 19.1444 14.3333C19.8833 14.65 20.6222 14.8611 21.3611 14.7556C21.5722 14.7556 21.8889 14.65 22.1 14.5444C22.6278 14.3333 22.6278 13.8056 22.2056 13.3833C21.9944 13.1722 21.6778 13.0667 21.3611 12.8556C20.9389 12.6444 20.5167 12.4333 20.2 12.1167C18.9333 11.0611 19.3556 9.58333 20.0944 8.84444C20.7278 8.42222 21.0444 8 21.8889 8C23.1556 8 24.5278 8 25.1611 8.21111H25.2667C25.1611 8.84444 25.0556 9.37222 24.8444 10.0056C24.3167 9.79444 23.7889 9.58333 23.2611 9.58333C22.9444 9.58333 22.6278 9.58333 22.3111 9.68889C22.1 9.68889 21.9944 9.79444 21.8889 9.9C21.6778 10.1111 21.6778 10.4278 21.8889 10.6389L22.4167 11.0611C22.8389 11.2722 23.2611 11.4833 23.5778 11.6944C24.1056 12.0111 24.6333 12.5389 24.7389 13.1722C24.95 14.1222 24.6333 14.9667 23.7889 15.6C23.2611 16.0222 23.05 16.2333 22.3111 16.2333C20.8333 16.2333 19.6722 16.3389 18.7222 16.0222C18.6167 16.2333 18.6167 16.2333 18.5111 16.1278V16.1278ZM14.8167 16.4444C14.9222 15.7056 14.9222 15.7056 15.0278 15.3889C15.5556 13.0667 16.0833 10.6389 16.5056 8.31667C16.6111 8.10556 16.6111 8 16.8222 8H18.7222C18.5111 9.26667 18.3 10.2167 17.9833 11.3778C17.6667 12.9611 17.35 14.5444 16.9278 16.1278C16.9278 16.3389 16.8222 16.3389 16.6111 16.3389L14.8167 16.4444ZM5 8.21111C5 8.10556 5.21111 8 5.31667 8H8.90556C9.43333 8 9.85556 8.31667 9.96111 8.84444L10.9111 13.4889C10.9111 13.5944 10.9111 13.5944 11.0167 13.7C11.0167 13.5944 11.1222 13.5944 11.1222 13.5944L13.3389 8.21111C13.2333 8.10556 13.3389 8 13.4444 8H15.6611C15.6611 8.10556 15.6611 8.10556 15.5556 8.21111L12.2833 15.9167C12.1778 16.1278 12.1778 16.2333 12.0722 16.3389C11.9667 16.4444 11.7556 16.3389 11.5444 16.3389H9.96111C9.85556 16.3389 9.75 16.3389 9.75 16.1278L8.06111 9.58333C7.85 9.37222 7.53333 9.05556 7.11111 8.95C6.47778 8.63333 5.31667 8.42222 5.10556 8.42222L5 8.21111Z\" fill=\"white\" style=\"fill:white;fill-opacity:1;\"></path></svg>\n\n  \n</div>\n\n<style>\n.product-payment-icons{\n  display:flex;\n  justify-content:center;\n  gap:8px;\n  margin-top:12px;\n  flex-wrap:wrap;\n}\n\n.product-payment-icons svg{\n  height:22px;\n  width:auto;\n}\n</style>\n            </div></div>\n            </div>\n            </div></div>\n            </div></div>\n            </div></div>\n            </div></div>"
+          }
+        },
+        "collapsible_text_4YVNEA": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/d3225ab021040514f24fda6b9469ff51_8c9bef18-47a9-4af3-8734-722ec3b40cf4.webp",
+            "icon_width": 20,
+            "title": "Informations Livraisons",
+            "content": "<p>Nous expédions vos colis dans un délai de<strong> 1 à 3 jours ouvrés</strong> (Temps de traitement de la commande). Les délais de livraison dépendent de votre adresse de livraison :</p><p><strong>Délais de livraison </strong>: 6 à 9 jours ouvrés en France métropolitaine.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_NYqN3e": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/fe10326b372aa3bcfa3731af12fd8c29.png",
+            "icon_width": 20,
+            "title": "Retours et Remboursements",
+            "content": "<p>Nous acceptons les retours dans un <strong>délai de</strong> <strong>14 jours</strong>, quelle qu'en soit la raison.&nbsp;</p><p>Les produits présentant des problèmes de qualité peuvent être retournés dans un délai de <strong>30 jours.</strong> Vous avez ainsi l'assurance de ne pas avoir à vous soucier de la qualité.</p>",
+            "page": ""
+          }
+        },
+        "collapsible_text_g4ykq8": {
+          "type": "collapsible_text",
+          "settings": {
+            "icon": "none",
+            "custom_icon": "shopify://shop_images/2_9817c4d5-ca4a-4aab-bacd-3f5cbc88116e.webp",
+            "icon_width": 18,
+            "title": "Service Client 24/7",
+            "content": "<p>Une question ? Notre équipe est à votre écoute pour vous accompagner avant, pendant et après votre commande, à tout moment.</p>",
+            "page": "contact"
+          }
+        },
+        "associated_products_xyXekt": {
+          "type": "associated_products",
+          "settings": {
+            "title": "Accessoires Compatibles :",
+            "stack_products": false,
+            "products_count": 5,
+            "background": "",
+            "text_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "liquid_a3N3bC",
+        "title",
+        "badges",
+        "price",
+        "liquid_4xMdpq",
+        "rating",
+        "payment_terms",
+        "description",
+        "variant_picker",
+        "quantity_selector",
+        "liquid_gihk4C",
+        "buy_buttons",
+        "liquid_Dr4GJC",
+        "collapsible_text_4YVNEA",
+        "collapsible_text_NYqN3e",
+        "collapsible_text_g4ykq8",
+        "associated_products_xyXekt"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_fixed_add_to_cart": true,
+        "desktop_media_width": 55,
+        "desktop_media_layout": "carousel_thumbnails_left",
+        "mobile_media_size": "contained",
+        "mobile_carousel_control": "thumbnails",
+        "enable_video_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3,
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "input_background": "rgba(0,0,0,0)",
+        "input_text_color": ""
+      }
+    },
+    "caracteristiques_nMEbU4": {
+      "type": "caracteristiques",
+      "blocks": {
+        "spec_6DPYLa": {
+          "type": "spec",
+          "settings": {
+            "icon": "motor",
+            "value": "350 W",
+            "label": "Puissance du moteur"
+          }
+        },
+        "spec_GRUPDB": {
+          "type": "spec",
+          "settings": {
+            "icon": "speed",
+            "value": "30 km/h",
+            "label": "Vitesse maximale"
+          }
+        },
+        "spec_WV8ihJ": {
+          "type": "spec",
+          "settings": {
+            "icon": "battery",
+            "value": "36 V / 7,8 Ah",
+            "label": "Capacité de batterie"
+          }
+        },
+        "spec_mmkPeG": {
+          "type": "spec",
+          "settings": {
+            "icon": "range",
+            "value": "25-30 km",
+            "label": "Autonomie"
+          }
+        },
+        "spec_GJnKfj": {
+          "type": "spec",
+          "settings": {
+            "icon": "load",
+            "value": "100 kg",
+            "label": "Charge maximale"
+          }
+        },
+        "spec_3xprFm": {
+          "type": "spec",
+          "settings": {
+            "icon": "charge",
+            "value": "5 à 6 h",
+            "label": "Temps de charge"
+          }
+        }
+      },
+      "block_order": [
+        "spec_6DPYLa",
+        "spec_GRUPDB",
+        "spec_WV8ihJ",
+        "spec_mmkPeG",
+        "spec_GJnKfj",
+        "spec_3xprFm"
+      ],
+      "name": "Caractéristiques produit",
+      "settings": {
+        "heading": "",
+        "section_width": 1300,
+        "circle_size": 88,
+        "padding_top": 75,
+        "padding_bottom": 75,
+        "padding_top_mobile": 10,
+        "padding_bottom_mobile": 50,
+        "background": "#ffffff",
+        "circle_background": "#f3f3f3",
+        "accent_color": "#c94b50",
+        "value_color": "#181818",
+        "label_color": "#383838"
+      }
+    },
+    "reassuranceicons_P7mN9p": {
+      "type": "reassuranceicons",
+      "blocks": {
+        "advantage_3r43xg": {
+          "type": "advantage",
+          "settings": {
+            "text": "Livraison rapide",
+            "icon": "truck"
+          }
+        },
+        "advantage_jqc4Wx": {
+          "type": "advantage",
+          "settings": {
+            "text": "Paiement sécurisé",
+            "icon": "lock"
+          }
+        },
+        "advantage_eYLtg9": {
+          "type": "advantage",
+          "settings": {
+            "text": "Garantie 2 ans",
+            "icon": "shield"
+          }
+        },
+        "advantage_xqeDWi": {
+          "type": "advantage",
+          "settings": {
+            "text": "Support client",
+            "icon": "support"
+          }
+        }
+      },
+      "block_order": [
+        "advantage_3r43xg",
+        "advantage_jqc4Wx",
+        "advantage_eYLtg9",
+        "advantage_xqeDWi"
+      ],
+      "name": "Barre avantages",
+      "settings": {
+        "bg_color": "#f5f5f5",
+        "text_color": "#181818",
+        "bar_height": 65,
+        "autoplay": true,
+        "slide_speed": 3
+      }
+    },
+    "sectionavis_4PYdxQ": {
+      "type": "sectionavis",
+      "blocks": {
+        "testimonial_EkVNcL": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify://shop_images/1783982815__img_2639__original.webp",
+            "product": "ST3 Pro",
+            "image_first": true,
+            "author": "Raphaël Voss",
+            "review": "Extrêmement puissante, avec un confort de conduite incomparable grâce à la suspension. La batterie tient très bien, même par temps froid. Livraison rapide et service impeccable !",
+            "date": "20 février 2026"
+          }
+        },
+        "testimonial_rLntWL": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify://shop_images/6_4d646807-ce11-41c8-8384-af06fb95f42d_1.webp",
+            "product": "ST3 Pro",
+            "image_first": false,
+            "author": "Sébastien Holt",
+            "review": "Quelle excellente trottinette ! Une belle autonomie, une conduite souple et un design élégant. Les clignotants et l'application sont très pratiques. Je recommande pour les trajets quotidiens !",
+            "date": "25 mars 2026"
+          }
+        },
+        "testimonial_eLJyct": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify://shop_images/6_4d646807-ce11-41c8-8384-af06fb95f42d.webp",
+            "product": "GT3 Max",
+            "image_first": true,
+            "author": "Clémence Frost",
+            "review": "Cette trottinette est géniale ! Elle avance parfaitement, la suspension absorbe les irrégularités de la route et l'autonomie est remarquable. Un vrai plaisir au quotidien.",
+            "date": "12 février 2026"
+          }
+        },
+        "testimonial_XqpHTg": {
+          "type": "testimonial",
+          "settings": {
+            "photo": "shopify://shop_images/2_ac1f1b5d-eca4-481d-807d-cb68f4145e30.webp",
+            "product": "GT3 Pro",
+            "image_first": false,
+            "author": "Lisa Sterling",
+            "review": "Une accélération puissante et une suspension très confortable sur toutes les surfaces. L'autonomie est suffisante pour toute la journée. Très bon rapport qualité-prix !",
+            "date": "12 mars 2026"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_EkVNcL",
+        "testimonial_rLntWL",
+        "testimonial_eLJyct",
+        "testimonial_XqpHTg"
+      ],
+      "name": "Avis clients - galerie",
+      "settings": {
+        "heading": "Ce que disent nos clients",
+        "show_rating": true,
+        "rating_label": "Excellent",
+        "rating_summary": "Noté excellent sur la base de 5 007 avis",
+        "rating_score": "(4,8/5)",
+        "last_star_fill": 60,
+        "bottom_text": "",
+        "max_width": 1080,
+        "columns_desktop": 4,
+        "columns_mobile": "2",
+        "column_gap": 16,
+        "column_gap_mobile": 10,
+        "photo_ratio": "3 / 4",
+        "card_radius": 12,
+        "card_padding": 20,
+        "card_padding_mobile": 14,
+        "show_avatars": true,
+        "show_dates": true,
+        "show_product_label": false,
+        "enable_mobile_slider": true,
+        "slider_card_width": 85,
+        "slider_show_arrows": true,
+        "slider_show_dots": true,
+        "font_family": "manrope",
+        "heading_size": 34,
+        "heading_size_mobile": 25,
+        "review_size": 14,
+        "review_size_mobile": 13,
+        "background_color": "#ffffff",
+        "card_color": "#ffffff",
+        "title_color": "#0a0a0a",
+        "text_color": "#242424",
+        "muted_color": "#737373",
+        "star_color": "#00b67a",
+        "pill_color": "#ffffff",
+        "pill_text_color": "#202020",
+        "padding_top": 56,
+        "padding_bottom": 32,
+        "padding_top_mobile": 52,
+        "padding_bottom_mobile": 24,
+        "header_spacing": 34
+      }
+    },
+    "bannieresuspension_X7Lk7C": {
+      "type": "bannieresuspension",
+      "name": "Bannière suspension",
+      "settings": {
+        "image_pc": "shopify://shop_images/a3f01715-7689-4a93-89ff-730ca762810c.png",
+        "image_mobile": "shopify://shop_images/07e5c179-1c7e-439e-b503-e4b81e65188f.png",
+        "position_image_pc": "center center",
+        "position_image_mobile": "center center",
+        "fallback_color": "#b50000",
+        "titre_pc": "N7PRO",
+        "titre_mobile": "Suspension avant et arrière",
+        "texte_pc": "Une conduite fluide, même sur les terrains difficiles. La double suspension absorbe les chocs pour un confort optimal.",
+        "texte_mobile": "Une conduite fluide, même sur les terrains difficiles. La double suspension absorbe les chocs.",
+        "section_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "opacity_pc": 5,
+        "opacity_mobile": 10,
+        "max_width": 1900,
+        "height_pc": 710,
+        "radius_pc": 0,
+        "content_width_pc": 620,
+        "align_pc": "flex-start",
+        "vertical_pc": "center",
+        "text_align_pc": "left",
+        "heading_size_pc": 52,
+        "text_size_pc": 17,
+        "heading_line_pc": 105,
+        "text_line_pc": 150,
+        "gap_pc": 24,
+        "heading_weight": "600",
+        "text_weight": "400",
+        "outer_top_pc": 32,
+        "outer_bottom_pc": 32,
+        "outer_side_pc": 40,
+        "inner_top_pc": 56,
+        "inner_bottom_pc": 56,
+        "inner_side_pc": 70,
+        "height_mobile": 680,
+        "radius_mobile": 0,
+        "content_width_mobile": 400,
+        "align_mobile": "flex-start",
+        "vertical_mobile": "flex-start",
+        "text_align_mobile": "left",
+        "heading_size_mobile": 28,
+        "text_size_mobile": 14,
+        "heading_line_mobile": 110,
+        "text_line_mobile": 145,
+        "gap_mobile": 16,
+        "outer_top_mobile": 32,
+        "outer_bottom_mobile": 32,
+        "outer_side_mobile": 15,
+        "inner_top_mobile": 38,
+        "inner_bottom_mobile": 38,
+        "inner_side_mobile": 20
+      }
+    },
+    "bannieresuspension_C3yGGe": {
+      "type": "bannieresuspension",
+      "name": "Bannière suspension",
+      "settings": {
+        "image_pc": "shopify://shop_images/27783004-92eb-48f2-95f5-82bff7839e7f.png",
+        "image_mobile": "shopify://shop_images/62c27025-a77f-4eb4-8982-75104f33ff08.png",
+        "position_image_pc": "center center",
+        "position_image_mobile": "center center",
+        "fallback_color": "#b50000",
+        "titre_pc": "Jusqu'à 30 km de liberté.",
+        "titre_mobile": "Jusqu'à 30 km de liberté.",
+        "texte_pc": "Profitez de vos trajets quotidiens avec une batterie amovible, facile à recharger où vous voulez.",
+        "texte_mobile": "Profitez de vos trajets quotidiens avec une batterie amovible, facile à recharger où vous voulez.",
+        "section_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "opacity_pc": 5,
+        "opacity_mobile": 10,
+        "max_width": 1900,
+        "height_pc": 710,
+        "radius_pc": 0,
+        "content_width_pc": 620,
+        "align_pc": "flex-start",
+        "vertical_pc": "flex-start",
+        "text_align_pc": "left",
+        "heading_size_pc": 52,
+        "text_size_pc": 17,
+        "heading_line_pc": 105,
+        "text_line_pc": 150,
+        "gap_pc": 24,
+        "heading_weight": "600",
+        "text_weight": "400",
+        "outer_top_pc": 32,
+        "outer_bottom_pc": 32,
+        "outer_side_pc": 40,
+        "inner_top_pc": 56,
+        "inner_bottom_pc": 56,
+        "inner_side_pc": 70,
+        "height_mobile": 680,
+        "radius_mobile": 0,
+        "content_width_mobile": 400,
+        "align_mobile": "flex-start",
+        "vertical_mobile": "flex-start",
+        "text_align_mobile": "left",
+        "heading_size_mobile": 28,
+        "text_size_mobile": 14,
+        "heading_line_mobile": 110,
+        "text_line_mobile": 145,
+        "gap_mobile": 16,
+        "outer_top_mobile": 32,
+        "outer_bottom_mobile": 32,
+        "outer_side_mobile": 15,
+        "inner_top_mobile": 38,
+        "inner_bottom_mobile": 38,
+        "inner_side_mobile": 20
+      }
+    },
+    "bannieresuspension_iQGQ3g": {
+      "type": "bannieresuspension",
+      "name": "Bannière suspension",
+      "settings": {
+        "image_pc": "shopify://shop_images/2b8a524c-be30-4571-a78c-f9e28f1fe9ba.png",
+        "position_image_pc": "center center",
+        "position_image_mobile": "center center",
+        "fallback_color": "#b50000",
+        "titre_pc": "Roulez sans craindre les crevaisons.",
+        "titre_mobile": "Roulez sans craindre les crevaisons.",
+        "texte_pc": "Pneus pleins alvéolés de 8,5 pouces et suspension arrière pour des déplacements plus sereins.",
+        "texte_mobile": "Pneus pleins alvéolés de 8,5 pouces et suspension arrière pour des déplacements plus sereins.",
+        "section_color": "#ffffff",
+        "heading_color": "#ffffff",
+        "text_color": "#ffffff",
+        "overlay_color": "#000000",
+        "opacity_pc": 5,
+        "opacity_mobile": 10,
+        "max_width": 1900,
+        "height_pc": 710,
+        "radius_pc": 0,
+        "content_width_pc": 620,
+        "align_pc": "flex-start",
+        "vertical_pc": "flex-start",
+        "text_align_pc": "left",
+        "heading_size_pc": 52,
+        "text_size_pc": 17,
+        "heading_line_pc": 105,
+        "text_line_pc": 150,
+        "gap_pc": 24,
+        "heading_weight": "600",
+        "text_weight": "400",
+        "outer_top_pc": 32,
+        "outer_bottom_pc": 32,
+        "outer_side_pc": 30,
+        "inner_top_pc": 56,
+        "inner_bottom_pc": 56,
+        "inner_side_pc": 70,
+        "height_mobile": 680,
+        "radius_mobile": 0,
+        "content_width_mobile": 400,
+        "align_mobile": "flex-start",
+        "vertical_mobile": "center",
+        "text_align_mobile": "left",
+        "heading_size_mobile": 28,
+        "text_size_mobile": 14,
+        "heading_line_mobile": 110,
+        "text_line_mobile": 145,
+        "gap_mobile": 16,
+        "outer_top_mobile": 32,
+        "outer_bottom_mobile": 32,
+        "outer_side_mobile": 15,
+        "inner_top_mobile": 38,
+        "inner_bottom_mobile": 38,
+        "inner_side_mobile": 20
+      }
+    },
+    "multi_column_PiMncJ": {
+      "type": "multi-column",
+      "blocks": {
+        "item_C93UPh": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_EdEgUM": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_Y4L4QJ": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        },
+        "item_gVgbFg": {
+          "type": "item",
+          "settings": {
+            "column_size": "4",
+            "title": "Column title",
+            "heading_tag": "h4",
+            "content": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "link_url": "",
+            "link_text": "",
+            "link_style": "link"
+          }
+        }
+      },
+      "block_order": [
+        "item_C93UPh",
+        "item_EdEgUM",
+        "item_Y4L4QJ",
+        "item_gVgbFg"
+      ],
+      "disabled": true,
+      "name": "Multi-column",
+      "settings": {
+        "full_width": true,
+        "stack_on_mobile": false,
+        "gap": "medium",
+        "text_alignment": "center",
+        "subheading": "",
+        "title": "Découvrez Les Performances",
+        "content": "",
+        "background": "#000000",
+        "background_gradient": "linear-gradient(190deg, rgba(41, 41, 41, 1), rgba(0, 0, 0, 1) 100%)",
+        "text_color": "#ffffff"
+      }
+    },
+    "detailsproduit_Gw8tF9": {
+      "type": "detailsproduit",
+      "blocks": {
+        "spec_mCDJbK": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Moteur",
+            "value": "350 W"
+          }
+        },
+        "spec_eyFaBx": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Vitesse maximale",
+            "value": "Jusqu'à 30 km/h"
+          }
+        },
+        "spec_TAADTA": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Autonomie maximale",
+            "value": "60 km (jusqu'à 113 km avec assistance)"
+          }
+        },
+        "spec_xtUVM3": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Batterie",
+            "value": "48 V - 15,6 Ah, amovible"
+          }
+        },
+        "spec_wykraC": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Temps de charge",
+            "value": "6 à 7 heures"
+          }
+        },
+        "spec_WtmeKC": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Freins",
+            "value": "Double freinage hydraulique"
+          }
+        },
+        "spec_aWqhXW": {
+          "type": "spec",
+          "settings": {
+            "group": "technical",
+            "label": "Dérailleur arrière",
+            "value": "Shimano 7 vitesses"
+          }
+        },
+        "spec_4Ap6bi": {
+          "type": "spec",
+          "settings": {
+            "group": "performance",
+            "label": "Type d'utilisation",
+            "value": "Trajets urbains et loisirs"
+          }
+        },
+        "spec_TwbNk8": {
+          "type": "spec",
+          "settings": {
+            "group": "performance",
+            "label": "Assistance",
+            "value": "Plusieurs niveaux au choix"
+          }
+        },
+        "pack_item_ETF4aN": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Trotinette",
+            "icon": "vehicle"
+          }
+        },
+        "pack_item_9eVtqG": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Boîte à outils",
+            "image": "shopify://shop_images/key_7.png",
+            "icon": "toolbox"
+          }
+        },
+        "pack_item_p49nRf": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Chargeur",
+            "image": "shopify://shop_images/key_6.png",
+            "icon": "charger"
+          }
+        },
+        "pack_item_apY4jK": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Manuel d'utilisation",
+            "image": "shopify://shop_images/key_5.png",
+            "icon": "manual"
+          }
+        },
+        "pack_item_hRzq8z": {
+          "type": "pack_item",
+          "settings": {
+            "title": "Clés",
+            "image": "shopify://shop_images/key_4.png",
+            "icon": "key"
+          }
+        }
+      },
+      "block_order": [
+        "spec_mCDJbK",
+        "spec_eyFaBx",
+        "spec_TAADTA",
+        "spec_xtUVM3",
+        "spec_wykraC",
+        "spec_WtmeKC",
+        "spec_aWqhXW",
+        "spec_4Ap6bi",
+        "spec_TwbNk8",
+        "pack_item_ETF4aN",
+        "pack_item_9eVtqG",
+        "pack_item_p49nRf",
+        "pack_item_apY4jK",
+        "pack_item_hRzq8z"
+      ],
+      "name": "Détails produit + colis",
+      "settings": {
+        "heading": "Détails du produit",
+        "technical_title": "Caractéristiques techniques",
+        "performance_title": "Performances",
+        "box_title": "Contenu du colis",
+        "technical_open_desktop": true,
+        "performance_open_desktop": false,
+        "accordions_open_mobile": false,
+        "max_width": 1440,
+        "box_width": 395,
+        "columns_gap": 50,
+        "box_radius": 18,
+        "show_tab": true,
+        "text_color": "#171717",
+        "muted_color": "#888888",
+        "line_color": "#e8e8e8",
+        "panel_color": "#f8f8f8",
+        "icon_background": "#ffffff",
+        "accent_color": "#da0000",
+        "tab_color": "#171717",
+        "title_size_desktop": 48,
+        "group_size_desktop": 15,
+        "item_size_desktop": 14,
+        "value_size_desktop": 13,
+        "box_title_size_desktop": 24,
+        "icon_size_desktop": 80,
+        "title_size_mobile": 30,
+        "group_size_mobile": 15,
+        "item_size_mobile": 14,
+        "value_size_mobile": 12,
+        "box_title_size_mobile": 24,
+        "icon_size_mobile": 88,
+        "padding_top_desktop": 60,
+        "padding_bottom_desktop": 70,
+        "padding_side_desktop": 30,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 46,
+        "padding_side_mobile": 20
+      }
+    },
+    "faqstyle_JTL4jN": {
+      "type": "faqstyle",
+      "blocks": {
+        "question_cMQEc8": {
+          "type": "question",
+          "settings": {
+            "category": "livraison",
+            "question": "Où livrez-vous vos produits ?",
+            "answer": "<p>Les zones de livraison disponibles sont indiquées au moment de la validation de votre commande. Les frais éventuels sont calculés selon votre destination.</p>"
+          }
+        },
+        "question_zEmLx4": {
+          "type": "question",
+          "settings": {
+            "category": "livraison",
+            "question": "Quels sont les délais de livraison ?",
+            "answer": "<p>Les délais estimés dépendent du produit, de son stock et de votre adresse. L'estimation applicable est indiquée lors de votre commande.</p>"
+          }
+        },
+        "question_i8Rk6z": {
+          "type": "question",
+          "settings": {
+            "category": "livraison",
+            "question": "Comment suivre ma commande ?",
+            "answer": "<p>Lorsqu'un suivi est disponible, vous recevez les informations d'expédition par e-mail. Vous pouvez également contacter notre service client avec votre numéro de commande.</p>"
+          }
+        },
+        "question_LbPiYG": {
+          "type": "question",
+          "settings": {
+            "category": "livraison",
+            "question": "Comment mon produit est-il emballé ?",
+            "answer": "<p>Votre produit est préparé dans un emballage adapté à son transport. Vérifiez l'état du colis lors de la réception et signalez rapidement tout dommage.</p>"
+          }
+        },
+        "question_JhG9wq": {
+          "type": "question",
+          "settings": {
+            "category": "paiement",
+            "question": "Quels moyens de paiement acceptez-vous ?",
+            "answer": "<p>Les moyens de paiement disponibles sont affichés lors du passage en caisse, avant la validation définitive de la commande.</p>"
+          }
+        },
+        "question_d6Q8z9": {
+          "type": "question",
+          "settings": {
+            "category": "paiement",
+            "question": "Le paiement sur votre site est-il sécurisé ?",
+            "answer": "<p>Le paiement est traité par les prestataires proposés à la caisse. Vérifiez les moyens de paiement et les informations affichées avant de confirmer votre achat.</p>"
+          }
+        },
+        "question_yGpBTn": {
+          "type": "question",
+          "settings": {
+            "category": "paiement",
+            "question": "Puis-je modifier ou annuler ma commande ?",
+            "answer": "<p>Contactez notre service client au plus vite avec votre numéro de commande. Les possibilités de modification ou d'annulation dépendent de l'état de préparation et d'expédition.</p>"
+          }
+        },
+        "question_xM7XpR": {
+          "type": "question",
+          "settings": {
+            "category": "paiement",
+            "question": "Comment obtenir une facture ?",
+            "answer": "<p>Pour toute demande de facture, contactez notre service client en indiquant votre numéro de commande et les informations de facturation nécessaires.</p>"
+          }
+        },
+        "question_rwtWBH": {
+          "type": "question",
+          "settings": {
+            "category": "garantie",
+            "question": "Que faire si mon produit arrive endommagé ?",
+            "answer": "<p>Contactez notre service client dès que possible, avec votre numéro de commande et des photos du colis et du produit. Nous vous indiquerons la marche à suivre.</p>"
+          }
+        },
+        "question_cQcWye": {
+          "type": "question",
+          "settings": {
+            "category": "garantie",
+            "question": "Quelle garantie s'applique à mon produit ?",
+            "answer": "<p>Les garanties légales applicables restent en vigueur. Les éventuelles garanties commerciales et leurs conditions sont précisées sur la fiche produit ou dans nos conditions de garantie.</p>"
+          }
+        },
+        "question_gnP4nL": {
+          "type": "question",
+          "settings": {
+            "category": "garantie",
+            "question": "Comment contacter le service après-vente ?",
+            "answer": "<p>Utilisez la page de contact de notre boutique en précisant votre numéro de commande, le modèle concerné et une description de votre demande.</p>"
+          }
+        },
+        "question_UDnEqz": {
+          "type": "question",
+          "settings": {
+            "category": "garantie",
+            "question": "Puis-je retourner un article ?",
+            "answer": "<p>Consultez notre politique de retour pour connaître les conditions et la procédure applicables, ainsi que vos droits légaux éventuels. Contactez-nous avant tout renvoi.</p>"
+          }
+        },
+        "question_JWxN6d": {
+          "type": "question",
+          "settings": {
+            "category": "produits",
+            "question": "Comment choisir le modèle adapté à mes besoins ?",
+            "answer": "<p>Comparez notamment l'autonomie annoncée, la puissance, le poids, le confort et les dimensions indiqués sur chaque fiche produit.</p>"
+          }
+        },
+        "question_N9YHi8": {
+          "type": "question",
+          "settings": {
+            "category": "produits",
+            "question": "Quelle est l'autonomie réelle de la batterie ?",
+            "answer": "<p>L'autonomie peut varier selon le poids transporté, la vitesse, le relief, la température, l'état de la batterie et les conditions d'utilisation.</p>"
+          }
+        },
+        "question_rxnw3N": {
+          "type": "question",
+          "settings": {
+            "category": "produits",
+            "question": "Combien de temps faut-il pour recharger la batterie ?",
+            "answer": "<p>Le temps de charge dépend du modèle, de la capacité de la batterie et du chargeur. Consultez les caractéristiques techniques et la notice du produit.</p>"
+          }
+        },
+        "question_zhUXwj": {
+          "type": "question",
+          "settings": {
+            "category": "produits",
+            "question": "Comment entretenir mon produit ?",
+            "answer": "<p>Suivez la notice du fabricant pour le nettoyage, le contrôle des pneus et des freins, le rangement ainsi que la recharge de la batterie. Respectez les consignes de sécurité avant chaque utilisation.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_cMQEc8",
+        "question_zEmLx4",
+        "question_i8Rk6z",
+        "question_LbPiYG",
+        "question_JhG9wq",
+        "question_d6Q8z9",
+        "question_yGpBTn",
+        "question_xM7XpR",
+        "question_rwtWBH",
+        "question_cQcWye",
+        "question_gnP4nL",
+        "question_UDnEqz",
+        "question_JWxN6d",
+        "question_N9YHi8",
+        "question_rxnw3N",
+        "question_zhUXwj"
+      ],
+      "name": "FAQ générale responsive",
+      "settings": {
+        "title": "Questions fréquentes",
+        "group_livraison": "Livraison et expédition",
+        "group_paiement": "Paiement et commandes",
+        "group_garantie": "Retours, garantie et assistance",
+        "group_produits": "Produits et utilisation",
+        "single_open": false,
+        "max_width": 1120,
+        "columns_gap": 18,
+        "groups_gap": 32,
+        "groups_gap_mobile": 26,
+        "title_spacing": 44,
+        "title_spacing_mobile": 28,
+        "category_spacing": 14,
+        "category_spacing_mobile": 12,
+        "row_padding": 18,
+        "row_padding_mobile": 17,
+        "icon_size": 14,
+        "faq_font": "theme",
+        "title_alignment": "center",
+        "title_weight": "700",
+        "title_size": 36,
+        "title_size_mobile": 28,
+        "category_size": 15,
+        "category_size_mobile": 15,
+        "question_size": 14,
+        "question_size_mobile": 14,
+        "answer_size": 14,
+        "answer_size_mobile": 14,
+        "bg_color": "#ffffff",
+        "title_color": "#252525",
+        "category_color": "#242424",
+        "question_color": "#373737",
+        "answer_color": "#686868",
+        "divider_color": "#dedede",
+        "padding_top": 44,
+        "padding_bottom": 54,
+        "padding_sides": 24,
+        "padding_top_mobile": 30,
+        "padding_bottom_mobile": 36,
+        "padding_sides_mobile": 20
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "disabled": true,
+      "settings": {
+        "recommendations_count": 6,
+        "products": [],
+        "full_width": true,
+        "stack_products": false,
+        "show_progress_bar": true,
+        "products_per_row_mobile": "1",
+        "products_per_row_desktop": 3,
+        "subheading": "",
+        "title": "Vous Aimerez Aussi",
+        "content": "",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": "",
+        "product_card_background": "",
+        "product_card_text_color": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "caracteristiques_nMEbU4",
+    "reassuranceicons_P7mN9p",
+    "sectionavis_4PYdxQ",
+    "bannieresuspension_X7Lk7C",
+    "bannieresuspension_C3yGGe",
+    "bannieresuspension_iQGQ3g",
+    "multi_column_PiMncJ",
+    "detailsproduit_Gw8tF9",
+    "faqstyle_JTL4jN",
+    "related-products"
+  ]
+}
