@@ -187,7 +187,7 @@
           "type": "spec",
           "settings": {
             "icon": "motor",
-            "value": "350 W",
+            "value": "2 X 1000 W",
             "label": "Puissance du moteur"
           }
         },
