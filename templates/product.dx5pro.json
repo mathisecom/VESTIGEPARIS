@@ -195,7 +195,7 @@
           "type": "spec",
           "settings": {
             "icon": "speed",
-            "value": "30 km/h",
+            "value": "60 km/h",
             "label": "Vitesse maximale"
           }
         },
@@ -203,7 +203,7 @@
           "type": "spec",
           "settings": {
             "icon": "battery",
-            "value": "36 V / 7,8 Ah",
+            "value": "52 V / 20 Ah",
             "label": "Capacité de batterie"
           }
         },
@@ -211,7 +211,7 @@
           "type": "spec",
           "settings": {
             "icon": "range",
-            "value": "25-30 km",
+            "value": "90-100  km",
             "label": "Autonomie"
           }
         },
