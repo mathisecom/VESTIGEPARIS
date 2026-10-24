@@ -15,8 +15,8 @@
         "heading_9M63yp": {
           "type": "heading",
           "settings": {
-            "text": "Heading",
-            "heading_tag": "h3"
+            "text": "La liberté commence à chaque trajet.",
+            "heading_tag": "h2"
           }
         },
         "button_DEFVeT": {
@@ -46,7 +46,7 @@
         "external_video_url": "",
         "text_color": "#ffffff",
         "overlay_color": "#000000",
-        "overlay_opacity": 40
+        "overlay_opacity": 50
       }
     },
     "reassuranceicons_PdXdib": {
@@ -827,12 +827,12 @@
         "question_size_mobile": 14,
         "answer_size": 14,
         "answer_size_mobile": 14,
-        "bg_color": "#FFFFFF",
+        "bg_color": "#ffffff",
         "title_color": "#252525",
         "category_color": "#242424",
         "question_color": "#373737",
         "answer_color": "#686868",
-        "divider_color": "#DEDEDE",
+        "divider_color": "#dedede",
         "padding_top": 44,
         "padding_bottom": 54,
         "padding_sides": 24,
