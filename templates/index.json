@@ -12,6 +12,12 @@
     "video_cbL6Xp": {
       "type": "video",
       "blocks": {
+        "subheading_XXafd8": {
+          "type": "subheading",
+          "settings": {
+            "text": "DÉCOUVREZ NOTRE GAMME E-RYD"
+          }
+        },
         "heading_9M63yp": {
           "type": "heading",
           "settings": {
@@ -32,6 +38,7 @@
         }
       },
       "block_order": [
+        "subheading_XXafd8",
         "heading_9M63yp",
         "button_DEFVeT"
       ],
