@@ -211,7 +211,7 @@
           "type": "spec",
           "settings": {
             "icon": "range",
-            "value": "25-30 km",
+            "value": "120‑250  km",
             "label": "Autonomie"
           }
         },
