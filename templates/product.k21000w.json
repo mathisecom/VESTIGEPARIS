@@ -523,6 +523,7 @@
       "name": "Bannière suspension",
       "settings": {
         "image_pc": "shopify://shop_images/2b8a524c-be30-4571-a78c-f9e28f1fe9ba.png",
+        "image_mobile": "shopify://shop_images/df82e523-0232-4786-a571-8ce0cfc1b321.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
@@ -560,7 +561,7 @@
         "radius_mobile": 0,
         "content_width_mobile": 400,
         "align_mobile": "flex-start",
-        "vertical_mobile": "center",
+        "vertical_mobile": "flex-start",
         "text_align_mobile": "left",
         "heading_size_mobile": 28,
         "text_size_mobile": 14,
