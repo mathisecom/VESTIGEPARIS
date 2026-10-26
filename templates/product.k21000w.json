@@ -219,7 +219,7 @@
           "type": "spec",
           "settings": {
             "icon": "load",
-            "value": "100 kg",
+            "value": "150 kg",
             "label": "Charge maximale"
           }
         },
@@ -462,8 +462,6 @@
       "type": "bannieresuspension",
       "name": "Bannière suspension",
       "settings": {
-        "image_pc": "shopify://shop_images/27783004-92eb-48f2-95f5-82bff7839e7f.png",
-        "image_mobile": "shopify://shop_images/62c27025-a77f-4eb4-8982-75104f33ff08.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
@@ -520,8 +518,6 @@
       "type": "bannieresuspension",
       "name": "Bannière suspension",
       "settings": {
-        "image_pc": "shopify://shop_images/2b8a524c-be30-4571-a78c-f9e28f1fe9ba.png",
-        "image_mobile": "shopify://shop_images/df82e523-0232-4786-a571-8ce0cfc1b321.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
