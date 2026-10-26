@@ -203,7 +203,7 @@
           "type": "spec",
           "settings": {
             "icon": "battery",
-            "value": "36 V / 7,8 Ah",
+            "value": "48 V / 60 Ah",
             "label": "Capacité de batterie"
           }
         },
@@ -219,7 +219,7 @@
           "type": "spec",
           "settings": {
             "icon": "load",
-            "value": "100 kg",
+            "value": "120 kg",
             "label": "Charge maximale"
           }
         },
