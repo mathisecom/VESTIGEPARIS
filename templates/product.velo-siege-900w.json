@@ -730,6 +730,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Trotinette",
+            "image": "shopify://shop_images/apefox-c14-2026-239484-1786371199577737304.webp",
             "icon": "vehicle"
           }
         },
