@@ -659,7 +659,7 @@
           "settings": {
             "group": "technical",
             "label": "Moteur",
-            "value": "350 W"
+            "value": "2X1000 W"
           }
         },
         "spec_eyFaBx": {
@@ -730,6 +730,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Trotinette",
+            "image": "shopify://shop_images/81NzOCH9ZiL._AC_SL1500.webp",
             "icon": "vehicle"
           }
         },
