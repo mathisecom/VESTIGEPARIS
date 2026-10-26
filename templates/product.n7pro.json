@@ -728,6 +728,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Trotinette",
+            "image": "shopify://shop_images/1_df949ad4-bb37-48d6-94ac-0b197ebcc3ad.webp",
             "icon": "vehicle"
           }
         },
