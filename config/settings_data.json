@@ -39,6 +39,7 @@
     "text_font_letter_spacing": -2,
     "heading_apparition": "split_fade",
     "color_swatch_config": "Noir : #181916\nBlanc : #F9F9F9\nBleu : #ADD3D8\nRose : #F4BAD0\nNoir Mat : #3E4046\nVert:#AFE764\nRouge: #DA484D",
+    "show_sold_out_badge": false,
     "discount_mode": "percentage",
     "product_color_display": "swatch",
     "product_info_alignment": "center",
@@ -150,16 +151,16 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".shopify-pc__banner__dialog{left:12px!important;bottom:12px!important;width:min(520px,calc(100vw - 24px))!important;max-height:90dvh!important;overflow:auto!important;background:#111!important;padding:20px!important;border-radius:20px!important;box-sizing:border-box!important}",
-      ".shopify-pc__banner__wrapper{flex-direction:column!important;align-items:stretch!important}",
-      ".shopify-pc__banner__body{width:100%!important;margin:0 0 12px!important}",
-      ".shopify-pc__banner__btns{flex-direction:column!important;min-width:0!important;width:100%!important;gap:10px!important}",
-      ".shopify-pc__banner__dialog h2{color:#fff!important;font-size:22px!important;padding-left:38px!important;background:radial-gradient(at 9px 9px,#111 2px,transparent 3px),radial-gradient(at 20px 15px,#111 2px,transparent 3px),radial-gradient(at 12px 21px,#111 2px,transparent 3px),radial-gradient(at 15px 15px,#fff 14px,transparent 15px);background-repeat:no-repeat}",
-      ".shopify-pc__banner__dialog p{color:#ddd!important;font-size:14px!important}",
-      ".shopify-pc__banner__dialog a{color:#fff!important}",
-      ".shopify-pc__banner__dialog button{flex:none!important;width:100%!important;margin:0!important;padding:12px!important;border-radius:30px!important}",
-      ".shopify-pc__banner__btn-accept{background:#fff!important;color:#111!important}",
-      ".shopify-pc__banner__btn-decline,.shopify-pc__banner__btn-manage-prefs{background:transparent!important;color:#fff!important;border:1px solid #aaa!important}"
+      ".shopify-pc__banner__dialog {left: 12px !important; bottom: 12px !important; width: min(520px, calc(100vw - 24px)) !important; max-height: 90dvh !important; overflow: auto !important; background: #111 !important; padding: 20px !important; border-radius: 20px !important; box-sizing: border-box !important;}",
+      ".shopify-pc__banner__wrapper {flex-direction: column !important; align-items: stretch !important;}",
+      ".shopify-pc__banner__body {width: 100% !important; margin: 0 0 12px !important;}",
+      ".shopify-pc__banner__btns {flex-direction: column !important; min-width: 0 !important; width: 100% !important; gap: 10px !important;}",
+      ".shopify-pc__banner__dialog h2 {color: #fff !important; font-size: 22px !important; padding-left: 38px !important; background: radial-gradient(at 9px 9px, #111 2px, transparent 3px), radial-gradient(at 20px 15px, #111 2px, transparent 3px), radial-gradient(at 12px 21px, #111 2px, transparent 3px), radial-gradient(at 15px 15px, #fff 14px, transparent 15px); background-repeat: no-repeat;}",
+      ".shopify-pc__banner__dialog p {color: #ddd !important; font-size: 14px !important;}",
+      ".shopify-pc__banner__dialog a {color: #fff !important;}",
+      ".shopify-pc__banner__dialog button {flex: none !important; width: 100% !important; margin: 0 !important; padding: 12px !important; border-radius: 30px !important;}",
+      ".shopify-pc__banner__btn-accept {background: #fff !important; color: #111 !important;}",
+      ".shopify-pc__banner__btn-decline,.shopify-pc__banner__btn-manage-prefs {background: transparent !important; color: #fff !important; border: 1px solid #aaa !important;}"
     ]
   }
 }
