@@ -150,14 +150,14 @@
   },
   "platform_customizations": {
     "custom_css": [
-      ".shopify-pc__banner__dialog {left: 50% !important; bottom: 20px !important; transform: translateX(-50%); width: calc(100% - 32px) !important; max-width: 480px !important; max-height: calc(100dvh - 40px); overflow-y: auto; padding: 24px !important; border-radius: 18px !important; background: #fff !important; box-shadow: 0 10px 45px #0002 !important; box-sizing: border-box; font-family: Manrope, sans-serif !important;}",
-      ".shopify-pc__banner__dialog h2 {font-size: 20px !important; font-weight: 700 !important; line-height: 1.3; margin-bottom: 12px !important;}",
-      ".shopify-pc__banner__dialog p {font-size: 13px !important; line-height: 1.65 !important; color: #666 !important;}",
-      ".shopify-pc__banner__btns {display: flex !important; gap: 10px !important; width: 100%;}",
-      ".shopify-pc__banner__dialog button {flex: 1 1 0; margin: 10px 0 0 !important; padding: 13px 12px !important; border-radius: 9px !important; font-size: 14px !important; font-weight: 600 !important; cursor: pointer;}",
-      ".shopify-pc__banner__btn-accept {background: #171717 !important; color: #fff !important;}",
-      ".shopify-pc__banner__btn-decline {background: #fff !important; color: #171717 !important; border: 1px solid #ddd !important;}",
-      "@media (max-width: 600px) {.shopify-pc__banner__dialog {bottom: 12px !important; padding: 20px !important; } .shopify-pc__banner__btns {flex-direction: column !important; } .shopify-pc__banner__dialog button {width: 100%; flex: auto; }}"
+      ".shopify-pc__banner__dialog {background: #101010 !important; color: white !important; border-radius: 20px !important; padding: 24px !important; max-width: 420px !important; max-height: 90vh; overflow-y: auto; box-shadow: 0 12px 35px #0005 !important; font-family: Manrope, sans-serif !important;}",
+      ".shopify-pc__banner__dialog h2 {color: white !important; font-size: 22px !important; font-weight: 700 !important;}",
+      ".shopify-pc__banner__dialog p {color: #ddd !important; font-size: 14px !important; line-height: 1.6 !important;}",
+      ".shopify-pc__banner__dialog a {color: white !important;}",
+      ".shopify-pc__banner__dialog button {border-radius: 50px !important; font-family: Manrope, sans-serif !important; font-size: 15px !important; font-weight: 600 !important; padding: 13px !important; width: 100% !important;}",
+      ".shopify-pc__banner__btn-accept {background: white !important; color: #111 !important; border: 1px solid white !important;}",
+      ".shopify-pc__banner__btn-decline,.shopify-pc__banner__btn-manage-prefs {background: transparent !important; color: white !important; border: 1px solid #aaa !important;}",
+      "@media (max-width: 749px) {.shopify-pc__banner__dialog {width: calc(100% - 24px) !important; padding: 20px !important; border-radius: 18px !important; }}"
     ]
   }
 }
