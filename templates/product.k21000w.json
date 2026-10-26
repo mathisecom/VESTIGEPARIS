@@ -651,7 +651,7 @@
           "settings": {
             "group": "technical",
             "label": "Moteur",
-            "value": "350 W"
+            "value": "1000 W"
           }
         },
         "spec_eyFaBx": {
@@ -659,7 +659,7 @@
           "settings": {
             "group": "technical",
             "label": "Vitesse maximale",
-            "value": "Jusqu'à 30 km/h"
+            "value": "Jusqu'à 45 km/h"
           }
         },
         "spec_TAADTA": {
@@ -667,7 +667,7 @@
           "settings": {
             "group": "technical",
             "label": "Autonomie maximale",
-            "value": "60 km (jusqu'à 113 km avec assistance)"
+            "value": "60 km"
           }
         },
         "spec_xtUVM3": {
