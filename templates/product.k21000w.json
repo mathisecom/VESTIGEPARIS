@@ -722,6 +722,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Trotinette",
+            "image": "shopify://shop_images/Nouveauprojet_54_6684fdd7-4c3b-4bba-a637-ac1e46c37c7f.webp",
             "icon": "vehicle"
           }
         },
