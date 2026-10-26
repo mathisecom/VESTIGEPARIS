@@ -612,7 +612,7 @@
         "transition_type": "fade_with_text",
         "autoplay": false,
         "cycle_speed": 6,
-        "background": "#F2F2F2",
+        "background": "#f2f2f2",
         "background_gradient": ""
       }
     },
@@ -697,7 +697,7 @@
           "settings": {
             "group": "technical",
             "label": "Moteur",
-            "value": "350 W"
+            "value": "2000 W"
           }
         },
         "spec_eyFaBx": {
@@ -705,7 +705,7 @@
           "settings": {
             "group": "technical",
             "label": "Vitesse maximale",
-            "value": "Jusqu'à 30 km/h"
+            "value": "Jusqu'à 60 km/h"
           }
         },
         "spec_TAADTA": {
@@ -713,7 +713,7 @@
           "settings": {
             "group": "technical",
             "label": "Autonomie maximale",
-            "value": "60 km (jusqu'à 113 km avec assistance)"
+            "value": "90 km (jusqu'à 110 km avec assistance)"
           }
         },
         "spec_xtUVM3": {
@@ -721,7 +721,7 @@
           "settings": {
             "group": "technical",
             "label": "Batterie",
-            "value": "48 V - 15,6 Ah, amovible"
+            "value": "52 V / 20 Ah, amovible"
           }
         },
         "spec_wykraC": {
@@ -729,7 +729,7 @@
           "settings": {
             "group": "technical",
             "label": "Temps de charge",
-            "value": "6 à 7 heures"
+            "value": "9 à 10 heures"
           }
         },
         "spec_WtmeKC": {
