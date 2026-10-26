@@ -406,6 +406,7 @@
       "type": "bannieresuspension",
       "name": "Bannière suspension",
       "settings": {
+        "image_pc": "shopify://shop_images/8cc02751-eb56-4729-8ac7-5be1d264daa8.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
@@ -462,6 +463,7 @@
       "type": "bannieresuspension",
       "name": "Bannière suspension",
       "settings": {
+        "image_pc": "shopify://shop_images/02a0113e-a4ee-484a-aaac-6dae4e5163a0.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
@@ -518,6 +520,7 @@
       "type": "bannieresuspension",
       "name": "Bannière suspension",
       "settings": {
+        "image_pc": "shopify://shop_images/52cc04bd-4263-4407-8621-c12f0d334354.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
