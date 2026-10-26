@@ -404,7 +404,6 @@
     },
     "bannieresuspension_X7Lk7C": {
       "type": "bannieresuspension",
-      "disabled": true,
       "name": "Bannière suspension",
       "settings": {
         "image_pc": "shopify://shop_images/3a8fa9c8-8cf2-4bd0-bd0d-9396a5407ab6.png",
@@ -425,8 +424,8 @@
         "height_pc": 710,
         "radius_pc": 22,
         "content_width_pc": 620,
-        "align_pc": "flex-end",
-        "vertical_pc": "flex-end",
+        "align_pc": "flex-start",
+        "vertical_pc": "flex-start",
         "text_align_pc": "left",
         "heading_size_pc": 52,
         "text_size_pc": 17,
@@ -462,10 +461,9 @@
     },
     "bannieresuspension_C3yGGe": {
       "type": "bannieresuspension",
-      "disabled": true,
       "name": "Bannière suspension",
       "settings": {
-        "image_pc": "shopify://shop_images/102716d5-6326-4d92-bdda-607056c09de2.png",
+        "image_pc": "shopify://shop_images/9d98716d-ea5e-45fe-b1e1-911f5a14dc9f.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
@@ -520,10 +518,9 @@
     },
     "bannieresuspension_iQGQ3g": {
       "type": "bannieresuspension",
-      "disabled": true,
       "name": "Bannière suspension",
       "settings": {
-        "image_pc": "shopify://shop_images/61b3f45a-f965-4f61-b10e-b71df7582fa3.png",
+        "image_pc": "shopify://shop_images/f4d6b965-54cb-4c11-9aa1-b9e5e770267f.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
