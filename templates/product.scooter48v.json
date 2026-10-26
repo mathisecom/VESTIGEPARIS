@@ -406,8 +406,6 @@
       "type": "bannieresuspension",
       "name": "Bannière suspension",
       "settings": {
-        "image_pc": "shopify://shop_images/a3f01715-7689-4a93-89ff-730ca762810c.png",
-        "image_mobile": "shopify://shop_images/07e5c179-1c7e-439e-b503-e4b81e65188f.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
@@ -464,8 +462,6 @@
       "type": "bannieresuspension",
       "name": "Bannière suspension",
       "settings": {
-        "image_pc": "shopify://shop_images/27783004-92eb-48f2-95f5-82bff7839e7f.png",
-        "image_mobile": "shopify://shop_images/62c27025-a77f-4eb4-8982-75104f33ff08.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
@@ -522,7 +518,6 @@
       "type": "bannieresuspension",
       "name": "Bannière suspension",
       "settings": {
-        "image_pc": "shopify://shop_images/2b8a524c-be30-4571-a78c-f9e28f1fe9ba.png",
         "position_image_pc": "center center",
         "position_image_mobile": "center center",
         "fallback_color": "#b50000",
@@ -727,6 +722,7 @@
           "type": "pack_item",
           "settings": {
             "title": "Trotinette",
+            "image": "shopify://shop_images/a89e24e79770456aad3f92b989342577_c7962937-24f3-4242-8baf-5e41b9832a45.webp",
             "icon": "vehicle"
           }
         },
