@@ -675,7 +675,7 @@
           "settings": {
             "group": "technical",
             "label": "Autonomie maximale",
-            "value": "60 km (jusqu'à 113 km avec assistance)"
+            "value": "120 km (jusqu'à 250 km avec assistance)"
           }
         },
         "spec_xtUVM3": {
