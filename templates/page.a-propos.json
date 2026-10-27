@@ -11,12 +11,154 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "content_width": "100%"
+      }
+    },
+    "aproposeryd_ERiDqx": {
+      "type": "aproposeryd",
+      "blocks": {
+        "benefit_yU4Yid": {
+          "type": "benefit",
+          "settings": {
+            "icon": "bolt",
+            "icon_color": "red",
+            "title": "Mobilité moderne",
+            "text": "Des solutions électriques pensées pour vos besoins d’aujourd’hui."
+          }
+        },
+        "benefit_e88DQF": {
+          "type": "benefit",
+          "settings": {
+            "icon": "compass",
+            "icon_color": "black",
+            "title": "Liberté au quotidien",
+            "text": "Davantage de souplesse pour vous déplacer à votre rythme."
+          }
+        },
+        "benefit_pchzRq": {
+          "type": "benefit",
+          "settings": {
+            "icon": "shield",
+            "icon_color": "red",
+            "title": "Choix éclairé",
+            "text": "Des informations présentées clairement pour comparer les modèles."
+          }
+        },
+        "image_text_TCY9jA": {
+          "type": "image_text",
+          "settings": {
+            "reverse": false,
+            "kicker": "Notre spécialité",
+            "heading": "Une sélection qui va à l’essentiel.",
+            "body": "<p>La trottinette électrique est au cœur d’E-RYD. Nous mettons en avant des modèles aux usages variés, pour vous aider à faire un choix éclairé.</p><p>Autonomie, confort et praticité : découvrez les caractéristiques qui comptent.</p>",
+            "tags": "Autonomie, Confort, Praticité, Design",
+            "button_label": "Explorer la sélection",
+            "button_link": ""
+          }
+        },
+        "image_banner_8C447z": {
+          "type": "image_banner",
+          "settings": {
+            "height": 450,
+            "align": "left",
+            "kicker": "Votre quotidien, votre rythme",
+            "heading": "Plus de liberté. Moins de contraintes.",
+            "body": "<p>Pour vos trajets personnels ou vos déplacements du quotidien, la mobilité électrique ouvre de nouvelles possibilités.</p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "step_yznQKb": {
+          "type": "step",
+          "settings": {
+            "number": "01 / DÉCOUVRIR",
+            "title": "Des produits bien présentés",
+            "text": "Les caractéristiques essentielles à portée de main."
+          }
+        },
+        "step_pjhzpA": {
+          "type": "step",
+          "settings": {
+            "number": "02 / CHOISIR",
+            "title": "Des conditions transparentes",
+            "text": "Retrouvez les informations de livraison, de retour et de garantie."
+          }
+        },
+        "step_qEAaCh": {
+          "type": "step",
+          "settings": {
+            "number": "03 / ÊTRE ACCOMPAGNÉ",
+            "title": "Un contact à votre écoute",
+            "text": "Notre service client répond à vos questions avant et après achat."
+          }
+        }
+      },
+      "block_order": [
+        "benefit_yU4Yid",
+        "benefit_e88DQF",
+        "benefit_pchzRq",
+        "image_text_TCY9jA",
+        "image_banner_8C447z",
+        "step_yznQKb",
+        "step_pjhzpA",
+        "step_qEAaCh"
+      ],
+      "name": "E-RYD - À propos",
+      "settings": {
+        "show_hero": true,
+        "show_intro": true,
+        "show_reassurance": true,
+        "show_bottom": true,
+        "color_ink": "#111214",
+        "color_red": "#D62E2E",
+        "color_bg": "#FFFFFF",
+        "color_panel": "#F5F5F5",
+        "color_muted": "#666B73",
+        "color_border": "#E6E6E8",
+        "bottom_bg": "#111214",
+        "container_width": 1180,
+        "corner_radius": 12,
+        "button_radius": 7,
+        "content_gap": 60,
+        "content_gap_mobile": 26,
+        "space_top": 90,
+        "space_top_mobile": 60,
+        "space_bottom": 80,
+        "space_bottom_mobile": 55,
+        "hero_title_pc": 65,
+        "hero_title_mobile": 37,
+        "heading_pc": 40,
+        "heading_mobile": 29,
+        "hero_height_pc": 530,
+        "hero_height_mobile": 560,
+        "hero_text_width": 650,
+        "hero_shade": 80,
+        "hero_shade_mobile": 85,
+        "hero_align": "left",
+        "hero_kicker": "À propos d’E-RYD",
+        "hero_title": "La mobilité électrique,",
+        "hero_title_accent": "en toute liberté.",
+        "hero_text": "<p>Un univers pensé pour celles et ceux qui veulent se déplacer autrement, avec plus de simplicité et de liberté au quotidien.</p>",
+        "hero_button": "Découvrir nos modèles",
+        "hero_link": "",
+        "intro_kicker": "L’univers E-RYD",
+        "intro_title": "Une autre façon d’imaginer vos déplacements.",
+        "intro_text": "<p>Chez <strong>E-RYD</strong>, nous croyons à une mobilité qui s’adapte à votre rythme. Notre sélection de trottinettes électriques accompagne les nouveaux usages, les trajets quotidiens et l’envie de profiter de chaque parcours.</p>",
+        "reassurance_kicker": "Notre engagement",
+        "reassurance_title": "Une expérience d’achat simple et rassurante.",
+        "reassurance_text": "<p>Un achat se décide plus facilement lorsqu’on dispose des bonnes informations. E-RYD souhaite rendre chaque étape claire et accessible.</p>",
+        "bottom_kicker": "E-RYD · Avancez librement",
+        "bottom_title": "Prêt à changer votre manière de vous déplacer ?",
+        "bottom_text": "<p>Découvrez notre univers et trouvez la trottinette électrique qui correspond à votre quotidien.</p>",
+        "bottom_button": "Voir les trottinettes",
+        "bottom_link": ""
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "aproposeryd_ERiDqx"
   ]
 }
