@@ -203,7 +203,7 @@
           "type": "spec",
           "settings": {
             "icon": "battery",
-            "value": "36 V / 7,8 Ah",
+            "value": "48 V - 15,6 Ah",
             "label": "Capacité de batterie"
           }
         },
@@ -227,7 +227,7 @@
           "type": "spec",
           "settings": {
             "icon": "charge",
-            "value": "5 à 6 h",
+            "value": "6 à 7 h",
             "label": "Temps de charge"
           }
         }
