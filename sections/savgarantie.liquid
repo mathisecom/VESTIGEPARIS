@@ -1,0 +1,432 @@
+{% comment %}
+  E-RYD — SAV & Garanties | Section Shopify 2.0
+  Ajouter dans /sections/eryd-sav-garanties.liquid
+  Puis Personnaliser > modèle de page > Ajouter une section > E-RYD - SAV & Garanties.
+  Aucun JavaScript et aucune application requis.
+{% endcomment %}
+
+{% liquid
+  assign sav_email = section.settings.contact_email | default: 'contact@e-ryd.com'
+  assign sav_email_href = sav_email | prepend: 'mailto:'
+  assign sav_policy_url = section.settings.policy_url | default: '/pages/politique-de-remboursement'
+  assign sav_hero = section.settings.hero_image
+  if sav_hero == blank
+    assign sav_hero = section.settings.hero_mobile_image
+  endif
+%}
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap');
+
+  #eryd-sav-{{ section.id }} {
+    --es-ink: {{ section.settings.text_color }};
+    --es-accent: {{ section.settings.accent_color }};
+    --es-background: {{ section.settings.background_color }};
+    --es-soft: {{ section.settings.card_color }};
+    --es-muted: {{ section.settings.muted_color }};
+    --es-line: {{ section.settings.border_color }};
+    --es-radius: {{ section.settings.corner_radius }}px;
+    --es-max: {{ section.settings.max_width }}px;
+    background: var(--es-background);
+    color: var(--es-ink);
+    width: 100%;
+    font-family: 'Manrope', sans-serif !important;
+    padding-top: {{ section.settings.padding_top }}px;
+    padding-bottom: {{ section.settings.padding_bottom }}px;
+    overflow: hidden;
+  }
+  #eryd-sav-{{ section.id }} *,
+  #eryd-sav-{{ section.id }} *::before,
+  #eryd-sav-{{ section.id }} *::after { box-sizing: border-box; }
+  #eryd-sav-{{ section.id }} :is(h1,h2,h3,p,span,a,strong,small,li,div) {
+    font-family: 'Manrope', sans-serif !important;
+  }
+  #eryd-sav-{{ section.id }} :is(h1,h2,h3,p) { margin: 0; padding: 0; }
+  #eryd-sav-{{ section.id }} h1,
+  #eryd-sav-{{ section.id }} h2,
+  #eryd-sav-{{ section.id }} h3 { letter-spacing: -.04em; font-weight: 800; }
+  #eryd-sav-{{ section.id }} p { line-height: 1.78; }
+  #eryd-sav-{{ section.id }} a { text-decoration: none; }
+  #eryd-sav-{{ section.id }} a:focus-visible { outline: 3px solid var(--es-accent); outline-offset: 3px; }
+  #eryd-sav-{{ section.id }} .es-container { width: min(var(--es-max), calc(100% - 64px)); margin-inline: auto; }
+  #eryd-sav-{{ section.id }} .es-kicker {
+    display: inline-flex; align-items: center; gap: 10px;
+    font-size: 10px; letter-spacing: .16em; text-transform: uppercase;
+    font-weight: 800; color: var(--es-muted);
+  }
+  #eryd-sav-{{ section.id }} .es-kicker::before {
+    content: ''; width: 25px; height: 3px; background: var(--es-accent); flex-shrink: 0;
+  }
+  #eryd-sav-{{ section.id }} .es-richtext > * + * { margin-top: 10px; }
+  #eryd-sav-{{ section.id }} .es-richtext a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+  #eryd-sav-{{ section.id }} .es-richtext :is(ul,ol) { padding-left: 20px; }
+  #eryd-sav-{{ section.id }} .es-btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 14px;
+    min-height: 47px; padding: 12px 21px; border-radius: {{ section.settings.button_radius }}px;
+    background: var(--es-ink); color: #fff !important; border: 1px solid var(--es-ink);
+    text-align: center; font-size: 12px; font-weight: 800; line-height: 1.5;
+    transition: background .2s, border-color .2s, transform .2s;
+  }
+  #eryd-sav-{{ section.id }} .es-btn:hover { background: var(--es-accent); border-color: var(--es-accent); transform: translateY(-2px); }
+  #eryd-sav-{{ section.id }} .es-btn--outline {
+    color: var(--es-ink) !important; background: transparent; border-color: var(--es-line);
+  }
+  #eryd-sav-{{ section.id }} .es-btn--outline:hover { color: #fff !important; }
+  #eryd-sav-{{ section.id }} .es-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; flex: 0 0 auto; }
+
+  /* HERO : texte blanc, accents rouge/noir, photographie optionnelle */
+  #eryd-sav-{{ section.id }} .es-hero {
+    display: grid; grid-template-columns: .92fr 1.08fr; min-height: {{ section.settings.hero_height }}px;
+    border-radius: var(--es-radius); overflow: hidden; background: #111214;
+  }
+  #eryd-sav-{{ section.id }} .es-hero-copy {
+    position: relative; display: flex; flex-direction: column; justify-content: center; align-items: flex-start;
+    padding: clamp(28px,5vw,68px); background: {{ section.settings.hero_background }}; isolation: isolate;
+  }
+  #eryd-sav-{{ section.id }} .es-hero-copy::after {
+    content: ''; position: absolute; z-index: -1; width: 230px; height: 230px;
+    border: 38px solid {{ section.settings.accent_color | color_modify: 'alpha', 0.10 }};
+    border-radius: 50%; bottom: -120px; right: -85px;
+  }
+  #eryd-sav-{{ section.id }} .es-hero-copy .es-kicker { color: #f3f3f3; }
+  #eryd-sav-{{ section.id }} .es-hero h1 {
+    font-size: {{ section.settings.title_size_pc }}px; line-height: 1.1; color: #fff;
+    margin: 20px 0 16px; max-width: 580px; overflow-wrap: anywhere;
+  }
+  #eryd-sav-{{ section.id }} .es-hero h1 .es-accent { color: var(--es-accent); }
+  #eryd-sav-{{ section.id }} .es-hero .es-richtext { color: #e1e1e1; font-size: 14px; max-width: 460px; }
+  #eryd-sav-{{ section.id }} .es-hero .es-btn { margin-top: 24px; background: #fff; color: #111214 !important; border-color: #fff; }
+  #eryd-sav-{{ section.id }} .es-hero .es-btn:hover { background: var(--es-accent); border-color: var(--es-accent); color: #fff !important; }
+  #eryd-sav-{{ section.id }} .es-hero-media { position: relative; min-height: 100%; background: #252525; overflow: hidden; }
+  #eryd-sav-{{ section.id }} .es-hero-media::before {
+    content: ''; position: absolute; top: 0; left: 0; height: 100%; width: 11px;
+    background: var(--es-accent); z-index: 2; transform: skew(-12deg) translateX(-5px);
+  }
+  #eryd-sav-{{ section.id }} .es-hero-media picture,
+  #eryd-sav-{{ section.id }} .es-hero-media img { width: 100%; height: 100%; display: block; }
+  #eryd-sav-{{ section.id }} .es-hero-media img {
+    object-fit: cover; object-position: {{ section.settings.hero_image_position }};
+  }
+  #eryd-sav-{{ section.id }} .es-hero-placeholder {
+    height: 100%; min-height: 350px; display: flex; align-items: center; justify-content: center;
+    position: relative; isolation: isolate; background: linear-gradient(145deg,#222 0%,#373737 52%,#111 100%);
+  }
+  #eryd-sav-{{ section.id }} .es-hero-placeholder::before {
+    content: ''; position: absolute; width: 300px; height: 300px; border: 1px solid #ffffff26; border-radius: 50%; z-index: -1;
+  }
+  #eryd-sav-{{ section.id }} .es-hero-placeholder svg { width: 138px; height: 138px; fill: none; stroke: #f7f7f7; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+  #eryd-sav-{{ section.id }} .es-hero-placeholder::after {
+    content: 'E-RYD'; position: absolute; bottom: 23px; right: 28px;
+    font-size: 10px; font-weight: 800; letter-spacing: .3em; color: #ffffff95;
+  }
+
+  /* 3 ou 4 cartes avec icônes configurables */
+  #eryd-sav-{{ section.id }} .es-info { padding-top: 59px; }
+  #eryd-sav-{{ section.id }} .es-section-header {
+    display: flex; justify-content: space-between; align-items: end; gap: 24px; margin-bottom: 23px;
+  }
+  #eryd-sav-{{ section.id }} .es-section-header h2 {
+    font-size: {{ section.settings.heading_size_pc }}px; line-height: 1.2;
+    margin-top: 12px; max-width: 720px;
+  }
+  #eryd-sav-{{ section.id }} .es-section-header .es-richtext {
+    font-size: 13px; color: var(--es-muted); max-width: 360px;
+  }
+  #eryd-sav-{{ section.id }} .es-cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
+  #eryd-sav-{{ section.id }} .es-card {
+    background: var(--es-soft); border: 1px solid var(--es-line);
+    border-radius: var(--es-radius); padding: clamp(21px,2.8vw,32px);
+    display: flex; flex-direction: column; align-items: flex-start; min-width: 0;
+  }
+  #eryd-sav-{{ section.id }} .es-icon {
+    display: grid; place-items: center; width: 51px; height: 51px;
+    border-radius: 50%; background: var(--es-background); color: var(--es-accent);
+    margin-bottom: 19px; border: 1px solid var(--es-line);
+  }
+  #eryd-sav-{{ section.id }} .es-icon--black { color: var(--es-ink); }
+  #eryd-sav-{{ section.id }} .es-icon svg { width: 25px; height: 25px; stroke: currentColor; fill: none; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+  #eryd-sav-{{ section.id }} .es-card h3 { font-size: 17px; margin-bottom: 9px; line-height: 1.36; }
+  #eryd-sav-{{ section.id }} .es-card .es-richtext { color: var(--es-muted); font-size: 13px; }
+  #eryd-sav-{{ section.id }} .es-card .es-richtext strong { color: var(--es-ink); }
+
+  /* Mode d'emploi SAV en 3 étapes */
+  #eryd-sav-{{ section.id }} .es-process {
+    display: grid; grid-template-columns: minmax(0,.62fr) minmax(0,1.38fr);
+    align-items: start; gap: 50px; padding: 62px 0 55px;
+  }
+  #eryd-sav-{{ section.id }} .es-process-heading h2 { font-size: {{ section.settings.heading_size_pc }}px; line-height: 1.2; margin: 15px 0 13px; }
+  #eryd-sav-{{ section.id }} .es-process-heading .es-richtext { font-size: 13px; color: var(--es-muted); }
+  #eryd-sav-{{ section.id }} .es-process-list { border-top: 1px solid var(--es-line); }
+  #eryd-sav-{{ section.id }} .es-process-step {
+    display: grid; grid-template-columns: 55px 1fr; gap: 17px;
+    padding: 19px 0; border-bottom: 1px solid var(--es-line);
+  }
+  #eryd-sav-{{ section.id }} .es-step-number { color: var(--es-accent); font-size: 15px; font-weight: 800; letter-spacing: -.02em; padding-top: 1px; }
+  #eryd-sav-{{ section.id }} .es-process-step h3 { font-size: 15px; margin-bottom: 5px; }
+  #eryd-sav-{{ section.id }} .es-process-step .es-richtext { color: var(--es-muted); font-size: 13px; }
+
+  /* Bandeau de contact et lien vers la politique de retour */
+  #eryd-sav-{{ section.id }} .es-contact {
+    display: flex; justify-content: space-between; align-items: center; gap: 32px;
+    padding: 30px clamp(24px,4vw,42px);
+    border-radius: var(--es-radius); background: var(--es-soft); border: 1px solid var(--es-line);
+  }
+  #eryd-sav-{{ section.id }} .es-contact h2 { font-size: 23px; line-height: 1.2; margin-bottom: 7px; }
+  #eryd-sav-{{ section.id }} .es-contact .es-richtext { font-size: 13px; color: var(--es-muted); }
+  #eryd-sav-{{ section.id }} .es-contact-actions { display: flex; flex-wrap: wrap; gap: 9px; justify-content: flex-end; flex: 0 0 auto; }
+  #eryd-sav-{{ section.id }} .es-note { margin-top: 20px; color: var(--es-muted); font-size: 11px; line-height: 1.7; }
+  #eryd-sav-{{ section.id }} .es-note a { color: var(--es-ink); text-decoration: underline; text-underline-offset: 2px; }
+
+  @media (max-width: 990px) {
+    #eryd-sav-{{ section.id }} .es-container { width: calc(100% - 44px); }
+    #eryd-sav-{{ section.id }} .es-hero-copy { padding: 34px; }
+    #eryd-sav-{{ section.id }} .es-cards { gap: 10px; }
+    #eryd-sav-{{ section.id }} .es-card { padding: 22px; }
+    #eryd-sav-{{ section.id }} .es-process { gap: 27px; }
+    #eryd-sav-{{ section.id }} .es-contact { flex-wrap: wrap; }
+    #eryd-sav-{{ section.id }} .es-contact-actions { justify-content: flex-start; }
+  }
+  @media (max-width: 749px) {
+    #eryd-sav-{{ section.id }} { padding-top: {{ section.settings.padding_top_mobile }}px; padding-bottom: {{ section.settings.padding_bottom_mobile }}px; }
+    #eryd-sav-{{ section.id }} .es-container { width: calc(100% - 32px); }
+    #eryd-sav-{{ section.id }} .es-hero { grid-template-columns: 1fr; }
+    #eryd-sav-{{ section.id }} .es-hero-copy { padding: 30px 24px 31px; order: 1; }
+    #eryd-sav-{{ section.id }} .es-hero h1 { font-size: {{ section.settings.title_size_mobile }}px; margin: 15px 0 11px; }
+    #eryd-sav-{{ section.id }} .es-hero .es-richtext { font-size: 12px; }
+    #eryd-sav-{{ section.id }} .es-hero-media { min-height: {{ section.settings.image_height_mobile }}px; height: {{ section.settings.image_height_mobile }}px; order: 0; }
+    #eryd-sav-{{ section.id }} .es-hero-media::before { width: 100%; height: 8px; top: auto; bottom: 0; left: 0; transform: none; }
+    #eryd-sav-{{ section.id }} .es-hero-media img { object-position: {{ section.settings.hero_image_position_mobile }}; }
+    #eryd-sav-{{ section.id }} .es-hero-placeholder { min-height: 0; height: 100%; }
+    #eryd-sav-{{ section.id }} .es-hero-placeholder svg { width: 100px; height: 100px; }
+    #eryd-sav-{{ section.id }} .es-info { padding-top: 39px; }
+    #eryd-sav-{{ section.id }} .es-section-header { display: block; margin-bottom: 20px; }
+    #eryd-sav-{{ section.id }} .es-section-header h2,
+    #eryd-sav-{{ section.id }} .es-process-heading h2 { font-size: {{ section.settings.heading_size_mobile }}px; }
+    #eryd-sav-{{ section.id }} .es-section-header .es-richtext { margin-top: 10px; }
+    #eryd-sav-{{ section.id }} .es-cards { grid-template-columns: 1fr; gap: 10px; }
+    #eryd-sav-{{ section.id }} .es-card { display: grid; grid-template-columns: 47px 1fr; column-gap: 14px; padding: 19px; }
+    #eryd-sav-{{ section.id }} .es-icon { width: 45px; height: 45px; grid-row: span 2; margin: 0; }
+    #eryd-sav-{{ section.id }} .es-icon svg { width: 23px; height: 23px; }
+    #eryd-sav-{{ section.id }} .es-card h3 { font-size: 15px; margin-bottom: 3px; }
+    #eryd-sav-{{ section.id }} .es-card .es-richtext { font-size: 12px; }
+    #eryd-sav-{{ section.id }} .es-process { grid-template-columns: 1fr; gap: 24px; padding: 43px 0 37px; }
+    #eryd-sav-{{ section.id }} .es-process-step { grid-template-columns: 39px 1fr; gap: 10px; padding: 15px 0; }
+    #eryd-sav-{{ section.id }} .es-contact { padding: 26px 21px; display: block; }
+    #eryd-sav-{{ section.id }} .es-contact h2 { font-size: 21px; }
+    #eryd-sav-{{ section.id }} .es-contact-actions { margin-top: 20px; justify-content: stretch; flex-direction: column; }
+    #eryd-sav-{{ section.id }} .es-contact-actions .es-btn { width: 100%; }
+    #eryd-sav-{{ section.id }} .es-note { margin-top: 17px; font-size: 11px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    #eryd-sav-{{ section.id }} .es-btn { transition: none; }
+    #eryd-sav-{{ section.id }} .es-btn:hover { transform: none; }
+  }
+</style>
+
+<section id="eryd-sav-{{ section.id }}" aria-label="SAV et garanties E-RYD">
+  <div class="es-container">
+    {% if section.settings.show_hero %}
+      <div class="es-hero">
+        <div class="es-hero-copy">
+          {% if section.settings.kicker != blank %}<span class="es-kicker">{{ section.settings.kicker | escape }}</span>{% endif %}
+          <h1>{{ section.settings.hero_title | escape }}{% if section.settings.hero_accent != blank %}<br><span class="es-accent">{{ section.settings.hero_accent | escape }}</span>{% endif %}</h1>
+          {% if section.settings.hero_text != blank %}<div class="es-richtext">{{ section.settings.hero_text }}</div>{% endif %}
+          {% if section.settings.hero_button_text != blank %}
+            <a class="es-btn" href="{{ sav_email_href | escape }}">{{ section.settings.hero_button_text | escape }}
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </a>
+          {% endif %}
+        </div>
+        <div class="es-hero-media">
+          {% if sav_hero != blank %}
+            <picture>
+              {% if section.settings.hero_mobile_image != blank %}
+                <source media="(max-width: 749px)" srcset="{{ section.settings.hero_mobile_image | image_url: width: 750 }} 750w, {{ section.settings.hero_mobile_image | image_url: width: 1100 }} 1100w" sizes="100vw">
+              {% endif %}
+              {{ sav_hero | image_url: width: 1500 | image_tag: widths: '375,550,750,990,1200,1500', sizes: '(max-width: 749px) 100vw, 55vw', loading: 'eager' }}
+            </picture>
+          {% else %}
+            <div class="es-hero-placeholder" aria-hidden="true">
+              <svg viewBox="0 0 120 120"><path d="M60 12 23 28v26c0 24 15 42 37 53 22-11 37-29 37-53V28L60 12Z"/><path d="m43 58 12 12 24-26"/><path d="M13 22h8M99 95h8M9 93h12"/></svg>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if section.settings.show_cards %}
+      <div class="es-info">
+        <div class="es-section-header">
+          <div>
+            {% if section.settings.cards_kicker != blank %}<span class="es-kicker">{{ section.settings.cards_kicker | escape }}</span>{% endif %}
+            {% if section.settings.cards_title != blank %}<h2>{{ section.settings.cards_title | escape }}</h2>{% endif %}
+          </div>
+          {% if section.settings.cards_text != blank %}<div class="es-richtext">{{ section.settings.cards_text }}</div>{% endif %}
+        </div>
+        <div class="es-cards">
+          {% for block in section.blocks %}
+            {% if block.type == 'info_card' %}
+              <article class="es-card" {{ block.shopify_attributes }}>
+                <span class="es-icon {% if block.settings.icon_color == 'black' %}es-icon--black{% endif %}" aria-hidden="true">
+                  {% case block.settings.icon %}
+                    {% when 'shield' %}<svg viewBox="0 0 24 24"><path d="M12 3 4 7v5c0 4.6 3.2 7.9 8 9 4.8-1.1 8-4.4 8-9V7l-8-4Z"/><path d="m8.3 12.3 2.3 2.4 5-5.5"/></svg>
+                    {% when 'return' %}<svg viewBox="0 0 24 24"><path d="M3 11a9 9 0 1 1 2.4 6.1"/><path d="M3 4v7h7"/><path d="M9 13h6M12 10l3 3-3 3"/></svg>
+                    {% when 'tools' %}<svg viewBox="0 0 24 24"><path d="M14.6 6.1a5 5 0 0 0-6.3 6.4L3 17.8 6.2 21l5.4-5.4a5 5 0 0 0 6.3-6.3l-3 3-3.1-3.1 2.8-3.1Z"/></svg>
+                    {% when 'chat' %}<svg viewBox="0 0 24 24"><path d="M20 11a8 8 0 0 1-8 8c-1.3 0-2.7-.3-3.8-.9L3 20l1.9-5.2A8 8 0 1 1 20 11Z"/><path d="M8 11h8M8 14h5"/></svg>
+                    {% when 'truck' %}<svg viewBox="0 0 24 24"><path d="M3 6h12v11H3zM15 10h3l3 3v4h-6"/><circle cx="7.5" cy="18" r="2"/><circle cx="18" cy="18" r="2"/></svg>
+                    {% when 'battery' %}<svg viewBox="0 0 24 24"><rect x="3" y="6" width="17" height="12" rx="2"/><path d="M22 10v4M11 9l-2 4h4l-2 3"/></svg>
+                    {% else %}<svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5 5.5-5.5"/></svg>
+                  {% endcase %}
+                </span>
+                {% if block.settings.title != blank %}<h3>{{ block.settings.title | escape }}</h3>{% endif %}
+                {% if block.settings.text != blank %}<div class="es-richtext">{{ block.settings.text }}</div>{% endif %}
+              </article>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if section.settings.show_process %}
+      <div class="es-process">
+        <div class="es-process-heading">
+          {% if section.settings.steps_kicker != blank %}<span class="es-kicker">{{ section.settings.steps_kicker | escape }}</span>{% endif %}
+          {% if section.settings.steps_title != blank %}<h2>{{ section.settings.steps_title | escape }}</h2>{% endif %}
+          {% if section.settings.steps_text != blank %}<div class="es-richtext">{{ section.settings.steps_text }}</div>{% endif %}
+        </div>
+        <div class="es-process-list">
+          {% assign sav_step_index = 0 %}
+          {% for block in section.blocks %}
+            {% if block.type == 'sav_step' %}
+              {% assign sav_step_index = sav_step_index | plus: 1 %}
+              <div class="es-process-step" {{ block.shopify_attributes }}>
+                <span class="es-step-number">{% if sav_step_index < 10 %}0{% endif %}{{ sav_step_index }}</span>
+                <div>
+                  {% if block.settings.title != blank %}<h3>{{ block.settings.title | escape }}</h3>{% endif %}
+                  {% if block.settings.text != blank %}<div class="es-richtext">{{ block.settings.text }}</div>{% endif %}
+                </div>
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    {% endif %}
+
+    {% if section.settings.show_contact %}
+      <div class="es-contact">
+        <div>
+          {% if section.settings.contact_title != blank %}<h2>{{ section.settings.contact_title | escape }}</h2>{% endif %}
+          {% if section.settings.contact_text != blank %}<div class="es-richtext">{{ section.settings.contact_text }}</div>{% endif %}
+        </div>
+        <div class="es-contact-actions">
+          {% if section.settings.contact_button != blank %}
+            <a class="es-btn" href="{{ sav_email_href | escape }}">{{ section.settings.contact_button | escape }}
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3z"/><path d="m3 6 9 7 9-7"/></svg>
+            </a>
+          {% endif %}
+          {% if section.settings.policy_button != blank %}
+            <a class="es-btn es-btn--outline" href="{{ sav_policy_url | escape }}">{{ section.settings.policy_button | escape }}
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-7-7 7 7-7 7"/></svg>
+            </a>
+          {% endif %}
+        </div>
+      </div>
+    {% endif %}
+    {% if section.settings.note != blank %}<div class="es-note es-richtext">{{ section.settings.note }}</div>{% endif %}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "E-RYD - SAV & Garanties",
+  "tag": "section",
+  "class": "eryd-sav-section",
+  "settings": [
+    {"type":"header","content":"Affichage"},
+    {"type":"checkbox","id":"show_hero","label":"Afficher la bannière","default":true},
+    {"type":"checkbox","id":"show_cards","label":"Afficher les garanties et retours","default":true},
+    {"type":"checkbox","id":"show_process","label":"Afficher les étapes de SAV","default":true},
+    {"type":"checkbox","id":"show_contact","label":"Afficher le contact final","default":true},
+    {"type":"header","content":"Couleurs"},
+    {"type":"color","id":"text_color","label":"Texte et bouton noir","default":"#111214"},
+    {"type":"color","id":"accent_color","label":"Rouge des icônes et détails","default":"#D62E2E"},
+    {"type":"color","id":"background_color","label":"Fond de page","default":"#FFFFFF"},
+    {"type":"color","id":"card_color","label":"Fond des cartes","default":"#F5F5F5"},
+    {"type":"color","id":"muted_color","label":"Textes secondaires","default":"#62666C"},
+    {"type":"color","id":"border_color","label":"Bordures","default":"#E6E6E8"},
+    {"type":"color","id":"hero_background","label":"Fond de la bannière","default":"#111214"},
+    {"type":"header","content":"Tailles et espacements"},
+    {"type":"range","id":"max_width","label":"Largeur maximale PC","min":900,"max":1400,"step":20,"unit":"px","default":1180},
+    {"type":"range","id":"corner_radius","label":"Arrondis des blocs","min":0,"max":36,"step":2,"unit":"px","default":18},
+    {"type":"range","id":"button_radius","label":"Arrondis des boutons","min":0,"max":40,"step":2,"unit":"px","default":22},
+    {"type":"range","id":"padding_top","label":"Espace haut PC","min":0,"max":120,"step":4,"unit":"px","default":48},
+    {"type":"range","id":"padding_bottom","label":"Espace bas PC","min":0,"max":120,"step":4,"unit":"px","default":64},
+    {"type":"range","id":"padding_top_mobile","label":"Espace haut mobile","min":0,"max":80,"step":4,"unit":"px","default":24},
+    {"type":"range","id":"padding_bottom_mobile","label":"Espace bas mobile","min":0,"max":80,"step":4,"unit":"px","default":40},
+    {"type":"range","id":"title_size_pc","label":"Titre principal PC","min":32,"max":68,"step":2,"unit":"px","default":50},
+    {"type":"range","id":"title_size_mobile","label":"Titre principal mobile","min":26,"max":44,"step":2,"unit":"px","default":34},
+    {"type":"range","id":"heading_size_pc","label":"Titres de sections PC","min":24,"max":48,"step":2,"unit":"px","default":32},
+    {"type":"range","id":"heading_size_mobile","label":"Titres sections mobile","min":20,"max":38,"step":2,"unit":"px","default":26},
+    {"type":"header","content":"Bannière principale"},
+    {"type":"text","id":"kicker","label":"Petit titre","default":"L'ASSISTANCE E-RYD"},
+    {"type":"text","id":"hero_title","label":"Titre principal","default":"SAV &"},
+    {"type":"text","id":"hero_accent","label":"Ligne de titre rouge","default":"garanties."},
+    {"type":"richtext","id":"hero_text","label":"Description","default":"<p>Une question, un retour ou une demande de réparation ? E-RYD vous accompagne avec des informations claires et une prise en charge adaptée.</p>"},
+    {"type":"text","id":"hero_button_text","label":"Bouton bannière","default":"Contacter le SAV"},
+    {"type":"image_picker","id":"hero_image","label":"Photo principale PC"},
+    {"type":"image_picker","id":"hero_mobile_image","label":"Photo différente sur mobile"},
+    {"type":"select","id":"hero_image_position","label":"Cadrage photo PC","options":[{"value":"center center","label":"Centré"},{"value":"center top","label":"Haut"},{"value":"center bottom","label":"Bas"},{"value":"left center","label":"Gauche"},{"value":"right center","label":"Droite"}],"default":"center center"},
+    {"type":"select","id":"hero_image_position_mobile","label":"Cadrage photo mobile","options":[{"value":"center center","label":"Centré"},{"value":"center top","label":"Haut"},{"value":"center bottom","label":"Bas"},{"value":"left center","label":"Gauche"},{"value":"right center","label":"Droite"}],"default":"center center"},
+    {"type":"range","id":"hero_height","label":"Hauteur de bannière PC","min":300,"max":560,"step":10,"unit":"px","default":370},
+    {"type":"range","id":"image_height_mobile","label":"Hauteur de photo mobile","min":160,"max":400,"step":10,"unit":"px","default":230},
+    {"type":"header","content":"Cartes garanties / retours"},
+    {"type":"text","id":"cards_kicker","label":"Petit titre des cartes","default":"LES INFORMATIONS ESSENTIELLES"},
+    {"type":"text","id":"cards_title","label":"Titre des cartes","default":"Une assistance en toute clarté."},
+    {"type":"richtext","id":"cards_text","label":"Texte à droite (PC)","default":"<p>Des réponses simples sur vos droits, les retours et les réparations.</p>"},
+    {"type":"header","content":"Étapes de prise en charge"},
+    {"type":"text","id":"steps_kicker","label":"Petit titre des étapes","default":"COMMENT ÇA MARCHE ?"},
+    {"type":"text","id":"steps_title","label":"Titre des étapes","default":"Votre demande, étape par étape."},
+    {"type":"richtext","id":"steps_text","label":"Texte d'introduction","default":"<p>Nous vous guidons pour trouver la solution adaptée, dans le respect de vos garanties légales.</p>"},
+    {"type":"header","content":"Contact et liens"},
+    {"type":"text","id":"contact_email","label":"Adresse e-mail du SAV","default":"contact@e-ryd.com"},
+    {"type":"text","id":"contact_title","label":"Titre du contact","default":"Besoin de notre aide ?"},
+    {"type":"richtext","id":"contact_text","label":"Texte du contact","default":"<p>Notre équipe est joignable par e-mail pour toute demande concernant votre commande ou votre véhicule.</p>"},
+    {"type":"text","id":"contact_button","label":"Bouton e-mail","default":"Écrire au SAV"},
+    {"type":"text","id":"policy_button","label":"Bouton politique de retours","default":"Voir les retours"},
+    {"type":"url","id":"policy_url","label":"Lien de la politique de retours"},
+    {"type":"richtext","id":"note","label":"Note juridique en bas de page","default":"<p>Les garanties légales s'appliquent dans les conditions prévues par la loi. Le droit de rétractation est distinct d'une demande de garantie. Si une batterie est gonflée ou endommagée, ne l'expédiez pas sans consignes du SAV. Consultez nos CGV et notre politique de remboursement pour les modalités détaillées.</p>"}
+  ],
+  "blocks": [
+    {
+      "type":"info_card","name":"Carte d'information",
+      "settings":[
+        {"type":"select","id":"icon","label":"Icône","options":[{"value":"shield","label":"Bouclier / Garantie"},{"value":"return","label":"Retour / Rétractation"},{"value":"tools","label":"Outils / Réparation"},{"value":"chat","label":"Service client"},{"value":"truck","label":"Transport"},{"value":"battery","label":"Batterie"},{"value":"check","label":"Validation"}],"default":"shield"},
+        {"type":"select","id":"icon_color","label":"Couleur d'icône","options":[{"value":"red","label":"Rouge"},{"value":"black","label":"Noir"}],"default":"red"},
+        {"type":"text","id":"title","label":"Titre","default":"Garantie légale"},
+        {"type":"richtext","id":"text","label":"Description","default":"<p>Votre produit bénéficie des garanties légales applicables.</p>"}
+      ]
+    },
+    {
+      "type":"sav_step","name":"Étape SAV",
+      "settings":[
+        {"type":"text","id":"title","label":"Titre de l'étape","default":"Contactez-nous"},
+        {"type":"richtext","id":"text","label":"Explication","default":"<p>Précisez votre numéro de commande et le problème rencontré.</p>"}
+      ]
+    }
+  ],
+  "max_blocks":12,
+  "presets":[
+    {
+      "name":"E-RYD - SAV & Garanties",
+      "blocks":[
+        {"type":"info_card","settings":{"icon":"shield","icon_color":"red","title":"Garantie légale : 2 ans","text":"<p>Les produits bénéficient de la <strong>garantie légale de conformité pendant 2 ans</strong> à compter de leur délivrance, dans les conditions prévues par la loi. Les batteries ne sont pas exclues par principe.</p>"}},
+        {"type":"info_card","settings":{"icon":"return","icon_color":"black","title":"Retours : 14 jours","text":"<p>Vous avez <strong>14 jours après réception</strong> pour exercer votre droit légal de rétractation, puis 14 jours pour renvoyer le produit. Consultez les conditions et frais applicables.</p>"}},
+        {"type":"info_card","settings":{"icon":"tools","icon_color":"red","title":"Réparation & prise en charge","text":"<p>En cas de défaut couvert par la garantie légale, la <strong>réparation ou le remplacement est sans frais</strong> dans les conditions légales. Hors garantie, aucun travail payant sans votre accord.</p>"}},
+        {"type":"sav_step","settings":{"title":"Décrivez votre demande","text":"<p>Écrivez à contact@e-ryd.com avec votre numéro de commande et une description du problème. Des photos peuvent être utiles, sans être systématiquement obligatoires.</p>"}},
+        {"type":"sav_step","settings":{"title":"Nous étudions la solution","text":"<p>Le SAV vous indique les vérifications nécessaires et les possibilités de réparation, de remplacement ou de retour selon la situation.</p>"}},
+        {"type":"sav_step","settings":{"title":"Organisation de la prise en charge","text":"<p>Les consignes d'expédition et les frais applicables sont précisés selon le motif du retour. Pour une garantie légale valable, la mise en conformité est sans frais.</p>"}}
+      ]
+    }
+  ]
+}
+{% endschema %}
