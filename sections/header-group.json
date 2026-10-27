@@ -20,18 +20,10 @@
             "text": "LIVRAISON OFFERTE EN FRANCE",
             "url": ""
           }
-        },
-        "message_p6hMGE": {
-          "type": "message",
-          "settings": {
-            "text": "SATISFAIT OU REMBOURSÉ 30 JOURS",
-            "url": ""
-          }
         }
       },
       "block_order": [
-        "message_cpwkrC",
-        "message_p6hMGE"
+        "message_cpwkrC"
       ],
       "settings": {
         "enable_sticky": false,
