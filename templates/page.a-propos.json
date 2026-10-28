@@ -63,6 +63,7 @@
         "image_banner_8C447z": {
           "type": "image_banner",
           "settings": {
+            "image": "shopify://shop_images/0bc883b9-d71a-4fb6-9da8-e16295eb218d.png",
             "image_mobile": "shopify://shop_images/Nouveau_projet_56.webp",
             "height": 470,
             "align": "left",
