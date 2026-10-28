@@ -187,7 +187,7 @@
           "type": "spec",
           "settings": {
             "icon": "motor",
-            "value": "500 W - 900 W",
+            "value": "900 W",
             "label": "Puissance du moteur"
           }
         },
@@ -659,7 +659,7 @@
           "settings": {
             "group": "technical",
             "label": "Moteur",
-            "value": "500 W"
+            "value": "900 W"
           }
         },
         "spec_eyFaBx": {
