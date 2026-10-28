@@ -63,9 +63,10 @@
         "image_banner_8C447z": {
           "type": "image_banner",
           "settings": {
+            "image_mobile": "shopify://shop_images/2a331e40-778c-4e2c-8abf-72850dec3d6b.png",
             "height": 450,
             "align": "left",
-            "kicker": "Votre quotidien, votre rythme",
+            "kicker": "",
             "heading": "Plus de liberté. Moins de contraintes.",
             "body": "<p>Pour vos trajets personnels ou vos déplacements du quotidien, la mobilité électrique ouvre de nouvelles possibilités.</p>",
             "button_label": "",
@@ -146,7 +147,7 @@
         "hero_title_accent": "en toute liberté.",
         "hero_text": "<p>Un univers pensé pour celles et ceux qui veulent se déplacer autrement, avec plus de simplicité et de liberté au quotidien.</p>",
         "hero_button": "Découvrir nos modèles",
-        "hero_link": "",
+        "hero_link": "shopify://collections/meilleures-ventes",
         "intro_kicker": "L’univers E-RYD",
         "intro_title": "Une autre façon d’imaginer vos déplacements.",
         "intro_text": "<p>Chez <strong>E-RYD</strong>, nous croyons à une mobilité qui s’adapte à votre rythme. Notre sélection de trottinettes électriques accompagne les nouveaux usages, les trajets quotidiens et l’envie de profiter de chaque parcours.</p>",
