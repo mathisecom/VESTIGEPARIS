@@ -49,6 +49,8 @@
         "image_text_TCY9jA": {
           "type": "image_text",
           "settings": {
+            "image": "shopify://shop_images/dx5pro_with_ride_pc.webp",
+            "image_mobile": "shopify://shop_images/dx5pro_with_ride_mb.webp",
             "reverse": false,
             "kicker": "Notre spécialité",
             "heading": "Une sélection qui va à l’essentiel.",
