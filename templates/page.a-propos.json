@@ -55,7 +55,7 @@
             "body": "<p>La trottinette électrique est au cœur d’E-RYD. Nous mettons en avant des modèles aux usages variés, pour vous aider à faire un choix éclairé.</p><p>Autonomie, confort et praticité : découvrez les caractéristiques qui comptent.</p>",
             "tags": "Autonomie, Confort, Praticité, Design",
             "button_label": "Explorer la sélection",
-            "button_link": ""
+            "button_link": "shopify://collections/meilleures-ventes"
           }
         },
         "image_banner_8C447z": {
@@ -112,11 +112,11 @@
         "show_reassurance": true,
         "show_bottom": true,
         "color_ink": "#111214",
-        "color_red": "#D62E2E",
-        "color_bg": "#FFFFFF",
-        "color_panel": "#F5F5F5",
-        "color_muted": "#666B73",
-        "color_border": "#E6E6E8",
+        "color_red": "#d62e2e",
+        "color_bg": "#ffffff",
+        "color_panel": "#f5f5f5",
+        "color_muted": "#666b73",
+        "color_border": "#e6e6e8",
         "bottom_bg": "#111214",
         "container_width": 1180,
         "corner_radius": 12,
