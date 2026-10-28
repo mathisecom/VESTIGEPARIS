@@ -122,7 +122,7 @@
         "contact_text": "<p>Notre équipe est joignable par e-mail pour toute demande concernant votre commande ou votre véhicule.</p>",
         "contact_button": "Écrire au SAV",
         "policy_button": "Voir les retours",
-        "policy_url": "",
+        "policy_url": "https://www.e-ryd.com/pages/politique-de-remboursement",
         "note": "<p>Les garanties légales s'appliquent dans les conditions prévues par la loi. Le droit de rétractation est distinct d'une demande de garantie. Si une batterie est gonflée ou endommagée, ne l'expédiez pas sans consignes du SAV. Consultez nos CGV et notre politique de remboursement pour les modalités détaillées.</p>"
       }
     }
