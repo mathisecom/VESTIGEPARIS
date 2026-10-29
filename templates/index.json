@@ -143,7 +143,7 @@
             "image": "shopify://shop_images/1-750x1000_8dffc1d1-4a94-4e41-827c-000e89f2f56f_2_3.webp",
             "subheading": "",
             "title": "Tout Terrain",
-            "url": "shopify://products/all-terrain-electric-scooter-1000w-motor-45km-h-speed-48v-15ah-battery-40-60km-long-range-10-off-road-tires-120kg-load-foldable-waterproof-dual-suspension-adult-escooter-k2",
+            "url": "shopify://products/e-ryd-trottinette-electrique-k2-1000w",
             "heading_tag": "h3",
             "text_position": "place-self-end-start text-start",
             "text_color": "#ffffff",
@@ -198,7 +198,7 @@
         "product_specs_kfTEWG": {
           "type": "product_specs",
           "settings": {
-            "product": "all-terrain-electric-scooter-1000w-motor-45km-h-speed-48v-15ah-battery-40-60km-long-range-10-off-road-tires-120kg-load-foldable-waterproof-dual-suspension-adult-escooter-k2",
+            "product": "e-ryd-trottinette-electrique-k2-1000w",
             "speed": "45  km/h",
             "range": "40-60 km",
             "power": "1000W",
@@ -258,7 +258,7 @@
         "collection": "",
         "products": [
           "sunnigoo-adult-electric-scooter-36v-10-4ah-350w-motor-30km-long-range-30km-h-8-5-inch-solid-tires-foldable-smart-app-escooter",
-          "all-terrain-electric-scooter-1000w-motor-45km-h-speed-48v-15ah-battery-40-60km-long-range-10-off-road-tires-120kg-load-foldable-waterproof-dual-suspension-adult-escooter-k2",
+          "e-ryd-trottinette-electrique-k2-1000w",
           "iscooter-dx5-pro-electric-scooter-with-nfcs-52v-20ah-battery-electric-motorcycle-2000w-motor-90-100km-range-60km-h-max-speed-with-seat-and-basket-17-3-5-e-moto-tires-with-tcs-e-scooter",
           "e-ryd-velo-electrique-avec-siege-900w",
           "e-ryd-scooter-electrique-48v"
@@ -565,7 +565,7 @@
         "product_specs_pRyFAh": {
           "type": "product_specs",
           "settings": {
-            "product": "all-terrain-electric-scooter-1000w-motor-45km-h-speed-48v-15ah-battery-40-60km-long-range-10-off-road-tires-120kg-load-foldable-waterproof-dual-suspension-adult-escooter-k2",
+            "product": "e-ryd-trottinette-electrique-k2-1000w",
             "speed": "30",
             "range": "",
             "power": "",
