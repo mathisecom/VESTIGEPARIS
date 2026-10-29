@@ -208,7 +208,7 @@
         "product_specs_9XtNFr": {
           "type": "product_specs",
           "settings": {
-            "product": "sunnigoo-adult-electric-scooter-36v-10-4ah-350w-motor-30km-long-range-30km-h-8-5-inch-solid-tires-foldable-smart-app-escooter",
+            "product": "e-ryd-trottinette-electrique-n7pro-350w",
             "speed": "30 km/h",
             "range": "25-30",
             "power": "350W",
@@ -218,7 +218,7 @@
         "product_specs_WLxc9H": {
           "type": "product_specs",
           "settings": {
-            "product": "iscooter-dx5-pro-electric-scooter-with-nfcs-52v-20ah-battery-electric-motorcycle-2000w-motor-90-100km-range-60km-h-max-speed-with-seat-and-basket-17-3-5-e-moto-tires-with-tcs-e-scooter",
+            "product": "e-ryd-scooter-electrique-dx5-pro-2000w",
             "speed": "60 km/h",
             "range": "90-100 km",
             "power": "2000W",
@@ -257,9 +257,9 @@
       "settings": {
         "collection": "",
         "products": [
-          "sunnigoo-adult-electric-scooter-36v-10-4ah-350w-motor-30km-long-range-30km-h-8-5-inch-solid-tires-foldable-smart-app-escooter",
+          "e-ryd-trottinette-electrique-n7pro-350w",
           "e-ryd-trottinette-electrique-k2-1000w",
-          "iscooter-dx5-pro-electric-scooter-with-nfcs-52v-20ah-battery-electric-motorcycle-2000w-motor-90-100km-range-60km-h-max-speed-with-seat-and-basket-17-3-5-e-moto-tires-with-tcs-e-scooter",
+          "e-ryd-scooter-electrique-dx5-pro-2000w",
           "e-ryd-velo-electrique-avec-siege-900w",
           "e-ryd-scooter-electrique-48v"
         ],
@@ -575,7 +575,7 @@
         "product_specs_Mqtwcg": {
           "type": "product_specs",
           "settings": {
-            "product": "sunnigoo-adult-electric-scooter-36v-10-4ah-350w-motor-30km-long-range-30km-h-8-5-inch-solid-tires-foldable-smart-app-escooter",
+            "product": "e-ryd-trottinette-electrique-n7pro-350w",
             "speed": "30",
             "range": "",
             "power": "",
@@ -585,7 +585,7 @@
         "product_specs_neKHzY": {
           "type": "product_specs",
           "settings": {
-            "product": "iscooter-dx5-pro-electric-scooter-with-nfcs-52v-20ah-battery-electric-motorcycle-2000w-motor-90-100km-range-60km-h-max-speed-with-seat-and-basket-17-3-5-e-moto-tires-with-tcs-e-scooter",
+            "product": "e-ryd-scooter-electrique-dx5-pro-2000w",
             "speed": "30",
             "range": "",
             "power": "",
