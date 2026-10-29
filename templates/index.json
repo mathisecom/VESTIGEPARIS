@@ -228,7 +228,7 @@
         "product_specs_r4N434": {
           "type": "product_specs",
           "settings": {
-            "product": "zylvro-c14-e-scooter-with-rear-suspension-900w-motor-48v-15ah-battery-14-inch-tires-disc-brakes-40km-h-top-speed-60km-long-range",
+            "product": "e-ryd-velo-electrique-avec-siege-900w",
             "speed": "30 km/h",
             "range": "50-60 km",
             "power": "500W",
@@ -238,7 +238,7 @@
         "product_specs_fbDBh8": {
           "type": "product_specs",
           "settings": {
-            "product": "dx5-6-adult-e-motorcycle-e-scooter-48v-15-6ah-battery-25km-h-speed-60-72km-range-15-inch-pneumatic-tyres-nfc-tap-unlock-dual-hydraulic-disc-brake-built-in-comfort-seat-storage-basket-for-urban-commute-grocery-shoppi",
+            "product": "e-ryd-scooter-electrique-48v",
             "speed": "55 km/h",
             "range": "60-72 km",
             "power": "1500W",
@@ -260,8 +260,8 @@
           "sunnigoo-adult-electric-scooter-36v-10-4ah-350w-motor-30km-long-range-30km-h-8-5-inch-solid-tires-foldable-smart-app-escooter",
           "all-terrain-electric-scooter-1000w-motor-45km-h-speed-48v-15ah-battery-40-60km-long-range-10-off-road-tires-120kg-load-foldable-waterproof-dual-suspension-adult-escooter-k2",
           "iscooter-dx5-pro-electric-scooter-with-nfcs-52v-20ah-battery-electric-motorcycle-2000w-motor-90-100km-range-60km-h-max-speed-with-seat-and-basket-17-3-5-e-moto-tires-with-tcs-e-scooter",
-          "zylvro-c14-e-scooter-with-rear-suspension-900w-motor-48v-15ah-battery-14-inch-tires-disc-brakes-40km-h-top-speed-60km-long-range",
-          "dx5-6-adult-e-motorcycle-e-scooter-48v-15-6ah-battery-25km-h-speed-60-72km-range-15-inch-pneumatic-tyres-nfc-tap-unlock-dual-hydraulic-disc-brake-built-in-comfort-seat-storage-basket-for-urban-commute-grocery-shoppi"
+          "e-ryd-velo-electrique-avec-siege-900w",
+          "e-ryd-scooter-electrique-48v"
         ],
         "full_width": true,
         "stack_products": false,
@@ -595,7 +595,7 @@
         "product_specs_eFVzUW": {
           "type": "product_specs",
           "settings": {
-            "product": "zylvro-c14-e-scooter-with-rear-suspension-900w-motor-48v-15ah-battery-14-inch-tires-disc-brakes-40km-h-top-speed-60km-long-range",
+            "product": "e-ryd-velo-electrique-avec-siege-900w",
             "speed": "30",
             "range": "",
             "power": "",
@@ -605,7 +605,7 @@
         "product_specs_yG8Ahh": {
           "type": "product_specs",
           "settings": {
-            "product": "dx5-6-adult-e-motorcycle-e-scooter-48v-15-6ah-battery-25km-h-speed-60-72km-range-15-inch-pneumatic-tyres-nfc-tap-unlock-dual-hydraulic-disc-brake-built-in-comfort-seat-storage-basket-for-urban-commute-grocery-shoppi",
+            "product": "e-ryd-scooter-electrique-48v",
             "speed": "30",
             "range": "",
             "power": "",
