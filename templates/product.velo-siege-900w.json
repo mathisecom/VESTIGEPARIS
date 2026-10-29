@@ -195,7 +195,7 @@
           "type": "spec",
           "settings": {
             "icon": "speed",
-            "value": "30 km/h",
+            "value": "25 km/h",
             "label": "Vitesse maximale"
           }
         },
@@ -667,7 +667,7 @@
           "settings": {
             "group": "technical",
             "label": "Vitesse maximale",
-            "value": "Jusqu'à 30 km/h"
+            "value": "Jusqu'à 25 km/h"
           }
         },
         "spec_TAADTA": {
